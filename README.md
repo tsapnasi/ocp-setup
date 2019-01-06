@@ -15,3 +15,8 @@ https://docs.openshift.com/container-platform/3.11/install/host_preparation.html
 #### DEMO Activites and Sample files
 1. OCP single node install
 2. Application Demo
+3. Resource Quota for applications 
+4. Horizontal Pod autoscaling
+5. Application upgrade Blue-Green deployment
+6. Source-2-Image
+
