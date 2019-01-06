@@ -18,7 +18,9 @@ OCP version 3.11 installation type "All in one node"
 
 #### DEMO Activites and Sample files
 1. OCP single node install
-2. Application Demo
+2. Application Demo 
+   - Webserver
+   - Webserver with Database
 3. Resource Quota for applications 
 4. Horizontal Pod autoscaling
 5. Application upgrade Blue-Green deployment
