@@ -7,6 +7,7 @@
 (VM, Barematel or cloud VMs)
 
 OCP version 3.11 installation type "All in one node" 
+
 [Disconnect installation](https://docs.openshift.com/container-platform/3.11/install/disconnected_install.html)
 
 
