@@ -12,10 +12,9 @@ OCP install and Demo guide
 #### Preinstallation steps (Don't go with docker storage setup for DEMO)
 https://docs.openshift.com/container-platform/3.11/install/host_preparation.html
 
-#### Sample files
-1."ocp-install_hostfile" (Installation File for single node) 
-   nsible-playbook -i ocp-install_hostfile 
-
+#### DEMO Activites and Sample files
+1. OCP single node install 
+   - Script: single-node-ocp-3.11.sh
 2. Application Demo 
 a. Single web server application based on HTTP server
    - Script file "webserver.sh" 
@@ -29,4 +28,5 @@ b. Two-Tier application webserver front end (HTTP) + DB server (MariaDB) backend
                                 
 3. Resource Quota 
 4. Horizontal Pod autoscaling 
-5. Source-2-Image
+5. Application upgrade Blue-Green deployment 
+6. Source-2-Image
