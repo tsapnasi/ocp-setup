@@ -13,7 +13,8 @@ OCP version 3.11 installation type "All in one node"
 
 [Official Inventory file guide](https://docs.openshift.com/container-platform/3.11/install/configuring_inventory_file.html)
 
-[Pre-Installation steps]Don't go with docker storage setup for DEMO(https://docs.openshift.com/container-platform/3.11/install/host_preparation.html)
+[Pre-Installation steps](https://docs.openshift.com/container-platform/3.11/install/host_preparation.html)
+*Don't go with docker storage setup for DEMO
 
 #### DEMO Activites and Sample files
 1. OCP single node install
