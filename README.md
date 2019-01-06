@@ -13,8 +13,8 @@ OCP install and Demo guide
 https://docs.openshift.com/container-platform/3.11/install/host_preparation.html
 
 #### Sample files
-1 "ocp-install_hostfile" (Installation File for single node) 
- ansible-playbook -i ocp-install_hostfile 
+1."ocp-install_hostfile" (Installation File for single node) 
+   nsible-playbook -i ocp-install_hostfile 
 
 2. Application Demo 
 a. Single web server application based on HTTP server
