@@ -1,0 +1,20 @@
+#
+webapp
+
+WEB APPLICATION DEMO
+#
+oc new-app http://192.168.1.30:10080/giriraj/webapp.git --allow-missing-images=true
+
+### SWITCH TO GUI 
+### SHOW THE LOGS AND PROGRESS
+
+## EXPOSE SVC 
+oc expose svc/webapp
+
+or GUI
+Create ROUE
+webserver.cloudapps.192.168.1.30.nip.io
+
+## ACCESS APP FROM ROUTE GUI
+
+http://webserver.cloudapps.192.168.1.30.nip.io
