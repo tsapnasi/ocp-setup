@@ -1,0 +1,5 @@
+oc new-project jenkins-ci-cd
+oc create -f jenkins.yaml
+oc get template
+oc new-app --template=jenkins-ephemeral
+

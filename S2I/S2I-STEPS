@@ -1,0 +1,26 @@
+### DEMO SOURCE TO IMAGE USING S2i
+###
+###
+# GOG SERVER DETAILS
+http://192.168.1.30:10080
+#USER REPOSITRY
+http://192.168.1.30:10080/giriraj
+#USER REPOSITORY
+http://192.168.1.30:10080/giriraj/s2i.git
+### 
+### docker start gogs (Additional)
+
+## PROJECT CREATION
+oc new-project s2i-demo
+
+### CREATE S2i (CLI) "strategy source is s2i"
+oc new-app openshift/builderimage:s2i~http://192.168.1.30:10080/giriraj/s2i.git --strategy=source --allow-missing-images
+
+### SWITCH TO GUI AND SHOW BUILD LOGS FOR PROGRESS
+### EXTENDING NETWORKING
+oc expose svc/s2i
+
+### VERIFY APPLICATION USING WEB-BROWSER
+http://s2i-s2i.cloudapps.ocp.192.168.1.30.nip.io/ 
+
+DEMO FINISH
