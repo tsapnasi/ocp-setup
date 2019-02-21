@@ -54,7 +54,7 @@ FINISH
 
 STEPS 
 ------
-oc new-project blue-green-demo
+oc new-project blue-green-demo < /br>
 oc new-app openshift/blue:v1 --name=example-blue -n blue-green-demo
 oc expose svc/example-blue --name=bluegreen-example
 oc new-app openshift/green:v1 --name=example-green -n blue-green-demo
