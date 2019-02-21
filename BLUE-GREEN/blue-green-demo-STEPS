@@ -54,9 +54,15 @@ FINISH
 
 STEPS 
 ------
-oc new-project blue-green-demo < /br>
+### APPLICATON V1=BLUE COLOR
+### APPLICATON V2=GREEN COLOR
+oc new-project blue-green-demo
+#APP version 1 which is of BLUE COLOR 
 oc new-app openshift/blue:v1 --name=example-blue -n blue-green-demo
 oc expose svc/example-blue --name=bluegreen-example
+#APP version 2 which is of GREEN COLOR
 oc new-app openshift/green:v1 --name=example-green -n blue-green-demo
+## UPGRADE from V1 to V2 
 oc patch route/bluegreen-example -p '{"spec":{"to":{"name":"example-green"}}}'
+# ROLLBACK from V2 to V1  
 oc patch route/bluegreen-example -p '{"spec":{"to":{"name":"example-blue"}}}'
