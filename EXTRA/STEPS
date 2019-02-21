@@ -3,3 +3,5 @@ oc create -f jenkins.yaml
 oc get template
 oc new-app --template=jenkins-ephemeral
 
+kubernetes.pod_name:"router-1-gcn6c" AND kubernetes.namespace_name:"default"
+
