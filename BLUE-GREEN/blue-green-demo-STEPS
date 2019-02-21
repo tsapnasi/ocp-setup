@@ -45,3 +45,18 @@ oc patch route/bluegreen-example -p '{"spec":{"to":{"name":"example-green"}}}'
 ###
 
 FINISH
+
+
+
+
+
+
+
+STEPS 
+------
+oc new-project blue-green-demo
+oc new-app openshift/blue:v1 --name=example-blue -n blue-green-demo
+oc expose svc/example-blue --name=bluegreen-example
+oc new-app openshift/green:v1 --name=example-green -n blue-green-demo
+oc patch route/bluegreen-example -p '{"spec":{"to":{"name":"example-green"}}}'
+oc patch route/bluegreen-example -p '{"spec":{"to":{"name":"example-blue"}}}'
