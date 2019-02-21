@@ -16,7 +16,7 @@ docker tag docker.io/giriraj789/blue:v1 docker-registry-default.cloudapps.ocp.19
 docker push docker-registry-default.cloudapps.ocp.192.168.1.30.nip.io/openshift/deployment-example:v2
 
 ###CREATE PROJECT
-oc new project blue-green-demo
+oc new-project blue-green-demo
 
 ### SPINING APPLICATION VERSION
 oc new-app openshift/deployment-example:v1 --name=example-green -n blue-green-demo
