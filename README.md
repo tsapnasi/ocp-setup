@@ -17,7 +17,12 @@ OCP version 3.11 installation type "All in one node"
 ***Don't go with docker storage setup for DEMO***
 
 #### DEMO Activites and Sample files
-1. OCP single node install
+1. Application Build strategies 
+   - Docker Strategy 
+     - Docker file
+     - Docker Image 
+
+
 2. Application Demo 
    - Webserver
    - Webserver with Database
