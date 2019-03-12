@@ -45,5 +45,5 @@ OCP version 3.11 installation type "All in one node"
 4. Horizontal Pod autoscaling
 5. Application upgrade Blue-Green deployment
    - Application version upgrade A to B 
-6. Source-2-Image
+
 
