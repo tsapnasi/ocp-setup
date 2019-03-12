@@ -27,13 +27,13 @@ OCP version 3.11 installation type "All in one node"
    - S2I AKA Source to Image
        
 
-
-2. Application (multi-tier) deployment Voteapp
+2. Code change web hook Demo 
+3. Application (multi-tier) deployment Voteapp Demo
    - HTTP as Frontend/web server
    - Mysql as backend Database
-3. Resource Quota for applications 
-4. Horizontal Pod autoscaling
-5. Application upgrade Blue-Green deployment
+4. Resource Quota for applications Demo
+5. Horizontal Pod autoscaling Demo
+6. Application deployment with upgrade Blue-Green deployment Demo
    - Application version upgrade A to B 
 
 
