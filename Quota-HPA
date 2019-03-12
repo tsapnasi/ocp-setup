@@ -1,0 +1,13 @@
+GUI 
+- Go to deployment of project code #2
+- Action - Edit resource limit 
+- Add CPU Request 100 milicore Limit 200 milicore 
+- Add Memory Request 100 Mib Limit 200 Mib
+
+
+HPA 
+- Go to deployment of project code #2
+- Action - Add autoscaler 
+- Min pod - 2 , Max pod - 5 , CPU request target 5 % 
+- show GUI manual scaling removed with auto scaled details
+- 
