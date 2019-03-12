@@ -17,7 +17,7 @@ OCP version 3.11 installation type "All in one node"
 ***Don't go with docker storage setup for DEMO***
 
 #### DEMO Activites and Sample files
-1. Application Build strategies 
+1. Application Build strategies Demo 
    - Docker Strategy 
      - Docker file
        
@@ -28,9 +28,9 @@ OCP version 3.11 installation type "All in one node"
        
 
 
-2. Application Demo 
-   - Webserver
-   - Webserver with Database
+2. Application (multi-tier) deployment Voteapp
+   - HTTP as Frontend/web server
+   - Mysql as backend Database
 3. Resource Quota for applications 
 4. Horizontal Pod autoscaling
 5. Application upgrade Blue-Green deployment
