@@ -35,6 +35,6 @@ OCP version 3.11 installation type "All in one node"
 5. Horizontal Pod autoscaling Demo
 6. Application deployment with upgrade Blue-Green deployment Demo
    - Blue (version 1) to Green (version 2)
-7 Catalogue Deployment cake/php Icon PHP
+7. Catalogue Deployment cake/php Icon PHP
 
 
