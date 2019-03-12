@@ -10,38 +10,38 @@ docker login docker-registry-default.cloudapps.ocp.192.168.1.30.nip.io -u $(oc w
 
 ### PUSHING DEVELOPED APPLICATIONS (V1 and V2) TO INTERNAL DOCKER REGISTRY
 
-docker tag docker.io/giriraj789/green:v1 docker-registry-default.cloudapps.ocp.192.168.1.30.nip.io/openshift/deployment-example:v1
-docker push docker-registry-default.cloudapps.ocp.192.168.1.30.nip.io/openshift/deployment-example:v1
-docker tag docker.io/giriraj789/blue:v1 docker-registry-default.cloudapps.ocp.192.168.1.30.nip.io/openshift/deployment-example:v2
-docker push docker-registry-default.cloudapps.ocp.192.168.1.30.nip.io/openshift/deployment-example:v2
+docker tag docker.io/giriraj789/blue:v1 docker-registry-default.cloudapps.ocp.192.168.1.30.nip.io/openshift/blue:v1
+docker push docker-registry-default.cloudapps.ocp.192.168.1.30.nip.io/openshift/blue:v1
+docker tag docker.io/giriraj789/green:v1 docker-registry-default.cloudapps.ocp.192.168.1.30.nip.io/openshift/green:v1
+docker push docker-registry-default.cloudapps.ocp.192.168.1.30.nip.io/openshift/green:v1
 
 ###CREATE PROJECT
-oc new-project blue-green-demo
+oc new-project blue-green
 
 ### SPINING APPLICATION VERSION
-oc new-app openshift/deployment-example:v1 --name=example-green -n blue-green-demo
-oc new-app openshift/deployment-example:v2 --name=example-blue -n blue-green-demo
+oc new-app openshift/blue:v1 --name=example-blue -n blue-green
+oc new-app openshift/green:v1 --name=example-green -n blue-green
 
 ### ESTABLISHING NETWORKING 
-oc expose svc/example-green --name=bluegreen-example
+oc expose svc/example-blue --name=bluegreen-example
 
 ### USE ANY BROWSER AND TEST APPLICATION V1 (GREEN COLOUR) ACCESSIBILTY 
 ### http://bluegreen-example-blue-green-demo.cloudapps.ocp.192.168.1.30.nip.io/
 ###
 
-### MOVING APPLICATION FROM V1 TO V2 
-oc patch route/bluegreen-example -p '{"spec":{"to":{"name":"example-blue"}}}'
-
-### USE ANY BROWSER AND TEST APPLICATION V2 (BLUE COLOUR) ACCESSIBILTY 
-### http://bluegreen-example-blue-green-demo.cloudapps.ocp.192.168.1.30.nip.io/
-###
-
-### ROLL BACK APPLICATION FROM V2 to V1 After successful testing
-
+### MOVING APPLICATION FROM Blue TO Green 
 oc patch route/bluegreen-example -p '{"spec":{"to":{"name":"example-green"}}}'
 
+### USE ANY BROWSER AND TEST APPLICATION ACCESSIBILTY 
+### http://bluegreen-example-blue-green.cloudapps.3.8.96.43.nip.io/
+###
+
+### ROLL BACK APPLICATION FROM Green to Blue After successful testing
+
+oc patch route/bluegreen-example -p '{"spec":{"to":{"name":"example-blue"}}}'
+
 ### USE ANY BROWSER AND TEST APPLICATION V1 (ROLL BACK TO BLUE COLOUR) ACCESSIBILTY 
-### http://bluegreen-example-blue-green-demo.cloudapps.ocp.192.168.1.30.nip.io/
+### http://bluegreen-example-blue-green.cloudapps.3.8.96.43.nip.io/
 ###
 
 FINISH
