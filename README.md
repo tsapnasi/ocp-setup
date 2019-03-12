@@ -31,11 +31,11 @@ OCP version 3.11 installation type "All in one node"
            - Deploy from Image and use Air route Image Stream in Openshift Project
            - Route airoute.cloudapps.3.8.96.43.nip.io
            
-     - S2I AKA Source to Image
-       GUI Demo - 
-           - oc new-project s2i-demo
-           - oc new-app openshift/builderimage:s2i~http://192.168.1.30:10080/giriraj/s2i.git --strategy=source --allow-missing-images
-           - oc expose svc
+   - S2I AKA Source to Image
+       - CLI Demo - 
+             - oc new-project s2i
+             - oc new-app openshift/webbuilder:s2i~https://github.com/learnbyseven/s2icode.git --allow-missing-images --strategy=source
+             - oc expose svc
 
 
 2. Application Demo 
