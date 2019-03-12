@@ -20,7 +20,21 @@ OCP version 3.11 installation type "All in one node"
 1. Application Build strategies 
    - Docker Strategy 
      - Docker file
-     - Docker Image 
+       CLI Demo - 
+           - Create project $ oc new-project webfile
+           - oc new-app https://github.com/learnbyseven/apachewebserver.git --allow-missing-images
+           - oc expose svc/apachewebserver
+    
+     - Docker Image
+       GUI Demo - 
+           - Create project $ oc new-project webimage
+           - Deploy from Image and use Air route Image Stream in Openshift Project
+           - Route airoute.cloudapps.3.8.96.43.nip.io
+           
+     - S2I AKA Source to Image
+       GUI Demo - 
+           - Create project $ oc new-project s2i-demo
+           - oc new-app openshift/builderimage:s2i~http://192.168.1.30:10080/giriraj/s2i.git --strategy=source --allow-missing-images
 
 
 2. Application Demo 
