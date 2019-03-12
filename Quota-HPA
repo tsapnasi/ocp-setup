@@ -8,6 +8,9 @@ GUI
 HPA 
 - Go to deployment of project code #2
 - Action - Add autoscaler 
-- Min pod - 2 , Max pod - 5 , CPU request target 5 % 
+- Min pod - 1 , Max pod - 3 , CPU request target 3 % 
 - show GUI manual scaling removed with auto scaled details
-- 
+- Fictitious Load 
+  GUI- 
+  rsh podname 
+  Command : dd if=/dev/zero of=/dev/null
