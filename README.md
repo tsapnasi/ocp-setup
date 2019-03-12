@@ -20,10 +20,7 @@ OCP version 3.11 installation type "All in one node"
 1. Application Build strategies 
    - Docker Strategy 
      - Docker file
-       CLI Demo  
-           - Create project $ oc new-project webfile
-           - oc new-app https://github.com/learnbyseven/apachewebserver.git --allow-missing-images
-           - oc expose svc/apachewebserver
+       
     
      - Docker Image
        GUI Demo 
