@@ -1,5 +1,5 @@
 Enviornment variable :
-DB_ADDR: 172.30.98.44
+DB_ADDR: votedb
 DB_USER: root
 DB_PASSWD: india@123
 DB_NAME: vote_db
