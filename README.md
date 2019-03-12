@@ -33,8 +33,9 @@ OCP version 3.11 installation type "All in one node"
            
      - S2I AKA Source to Image
        GUI Demo - 
-           - Create project $ oc new-project s2i-demo
+           - oc new-project s2i-demo
            - oc new-app openshift/builderimage:s2i~http://192.168.1.30:10080/giriraj/s2i.git --strategy=source --allow-missing-images
+           - oc expose svc
 
 
 2. Application Demo 
