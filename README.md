@@ -34,6 +34,6 @@ OCP version 3.11 installation type "All in one node"
 4. Resource Quota for applications Demo
 5. Horizontal Pod autoscaling Demo
 6. Application deployment with upgrade Blue-Green deployment Demo
-   - Application version upgrade A to B 
+   - Blue (version 1) to Green (version 2)
 
 
