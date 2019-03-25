@@ -5,3 +5,5 @@ oc new-app --template=jenkins-ephemeral
 
 kubernetes.pod_name:"router-1-gcn6c" AND kubernetes.namespace_name:"default"
 
+oc adm policy add-role-to-user edit system:serviceaccount:jenkins:jenkins -n development
+oc adm policy add-role-to-group system:image-puller system:serviceaccounts:testing -n development
