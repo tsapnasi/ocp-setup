@@ -4,7 +4,7 @@
            - oc expose svc/apachewebserver
            
 # Docker Image GUI Demo 
-           - oc new-project webimage
+           - oc new-project web
            - Deploy from Image and use Air route Image Stream in Openshift Project
            - Route airoute.cloudapps.3.8.96.43.nip.io
            
