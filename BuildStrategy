@@ -1,5 +1,5 @@
 # Docker file CLI Demo  
-           - oc new-project webfile
+           - oc new-project webserver
            - oc new-app https://github.com/learnbyseven/apachewebserver.git --allow-missing-images
            - oc expose svc/apachewebserver
            
