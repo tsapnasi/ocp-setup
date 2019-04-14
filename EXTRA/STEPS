@@ -8,5 +8,8 @@ oc import-image is/jenkins:2 --from=registry.redhat.io/openshift3/jenkins-2-rhel
 
 kubernetes.pod_name:"router-1-gcn6c" AND kubernetes.namespace_name:"default"
 
+## Create Devlopment Project 
+oc new-project development
+
 oc adm policy add-role-to-user edit system:serviceaccount:jenkins:jenkins -n development
 oc adm policy add-role-to-group system:image-puller system:serviceaccounts:testing -n development
