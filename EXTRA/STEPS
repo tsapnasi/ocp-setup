@@ -1,7 +1,10 @@
-oc new-project jenkins-ci-cd
+oc new-project jenkins
 oc create -f jenkins.yaml
-oc get template
 oc new-app --template=jenkins-ephemeral
+oc import-image is/jenkins:2 --from=registry.redhat.io/openshift3/jenkins-2-rhel7:v3.11 --confirm -n openshift
+
+# Check Jenkins pod deploy
+
 
 kubernetes.pod_name:"router-1-gcn6c" AND kubernetes.namespace_name:"default"
 
