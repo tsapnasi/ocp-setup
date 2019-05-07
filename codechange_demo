@@ -1,9 +1,9 @@
-
-Project Code 
+code_change_demo
+----------------
+Project name "Code" 
  - Application deployed with s2i process
  - Browse http://code.cloudapps.3.8.96.43.nip.io
  - https://github.com/learnbyseven/s2icode 
-   - change index.html with value Hotel-Cambridge.jpg or india-location-map.jpg
+ - change index.html with value Hotel-Cambridge.jpg or india-location-map.jpg
  - Browse http://code.cloudapps.3.8.96.43.nip.io (view change) 
- 
  - Git Settings + webbook with payload https://ec2-3-8-96-43.eu-west-2.compute.amazonaws.com:8443/apis/build.openshift.io/v1/namespaces/code/buildconfigs/s2icode/webhooks/dxYgZPh5JzrYwNKQfXU2/github

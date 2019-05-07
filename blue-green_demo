@@ -1,0 +1,38 @@
+DEMO STEPS BLUE-GREEN
+---------------------
+---------------------
+
+### PLEASE READ THE STEPS CAREFULLY 
+### OFFICIAL DOC REFERENCE https://docs.openshift.com/container-platform/3.11/dev_guide/deployments/advanced_deployment_strategies.html
+
+### DOCKER REGISTRY LOGIN 
+#docker login docker-registry-default.cloudapps.ocp.192.168.1.30.nip.io -u $(oc whoami) -p $(oc whoami -t)
+
+### PUSHING DEVELOPED APPLICATIONS (V1 and V2) TO INTERNAL DOCKER REGISTRY
+
+#docker tag docker.io/giriraj789/blue:v1 docker-registry-default.cloudapps.ocp.192.168.1.30.nip.io/openshift/blue:v1
+#docker push docker-registry-default.cloudapps.ocp.192.168.1.30.nip.io/openshift/blue:v1
+#docker tag docker.io/giriraj789/green:v1 docker-registry-default.cloudapps.ocp.192.168.1.30.nip.io/openshift/green:v1
+#docker push docker-registry-default.cloudapps.ocp.192.168.1.30.nip.io/openshift/green:v1
+
+
+STEPS 
+------
+### APPLICATON V1=BLUE COLOR name example-blue
+### APPLICATON V2=GREEN COLOR name example-green
+
+# CREATE PROJECT
+oc new-project blue-green-demo
+
+#APP version 1 
+oc new-app openshift/blue:v1 --name=example-blue -n blue-green-demo
+oc expose svc/example-blue --name=bluegreen-example
+
+#APP version 2 
+oc new-app openshift/green:v1 --name=example-green -n blue-green-demo
+
+## UPGRADE from V1 to V2 
+oc patch route/bluegreen-example -p '{"spec":{"to":{"name":"example-green"}}}'
+
+# ROLLBACK from V2 to V1  
+oc patch route/bluegreen-example -p '{"spec":{"to":{"name":"example-blue"}}}'

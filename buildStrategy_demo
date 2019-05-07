@@ -1,14 +1,19 @@
-# Docker file CLI Demo  
+Deployment Strategy
+-------------------
+------------------- 
+
+
+1. Docker file CLI Demo  
            - oc new-project webserver
            - oc new-app https://github.com/learnbyseven/apachewebserver.git --allow-missing-images
            - oc expose svc/apachewebserver
            
-# Docker Image GUI Demo 
+2. Docker Image GUI Demo 
            - oc new-project web
            - Deploy from Image and use Air route Image Stream in Openshift Project
            - Route airoute.cloudapps.3.8.96.43.nip.io
            
-# S2I AKA Source to Image CLI Demo 
+3. S2I AKA Source to Image CLI Demo 
            - oc new-project s2i
            - oc new-app openshift/webbuilder:s2i~https://github.com/learnbyseven/s2icode.git --allow-missing-images --strategy=source
            - oc expose svc
