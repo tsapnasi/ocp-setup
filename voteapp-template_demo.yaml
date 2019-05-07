@@ -1,0 +1,185 @@
+#SCC ANYUID NEED TO BE ADDED
+#STEPS
+#oc new-project template-apps
+#oc adm policy add-scc-to-user anyuid -z default -n template-apps
+#oc create -f voteapp-template_demo.yaml -n template-apps
+#oc new-app voteapp -n template-apps  
+kind: Template
+apiVersion: v1
+labels:
+  template: voteapp
+metadata:
+  name: voteapp
+  annotations:
+    openshift.io/display-name: "VOTEAPP-PHP-MARIADB" 
+    description: "An example of PHP web based application VOTEAPP with a MariaDB database."
+    tags: "voteapp"
+    iconClass: "icon-shadowman"
+objects:
+- apiVersion: v1
+  kind: DeploymentConfig
+  metadata:
+    generation: 1
+    labels:
+      app: voteapp
+    name: votedb
+  spec:
+    replicas: 1
+    selector:
+      app: voteapp
+      deploymentconfig: votedb
+    strategy:
+      type: Rolling
+    template:
+      metadata:
+        labels:
+          app: voteapp
+          deploymentconfig: votedb
+      spec:
+        containers:
+        - env:
+          - name: DB_NAME
+            value: vote_db
+          - name: DB_PASSWD
+            value: india@123
+          - name: DB_USER
+            value: root
+          image: 'docker-registry.default.svc:5000/openshift/votedb:latest'
+          imagePullPolicy: Always
+          livenessProbe:
+            initialDelaySeconds: 45
+            tcpSocket:
+              port: 3306
+            timeoutSeconds: 1
+          name: votedb
+          ports:
+          - containerPort: 3306
+          readinessProbe:
+            exec:
+              command:
+              - /bin/sh
+              - -i
+              - -c
+              - MYSQL_PWD="$DB_PASSWD" mysql -h 127.0.0.1 -u $DB_USER -D $DB_NAME
+                -e 'SELECT 1'
+            timeoutSeconds: 2
+        dnsPolicy: ClusterFirst
+        restartPolicy: Always
+    triggers:
+    - type: ConfigChange
+- apiVersion: v1
+  kind: Service
+  metadata:
+    labels:
+      app: voteapp
+    name: votedb
+  spec:
+    ports:
+    - name: 3306-tcp
+      port: 3306
+      protocol: TCP
+      targetPort: 3306
+    selector:
+      app: voteapp
+      deploymentconfig: votedb
+- apiVersion: v1
+  kind: DeploymentConfig
+  metadata:
+    generation: 1
+    labels:
+      app: voteapp
+    name: voteweb
+  spec:
+    replicas: 1
+    selector:
+      app: voteapp
+      deploymentconfig: voteweb
+    strategy:
+      type: Rolling
+    template:
+      metadata:
+        labels:
+          app: voteapp
+          deploymentconfig: voteweb
+      spec:
+        containers:
+        - env:
+          - name: DB_NAME
+            value: vote_db
+          - name: DB_PASSWD
+            value: india@123
+          - name: DB_USER
+            value: root
+          - name: DB_ADDR
+            value: votedb
+          image: 'docker-registry.default.svc:5000/openshift/voteweb:latest'
+          imagePullPolicy: Always
+          livenessProbe:
+            initialDelaySeconds: 45
+            tcpSocket:
+              port: 8080
+            timeoutSeconds: 1
+          name: voteweb
+          ports:
+          - containerPort: 8080
+            protocol: TCP
+          readinessProbe:
+            tcpSocket:
+              port: 8080
+            timeoutSeconds: 1
+        dnsPolicy: ClusterFirst
+        restartPolicy: Always
+    triggers:
+    - type: ConfigChange
+- apiVersion: v1
+  kind: Service
+  metadata:
+    labels:
+      app: voteapp
+    name: voteweb
+  spec:
+    ports:
+    - name: 8080-tcp
+      port: 8080
+      protocol: TCP
+      targetPort: 8080
+    selector:
+      app: voteapp
+      deploymentconfig: voteweb
+    type: ClusterIP
+- apiVersion: v1
+  kind: Route
+  metadata:
+    labels:
+      app: voteapp
+    name: voteweb
+  spec:
+    host: ""
+    port:
+      targetPort: 8080-tcp
+    to:
+      kind: Service
+      name: voteweb
+parameters:
+- description: Username for VOTEDB user that will be used for accessing the database.
+  displayName: VOTEDB User
+  from: user[A-Z0-9]{3}
+  name: DB_USER
+  required: true
+  value: user
+- description: Password for the VOTEDB user.
+  displayName: DB Password
+  from: '[a-zA-Z0-9]{12}'
+  name: DB_PASSWD
+  required: true
+  generate: expression
+- description: Name of the VOTEDB database accessed.
+  displayName: VOTEDB Database Name
+  name: DB_NAME
+  required: true
+  value: vote_db
+- description: Name of the VOTEDB ADDRESS accessed.
+  displayName: VOTEDB SERVER ADDRESS
+  name: DB_ADDR
+  required: true
+  value: votedb.$name.svc.cluster.local
