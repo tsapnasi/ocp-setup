@@ -1,0 +1,67 @@
+[OSEv3:children]
+masters
+nodes
+etcd
+#new_nodes
+#glusterfs
+
+[OSEv3:vars]
+ansible_ssh_user=root
+ansible_become=true 
+os_sdn_network_plugin_name='redhat/openshift-ovs-networkpolicy'
+deployment_type=openshift-enterprise
+openshift_master_identity_providers=[{'name': 'htpasswd_auth', 'login': 'true', 'challenge': 'true', 'kind': 'HTPasswdPasswordIdentityProvider'}]
+openshift_clock_enabled=true
+openshift_master_default_subdomain=cloudapps.3.8.96.43.nip.io
+openshift_disable_check=docker_storage,memory_availability,disk_availability,docker_image_availability,package_version
+os_firewall_use_firewalld=True
+openshift_master_cluster_public_hostname=ec2-3-8-96-43.eu-west-2.compute.amazonaws.com
+openshift_enable_unsupported_configurations=True
+openshift_logging_install_logging=True
+openshift_metrics_install_metrics=True
+template_service_broker_install=true
+ansible_service_broker_install=true
+openshift_enable_service_catalog=true
+openshift_cluster_monitoring_operator_install=true
+openshift_deployment_type=openshift-enterprise
+oreg_url=registry.redhat.io/openshift3/ose-${component}:${version}
+oreg_auth_user=rhn-support-grajawat
+oreg_auth_password=FAKENenu1882@123
+oreg_test_login=false
+openshift_prometheus_state=true
+openshift_examples_modify_imagestreams=true
+openshift_cluster_monitoring_operator_install=false
+openshift_logging_install_logging=true
+openshift_logging_es_cpu_limit=3000m
+openshift_logging_es_memory_limit=1000M
+openshift_logging_fluentd_cpu_limit=1000m
+openshift_logging_fluentd_memory_limit=1000M
+openshift_logging_kibana_cpu_limit=1500m
+openshift_logging_kibana_memory_limit=1000M
+openshift_logging_es_nodeselector={'node-role.kubernetes.io/infra':'true'}
+
+####GLUSTER
+#openshift_storage_glusterfs_is_native=true
+#openshift_storage_glusterfs_block_deploy=true
+#openshift_storage_glusterfs_wipe=true
+#openshift_storage_glusterfs_storageclass=true
+#openshift_storage_glusterfs_heketi_is_native=true
+#openshift_storage_glusterfs_block_host_vol_size=100
+#openshift_storage_glusterfs_block_storageclass=true
+#openshift_storage_glusterfs_block_storageclass_default=false
+
+[masters]
+ip-172-31-38-149.eu-west-2.compute.internal
+[nodes]
+ip-172-31-38-149.eu-west-2.compute.internal openshift_node_group_name="node-config-all-in-one"
+[etcd]
+ip-172-31-38-149.eu-west-2.compute.internal
+
+#[glusterfs]
+#ip-172-31-38-149.eu-west-2.compute.internal glusterfs_devices='[ "/dev/nvme1n1" ]'
+#ip-172-31-42-197.eu-west-2.compute.internal glusterfs_devices='[ "/dev/xvdf" ]'
+#ip-172-31-38-140.eu-west-2.compute.internal glusterfs_devices='[ "/dev/xvdb" ]'
+
+#[new_nodes]
+#ip-172-31-42-197.eu-west-2.compute.internal openshift_node_group_name='node-config-compute'
+#ip-172-31-38-140.eu-west-2.compute.internal openshift_node_group_name='node-config-compute'
