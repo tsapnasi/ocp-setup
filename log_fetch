@@ -1,0 +1,2 @@
+kubernetes.pod_name:"docker-registry-1-bb2sc" AND kubernetes.namespace_name:"default"
+
