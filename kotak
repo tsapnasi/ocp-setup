@@ -1,3 +1,114 @@
-ls -lrth | grep -i Apr | awk '{print $NF}' | xargs /bin/rm -rf
-find / -name "elasticsearch-storage"
+ADDITIONAL AVOID THE COMMENTED 
+###THIS IS NOT FOR YOUR USE find / -name "elasticsearch-storage"
+###THIS IS NOT FOR YOUR USE ls -lrth | grep -i Apr | awk '{print $NF}' | xargs /bin/rm -rf
 
+Optional 
+--------
+# For log limiting logs  
+systemctl stop docker
+#Add Below Line In File "/etc/sysconfig/docker"
+OPTIONS=' --selinux-enabled       --signature-verification=False --log-opt max-size=50m --log-opt max-file=5'
+systemctl start docker
+
+
+APPLICATION UPGRADE WITHOUT DOWNTIME
+------------------------------------
+- By default 25 % surge rate of rolling update will provides "0" downtime when application upgrade, Edit bc via GUI
+  to show the surge rate.
+- Create a webhook based application (git as source)
+Test website availability
+-------------------------
+while true; do curl -Is http://code.clouapps.3.8.96.43.nip.io | head -n 1 ;done
+
+- Change git code and commit
+- Check for application drops 
+
+
+SECURING APPLICATION WITH SSL CERT
+----------------------------------
+
+- ////////CREATING ROOT MASTER CA (CERTIFICATE AUTHORITY)
+
+[SELF-SIGNED-CA]
+[root@ip-172-31-38-149 ~]# mkdir cert
+[root@ip-172-31-38-149 ~]# cd cert/
+[root@ip-172-31-38-149 cert]# openssl genrsa -out rootCA.key 2048
+Generating RSA private key, 2048 bit long modulus
+...............+++
+................+++
+e is 65537 (0x10001)
+[root@ip-172-31-38-149 cert]# ls
+rootCA.key
+[root@ip-172-31-38-149 cert]# openssl req -x509 -new -nodes -key rootCA.key -sha256 -days 10000 -out rootCA.pem
+You are about to be asked to enter information that will be incorporated
+into your certificate request.
+What you are about to enter is what is called a Distinguished Name or a DN.
+There are quite a few fields but you can leave some blank
+For some fields there will be a default value,
+If you enter '.', the field will be left blank.
+-----
+Country Name (2 letter code) [XX]:IN
+State or Province Name (full name) []:KA
+Locality Name (eg, city) [Default City]:BAN
+Organization Name (eg, company) [Default Company Ltd]:REDHAT
+Organizational Unit Name (eg, section) []:DEVOPS
+Common Name (eg, your name or your server's hostname) []:MASTER_CA
+Email Address []:masterca.redhat.com
+
+[root@ip-172-31-38-149 cert]# ls
+rootCA.key  rootCA.pem
+
+- //////// CREATING APPLICATION CERT AND SIGNED FROM MASTER CA
+
+
+[root@ip-172-31-38-149 cert]# openssl genrsa -out device.key 2048
+Generating RSA private key, 2048 bit long modulus
+...............................................................................................................+++
+...................+++
+e is 65537 (0x10001)
+[root@ip-172-31-38-149 cert]# openssl req -new -key device.key -out device.csr
+You are about to be asked to enter information that will be incorporated
+into your certificate request.
+What you are about to enter is what is called a Distinguished Name or a DN.
+There are quite a few fields but you can leave some blank
+For some fields there will be a default value,
+If you enter '.', the field will be left blank.
+-----
+Country Name (2 letter code) [XX]:IN
+State or Province Name (full name) []:KA
+Locality Name (eg, city) [Default City]:BAN
+Organization Name (eg, company) [Default Company Ltd]:IBM
+Organizational Unit Name (eg, section) []:DEV
+Common Name (eg, your name or your server's hostname) []:secureapp.cloudapps.3.8.96.43.nip.io
+Email Address []:giriraj789@gmail.com
+
+Please enter the following 'extra' attributes
+to be sent with your certificate request
+A challenge password []:
+An optional company name []:ibm
+[root@ip-172-31-38-149 cert]# ls
+device.csr  device.key  rootCA.key  rootCA.pem
+[root@ip-172-31-38-149 cert]# openssl x509 -req -in device.csr -CA rootCA.pem -CAkey rootCA.key -CAcreateserial -out device.crt -days 500 -sha256
+Signature ok
+subject=/C=IN/ST=KA/L=BAN/O=IBM/OU=DEV/CN=secureapp.cloudapps.3.8.96.43.nip.io/emailAddress=giriraj789@gmail.com
+Getting CA Private Key
+
+
+#### Note "Above 81 line "A challenge password []: press enter for blank password"
+
+- Take any project and expose svc to route
+  $oc expose svc/s2icode 
+  
+- Browse the website and view cert details in crome " It shows openshift default CA screen shot attached"
+
+- Delete the route
+  oc delete route s2icode 
+  
+- Create new route and attach certificate 
+  $ oc create route edge --service=s2icode --cert=device.crt --key=device.key --ca-cert=rootCA.pem --hostname=secureapp.cloudapps.3.8.96.43.nip.io
+  
+- Browse back and view certificate details " It change from openshift cert to Master_CA cert"
+
+
+WHITELISTING IP (SLEEPING WILL DO IT TOMMOROW)
+---------------
