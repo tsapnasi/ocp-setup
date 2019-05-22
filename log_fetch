@@ -1,2 +1,3 @@
 kubernetes.pod_name:"docker-registry-1-bb2sc" AND kubernetes.namespace_name:"default"
+kubernetes.pod_name:"s2icode-12-tsdxb" AND kubernetes.namespace_name:"code"
 
