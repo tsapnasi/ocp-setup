@@ -1,0 +1,3 @@
+ip-172-31-38-140.eu-west-2.compute.internal   Ready     compute                92d       v1.11.0+d4cacc0
+ip-172-31-38-149.eu-west-2.compute.internal   Ready     compute,infra,master   101d      v1.11.0+d4cacc0
+ip-172-31-42-197.eu-west-2.compute.internal   Ready     compute                92d       v1.11.0+d4cacc0
