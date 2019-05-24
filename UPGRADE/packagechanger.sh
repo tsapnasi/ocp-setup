@@ -1,4 +1,5 @@
 #!/bin/bash
+subscription-manager refresh
 subscription-manager repos \
     --disable="rhel-7-server-ose-3.10-rpms" \
     --disable="rhel-7-server-ansible-2.4-rpms" \
