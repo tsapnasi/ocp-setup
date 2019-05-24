@@ -1,0 +1,4 @@
+oc get -n kube-system configmap openshift-master-controllers -o yaml
+source /etc/etcd/etcd.conf
+export ETCDCTL_API=3
+etcdctl --cert=$ETCD_PEER_CERT_FILE --key=$ETCD_PEER_KEY_FILE --cacert=$ETCD_TRUSTED_CA_FILE --endpoints=$ETCD_LISTEN_CLIENT_URLS --write-out=table endpoint status
