@@ -1,0 +1,8 @@
+#!/bin/bash
+subscription-manager register --username=@redhat.com  --password=N
+subscription-manager attach --pool=Fake8a85f9833e1404a9013e3cddf99305e61982
+subscription-manager repos --disable="*"
+subscription-manager repos --enable={rhel-7-server-rpms,rhel-7-server-extras-rpms,rhel-7-server-ose-3.11-rpms,rhel-7-server-ansible-2.6-rpms}
+#FOR CLUSTER subscription-manager repos --enable=rh-gluster-3-client-for-rhel-7-server-rpms
+yum -y update && yum -y install wget git net-tools bind-utils yum-utils iptables-services bridge-utils bash-completion kexec-tools sos psacct openshift-ansible
+echo "FINISH"

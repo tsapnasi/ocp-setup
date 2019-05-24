@@ -1,0 +1,58 @@
+[OSEv3:children]
+masters
+nodes
+etcd
+lb
+
+[OSEv3:vars]
+ansible_ssh_user=root
+ansible_become=true
+os_sdn_network_plugin_name='redhat/openshift-ovs-networkpolicy'
+deployment_type=openshift-enterprise
+openshift_master_identity_providers=[{'name': 'htpasswd_auth', 'login': 'true', 'challenge': 'true', 'kind': 'HTPasswdPasswordIdentityProvider'}]
+openshift_clock_enabled=true
+openshift_master_default_subdomain=apps.13.233.39.95.nip.io
+openshift_disable_check=docker_storage,memory_availability,disk_availability,docker_image_availability,package_version
+os_firewall_use_firewalld=True
+openshift_enable_unsupported_configurations=True
+openshift_logging_install_logging=false
+openshift_metrics_install_metrics=false
+template_service_broker_install=false
+ansible_service_broker_install=false
+openshift_enable_service_catalog=false
+openshift_cluster_monitoring_operator_install=false
+openshift_deployment_type=openshift-enterprise
+oreg_url=registry.redhat.io/openshift3/ose-${component}:${version}
+oreg_auth_user=rhn-support-grajawat
+oreg_auth_password=Nenu@123
+oreg_test_login=false
+openshift_prometheus_state=false
+openshift_examples_modify_imagestreams=true
+openshift_cluster_monitoring_operator_install=false
+#openshift_docker_options='--selinux-enabled --log-opt  max-size=1M --log-opt max-file=3 --insecure-registry 172.30.0.0/16 --log-driver=json-file --signature-verification=false'
+openshift_master_cluster_method=native
+openshift_master_cluster_hostname=ec2-13-233-39-95.ap-south-1.compute.amazonaws.com
+openshift_master_cluster_public_hostname=ec2-13-233-39-95.ap-south-1.compute.amazonaws.com
+
+[masters]
+ip-172-31-20-135.ap-south-1.compute.internal
+ip-172-31-26-159.ap-south-1.compute.internal
+ip-172-31-25-160.ap-south-1.compute.internal
+
+[nodes]
+ip-172-31-20-135.ap-south-1.compute.internal openshift_node_group_name='node-config-master'
+ip-172-31-26-159.ap-south-1.compute.internal openshift_node_group_name='node-config-master'
+ip-172-31-25-160.ap-south-1.compute.internal openshift_node_group_name='node-config-master'
+ip-172-31-22-206.ap-south-1.compute.internal openshift_node_group_name='node-config-infra'
+ip-172-31-29-206.ap-south-1.compute.internal openshift_node_group_name='node-config-infra'
+ip-172-31-31-23.ap-south-1.compute.internal  openshift_node_group_name='node-config-compute'
+ip-172-31-31-247.ap-south-1.compute.internal openshift_node_group_name='node-config-compute'
+
+[etcd]
+ip-172-31-20-135.ap-south-1.compute.internal
+ip-172-31-26-159.ap-south-1.compute.internal
+ip-172-31-25-160.ap-south-1.compute.internal
+
+[lb]
+ip-172-31-18-172.ap-south-1.compute.internal
+

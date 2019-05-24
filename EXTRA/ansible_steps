@@ -1,0 +1,1 @@
+ansible -i hostfile OSEv3 -m ping 

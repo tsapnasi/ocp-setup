@@ -1,0 +1,10 @@
+OCP3.10
+-------
+kgr1 ec2-13-234-136-239.ap-south-1.compute.amazonaws.com 13.234.136.239 ip-172-31-20-135.ap-south-1.compute.internal
+kgr2 ec2-13-235-19-197.ap-south-1.compute.amazonaws.com  13.235.19.197 ip-172-31-22-206.ap-south-1.compute.internal
+kgr3 ec2-13-233-167-21.ap-south-1.compute.amazonaws.com  13.233.167.21 ip-172-31-25-160.ap-south-1.compute.internal 
+kgr4 ec2-13-233-7-142.ap-south-1.compute.amazonaws.com 13.233.7.142 ip-172-31-31-23.ap-south-1.compute.internal
+kgr5 ec2-13-234-118-47.ap-south-1.compute.amazonaws.com 13.234.118.47 ip-172-31-26-159.ap-south-1.compute.internal
+kgr6 ec2-13-234-118-4.ap-south-1.compute.amazonaws.com  13.234.118.4 ip-172-31-31-247.ap-south-1.compute.internal
+kgr7 ec2-13-233-39-95.ap-south-1.compute.amazonaws.com 13.233.39.95 ip-172-31-18-172.ap-south-1.compute.internal 
+kgr8 ec2-13-233-208-150.ap-south-1.compute.amazonaws.com 13.233.208.150 ip-172-31-29-206.ap-south-1.compute.internal
