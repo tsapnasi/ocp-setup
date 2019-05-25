@@ -18,3 +18,6 @@ openshift_rolling_restart_mode=system
 ansible-playbook -i /root/all/host-ocp3.10 /usr/share/ansible/openshift-ansible/playbooks/byo/openshift-cluster/upgrades/v3_11/upgrade_control_plane.yml -e openshift_upgrade_nodes_label="ucp=135"
 ansible-playbook -i playbooks/byo/openshift-cluster/upgrades/v3_11/upgrade_nodes.yml
 oc label node ip-172-31-20-135.ap-south-1.compute.internal upc=135
+find /usr/share/ansible/  -type f -exec grep -H 'migrate storage --include=' {} \;
+ignore_errors: yes
+find /usr/share/ansible/openshift-ansible/  -type f -exec grep -H 'The following hosts did not complete etcd backup' {} \;
