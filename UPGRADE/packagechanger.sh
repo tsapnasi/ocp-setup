@@ -21,3 +21,8 @@ oc label node ip-172-31-20-135.ap-south-1.compute.internal upc=135
 find /usr/share/ansible/  -type f -exec grep -H 'migrate storage --include=' {} \;
 ignore_errors: yes
 find /usr/share/ansible/openshift-ansible/  -type f -exec grep -H 'The following hosts did not complete etcd backup' {} \;
+find /usr/share/ansible/openshift-ansible/  -type f -exec grep -H 'Unable to determine available OpenShift RPM version' {} \;
+
+
+
+
