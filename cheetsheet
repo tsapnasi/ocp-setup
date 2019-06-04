@@ -1,1 +1,2 @@
 oc set route-backends cotd cotd=50 cotd2=50
+while true; do curl -s http://$(oc get route cotd --template='{{ .spec.host }}')/item.php | grep "data/images" | awk '{print $5}'; sleep 1; done
