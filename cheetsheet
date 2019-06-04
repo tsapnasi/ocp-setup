@@ -1,2 +1,70 @@
 oc set route-backends cotd cotd=50 cotd2=50
 while true; do curl -s http://$(oc get route cotd --template='{{ .spec.host }}')/item.php | grep "data/images" | awk '{print $5}'; sleep 1; done
+oc get all -lapp=cotd2
+oc project -q
+secret
+oc create -f https://raw.githubusercontent.com/jboss-openshift/application-templates/ose-v1.4.8/secrets/eap7-app-secret.json
+
+Add secret to service account
+oc create secret generic printenv-secret --from-file=app_user=user.txt --from-file=app_password=password.txt
+oc secrets link eap7-service-account eap7-app-secret
+echo "cjNkaDR0MSEK" | base64 --decode
+oc set env dc/printenv --from=secret/printenv-secret
+oc set env dc/printenv --list
+oc set env dc/printenv --from=secret/printenv-secret --prefix=MYSQL_
+
+
+
+
+
+echo 'r3dh4t1!' > ./dbpassword.txt
+echo 'admin' > ./dbuser.txt
+echo 'http://postgresql:5432' > ./dburl.txt
+oc create secret generic printenv-db-secret --from-file=app_db_user=user.txt --from-file=app_db_password=password.txt --from-file=app_db_url=dburl.txt
+
+
+oc set volume dc/printenv --add --overwrite --name=db-config-volume -m /dbconfig/ --secret-name=printenv-db-secret
+oc set env dc/printenv READ_FROM_FILE=/dbconfig/app_db_url
+curl $(oc get route printenv --template='{{ .spec.host }}')
+
+
+JAVA
+oc new-app openshift/eap71-basic-s2i  -p APPLICATION_NAME=session-replication -p SOURCE_REPOSITORY_URL=https://github.com/redhat-gpte-devopsautomation/ocp-session-replication.git -p SOURCE_REPOSITORY_REF=3.11 -p CONTEXT_DIR= -p MAVEN_MIRROR_URL=http://nexus.opentlc-shared.svc.cluster.local:8081/repository/maven-all-public
+
+Patch
+oc patch dc session-replication -p '{"spec":{"template":{"spec":{"serviceAccountName": "eap7-service-account"}}}}'
+
+Set resources
+
+oc set resources dc session-replication --requests=cpu=500m,memory=1Gi --limits=cpu=500m,memory=1Gi
+
+oc scale --replicas=2 dc session-replication
+oc process -f $HOME/deployment-example.json | oc create -f -
+
+
+EV
+ADD
+oc set env dc/printenv APP_VAR_1=Value1 APP_VAR_2=Value2
+
+DEL
+oc set env dc/printenv APP_VAR_2-
+
+FROM FILE
+oc set env dc/printenv READ_FROM_FILE=/data/configfile.txt
+
+
+
+
+
+cho "apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: gogs-data
+spec:
+  accessModes:
+  - ReadWriteOnce
+  resources:
+    requests:
+      storage: 4Gi" | oc create -f -
+
+oc set volume dc/gogs --add --overwrite --name=gogs-volume-1 --mount-path=/data/ --type persistentVolumeClaim --claim-name=gogs-data
