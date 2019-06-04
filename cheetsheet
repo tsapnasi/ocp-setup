@@ -78,3 +78,8 @@ Create the ConfigMap and mount it as a volume:
 oc create configmap gogs --from-file=app.ini
 oc set volume dc/gogs --add --overwrite --name=config-volume -m /opt/gogs/custom/conf/ -t configmap --configmap-name=gogs
 rm -f app.ini
+
+
+Turn off all automatic triggers:
+
+oc set triggers dc openshift-tasks --manual
