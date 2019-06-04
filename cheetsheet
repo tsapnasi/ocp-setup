@@ -1,0 +1,1 @@
+oc set route-backends cotd cotd=50 cotd2=50
