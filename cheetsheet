@@ -83,3 +83,47 @@ rm -f app.ini
 Turn off all automatic triggers:
 
 oc set triggers dc openshift-tasks --manual
+
+
+oc policy add-role-to-user edit system:serviceaccount:xyz-cicd:jenkins -n xyz-tasks
+
+
+
+node {
+  stage('Build Tasks') {
+    openshift.withCluster() {
+      openshift.withProject("xyz-tasks") {
+        openshift.selector("bc", "openshift-tasks").startBuild("--wait=true")
+      }
+    }
+  }
+  stage('Tag Image') {
+    openshift.withCluster() {
+      openshift.withProject("xyz-tasks") {
+        openshift.tag("openshift-tasks:latest", "openshift-tasks:${BUILD_NUMBER}")
+      }
+    }
+  }
+  stage('Deploy new image') {
+    openshift.withCluster() {
+      openshift.withProject("xyz-tasks") {
+        openshift.selector("dc", "openshift-tasks").rollout().latest();
+      }
+    }
+  }
+}
+
+
+
+
+
+
+oc new-app --template=mongodb-ephemeral --name=mongdb --param MONGODB_USER=mongouser --param MONGODB_PASSWORD=redhat --param MONGODB_DATABASE=mydb --param DATABASE_SERVICE_NAME=mongodb
+
+
+
+oc get secret mongodb --template '{{ index .data "database-user"}}'|base64 -d
+
+
+
+oc new-app --image-stream="openshift/jboss-eap71-openshift:1.3" https://github.com/redhat-gpte-devopsautomation/openshift3mlbparks MONGODB_USER=mongouser MONGODB_PASSWORD=redhat MONGODB_DATABASE=mydb DATABASE_SERVICE_NAME=mongodb
