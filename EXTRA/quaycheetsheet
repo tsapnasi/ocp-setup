@@ -1,0 +1,16 @@
+{
+        "auths": {
+                "docker-registry.default.svc:5000": {
+                        "auth": "b3NlYWRtaW46QWt5ak92MkZaS1BJWmV0d2RiTzlwYVNDUjdGUktxVTFIVU40MC1CeDZETQ=="
+                },
+                "https://index.docker.io/v1/": {
+                        "auth": "Z2lyaXJhajc4OTpyZWRoYXRAMTIz"
+                },
+                "quay.io": {
+                        "auth": "Y29yZW9zK3JoY3A6TDZaWFhWSEQ5WExRN1BSN0hCTlJXMkZBSVpRTkpZSFJFSVNGR0NVQklCNDVDNDNXQ1dZVTNEWjBGSEpIMkFZNQ=="
+                },
+                "registry.redhat.io": {
+                        "auth": "cmhuLXN1cHBvcnQtZ3JhamF3YXQ6TmVudUAxMjM="
+                }
+        }
+}
