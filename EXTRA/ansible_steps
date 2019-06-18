@@ -1,1 +1,2 @@
 ansible -i hostfile OSEv3 -m ping 
+ansible -i /root/OCP/hosts OSEv3 -m shell -a "df -h"
