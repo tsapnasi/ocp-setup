@@ -1,103 +1,25 @@
 
-IP Address
 
-Node
+upiuatbastion.onlinesbi.com 10.209.75.188
 
-DNS
+upiuatlb.onlinesbi.com 10.209.75.184
 
-10.209.75.179
+upiuatmaster1.onlinesbi.com 10.209.75.179
+upiuatmaster2.onlinesbi.com 10.209.75.180
+upiuatmaster3.onlinesbi.com 10.209.75.181
 
-Master Node
+upiuatinfra1.onlinesbi.com 10.209.75.182
+upiuatinfra2.onlinesbi.com 10.209.75.183
 
-upiuatmaster1.onlinesbi.com
+upiuatlog1.onlinesbi.com 10.209.75.185
+upiuatlog2.onlinesbi.com 10.209.75.186
+upiuatlog3.onlinesbi.com 10.209.75.187
 
-10.209.75.180
+upiuatapp1.onlinesbi.com 10.209.75.189
+upiuatapp2.onlinesbi.com 10.209.75.190
+upiuatapp3.onlinesbi.com 10.209.75.191
+upiuatapp4.onlinesbi.com 10.209.75.192
+upiuatapp5.onlinesbi.com 10.209.75.193
+upiuatapp6.onlinesbi.com 10.209.75.194
 
-Master Node
-
-upiuatmaster2.onlinesbi.com
-
-10.209.75.181
-
-Master Node
-
-upiuatmaster3.onlinesbi.com
-
-10.209.75.182
-
-Infra Node
-
-upiuatinfra1.onlinesbi.com
-
-10.209.75.183
-
-Infra Node
-
-upiuatinfra2.onlinesbi.com
-
-10.209.75.184
-
-Infra Node
-
-upiuatinfra3.onlinesbi.com
-
-10.209.75.185
-
-logging Node
-
-upiuatlog1.onlinesbi.com
-
-10.209.75.186
-
-logging Node
-
-upiuatlog2.onlinesbi.com
-
-10.209.75.187
-
-logging Node
-
-upiuatlog3.onlinesbi.com
-
-10.209.75.188
-
-Bastion Server
-
-upiuatbastion.onlinesbi.com
-
-10.209.75.189
-
-App node
-
-upiuatapp1.onlinesbi.com
-
-10.209.75.190
-
-App node
-
-upiuatapp2.onlinesbi.com
-
-10.209.75.191
-
-App node
-
-upiuatapp3.onlinesbi.com
-
-10.209.75.192
-
-App node
-
-upiuatapp4.onlinesbi.com
-
-10.209.75.193
-
-App node
-
-upiuatapp5.onlinesbi.com
-
-10.209.75.194
-
-App node
-
-upiuatapp6.onlinesbi.com
 
