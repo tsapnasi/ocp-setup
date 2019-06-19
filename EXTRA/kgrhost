@@ -1,0 +1,4 @@
+#kgr1 ip-172-31-17-49.ap-south-1.compute.internal 13.234.204.196 ec2-13-234-204-196.ap-south-1.compute.amazonaws.com
+#kgr2 ip-172-31-23-158.ap-south-1.compute.internal 13.126.59.178 ec2-13-126-59-178.ap-south-1.compute.amazonaws.com
+#kgr3 ip-172-31-23-185.ap-south-1.compute.internal 13.127.165.238 ec2-13-127-165-238.ap-south-1.compute.amazonaws.com
+#kgr4 ip-172-31-20-145.ap-south-1.compute.internal 13.235.17.203 ec2-13-235-17-203.ap-south-1.compute.amazonaws.com
