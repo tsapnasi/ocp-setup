@@ -40,20 +40,22 @@ upiuatapp6.onlinesbi.com
 
 ## PROXY SETTINGS
 #cat /etc/yum.conf
-#proxy=http://ip-172-31-30-163.ap-south-1.compute.internal:3128
+#proxy=http://proxyserver_name:3128
+
+
 
 ### RHSM 
 ## cat /etc/rhsm/rhsm.conf
 ### an http proxy server to use
-#proxy_hostname = ip-172-31-30-163.ap-south-1.compute.internal
+#proxy_hostname = proxyserver_name
 #port for http proxy server
 #proxy_port = 3128
 
 ### Docker Proxy
 ###cat /etc/sysconfig/docker
 ###
-###HTTP_PROXY=http://ip-172-31-30-163.ap-south-1.compute.internal:3128
-###HTTPS_PROXY=http://ip-172-31-30-163.ap-south-1.compute.internal:3128
+###HTTP_PROXY=http://proxyserver_name:3128
+###HTTPS_PROXY=http://proxyserver_name:3128
 
 
 
@@ -143,6 +145,31 @@ do
     sshpass -p "password" ssh-copy-id -i ~/.ssh/id_rsa.pub user@$server  
 done
 
+---------
+Pre-tasks
+---------
+
+-------------
+PROXY SCRIPTS
+--------------
+
+#!/bin/bash
+echo "proxy=name:port" >> /etc/yum.conf"
+sed -i 's/proxy_hostname =/proxy_hostname = name/g' /etc/rhsm/rhsm.conf
+sed -i 's/proxy_port =/proxy_port = port/g' /etc/rhsm/rhsm.conf
+sed -i 's/proxy_user =/proxy_user =/g' /etc/rhsm/rhsm.conf
+sed -i 's/proxy_password =/proxy_password =/g' /etc/rhsm/rhsm.conf
+
+
+
+#!/bin/bash
+subscription-manager register --username=@redhat.com  --password=N
+subscription-manager attach --pool=Fake8a85f9833e1404a9013e3cddf99305e61982
+subscription-manager repos --disable="*"
+subscription-manager repos --enable={rhel-7-server-rpms,rhel-7-server-extras-rpms,rhel-7-server-ose-3.11-rpms,rhel-7-server-ansible-2.6-rpms}
+yum -y update && yum -y install wget git net-tools bind-utils yum-utils iptables-services bridge-utils bash-completion kexec-tools sos psacct openshift-ansible
+echo "FINISH"
+
 
 ---------------
 Docker-storage
@@ -151,11 +178,30 @@ Docker-storage
 docker-storage.sh
 #!/bin/bash
 yum -y install docker-1.13.1
+echo "HTTP_PROXY=http://name:port" >> /etc/sysconfig/docker
+echo "HTTPS_PROXY=http://name:port" >> /etc/sysconfig/docker
 cat <<EOF > /etc/sysconfig/docker-storage-setup
 DEVS=/dev/xvdb
 VG=docker-vg
 EOF
 docker-storage-setup
 
+----------------
+Script execution
+----------------
 
+- name: Transfer and execute a script.
+  hosts: nodes
+  tasks:
+
+     - name: Copy and Execute the script 
+       script: /root/test/echo.sh
+
+
+-----
+EXTRA
+-----
+ansible -i /root/ocp/hosts all -m shell -a "echo "proxy=http://ip-172-31-30-163.ap-south-1.compute.internal:3128" >> /etc/yum.conf"
+ansible-playbook -i /root/ocp/hosts /usr/share/ansible/openshift-ansible/playbooks/prerequisites.yml 
+ansible-playbook -i /root/ocp/hosts /usr/share/ansible/openshift-ansible/playbooks/deploy_cluster.yml
 
