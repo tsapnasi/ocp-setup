@@ -1,25 +1,86 @@
 
+############################################
+#upiuatbastion.onlinesbi.com 10.209.75.188 #
+#upiuatlb.onlinesbi.com 10.209.75.184      #
+#upiuatmaster1.onlinesbi.com 10.209.75.179 #
+#upiuatmaster2.onlinesbi.com 10.209.75.180 #
+#upiuatmaster3.onlinesbi.com 10.209.75.181 #
+#upiuatinfra1.onlinesbi.com 10.209.75.182  #
+#upiuatinfra2.onlinesbi.com 10.209.75.183  #
+#upiuatlog1.onlinesbi.com 10.209.75.185    #
+#upiuatlog2.onlinesbi.com 10.209.75.186    #
+#upiuatlog3.onlinesbi.com 10.209.75.187    #
+#upiuatapp1.onlinesbi.com 10.209.75.189    #
+#upiuatapp2.onlinesbi.com 10.209.75.190    #
+#upiuatapp3.onlinesbi.com 10.209.75.191    #
+#upiuatapp4.onlinesbi.com 10.209.75.192    #
+#upiuatapp5.onlinesbi.com 10.209.75.193    #
+#upiuatapp6.onlinesbi.com 10.209.75.194    #
+############################################
 
-upiuatbastion.onlinesbi.com 10.209.75.188
+[OSEv3:children]
+masters
+nodes
+etcd
+lb
 
-upiuatlb.onlinesbi.com 10.209.75.184
+[OSEv3:vars]
+ansible_ssh_user=root
+ansible_become=true 
+os_sdn_network_plugin_name='redhat/openshift-ovs-multitenant'
+openshift_node_groups=[{'name': 'node-config-master', 'labels': ['node-role.kubernetes.io/master=true']}, {'name': 'node-config-infra', 'labels': ['node-role.kubernetes.io/infra=true']}, {'name': 'node-config-compute', 'labels': ['node-role.kubernetes.io/compute=true']}, {'name': 'node-config-logging', 'labels': ['node-role.kubernetes.io/logging=true']}]
+deployment_type=openshift-enterprise
+openshift_master_identity_providers=[{'name': 'htpasswd_auth', 'login': 'true', 'challenge': 'true', 'kind': 'HTPasswdPasswordIdentityProvider'}]
+openshift_clock_enabled=true
+openshift_master_default_subdomain=
+openshift_disable_check=docker_storage,memory_availability,disk_availability,docker_image_availability,package_version
+os_firewall_use_firewalld=True
+openshift_master_cluster_public_hostname=upiuatlb.onlinesbi.com
+openshift_enable_unsupported_configurations=True
+openshift_logging_install_logging=true
+openshift_metrics_install_metrics=true
+template_service_broker_install=true
+ansible_service_broker_install=true
+openshift_enable_service_catalog=true
+openshift_cluster_monitoring_operator_install=true
+openshift_deployment_type=openshift-enterprise
+oreg_url=registry.redhat.io/openshift3/ose-${component}:${version}
+oreg_auth_user=
+oreg_auth_password=
+oreg_test_login=false
+openshift_prometheus_state=true
+openshift_examples_modify_imagestreams=true
+openshift_cluster_monitoring_operator_install=false
+openshift_logging_es_cpu_limit=3000m
+openshift_logging_es_memory_limit=1000M
+openshift_logging_fluentd_cpu_limit=1000m
+openshift_logging_fluentd_memory_limit=1000M
+openshift_logging_kibana_cpu_limit=1500m
+openshift_logging_kibana_memory_limit=1000M
+openshift_logging_es_nodeselector={'node-role.kubernetes.io/logging':'true'}
+openshift_logging_kibana_nodeselector={'node-role.kubernetes.io/logging':'true'}
+openshift_logging_curator_nodeselector={'node-role.kubernetes.io/logging':'true'}
+openshift_docker_options='--selinux-enabled --log-opt  max-size=1M --log-opt max-file=3 --insecure-registry 172.30.0.0/16 --log-driver=json-file --signature-verification=false'
 
-upiuatmaster1.onlinesbi.com 10.209.75.179
-upiuatmaster2.onlinesbi.com 10.209.75.180
-upiuatmaster3.onlinesbi.com 10.209.75.181
-
-upiuatinfra1.onlinesbi.com 10.209.75.182
-upiuatinfra2.onlinesbi.com 10.209.75.183
-
-upiuatlog1.onlinesbi.com 10.209.75.185
-upiuatlog2.onlinesbi.com 10.209.75.186
-upiuatlog3.onlinesbi.com 10.209.75.187
-
-upiuatapp1.onlinesbi.com 10.209.75.189
-upiuatapp2.onlinesbi.com 10.209.75.190
-upiuatapp3.onlinesbi.com 10.209.75.191
-upiuatapp4.onlinesbi.com 10.209.75.192
-upiuatapp5.onlinesbi.com 10.209.75.193
-upiuatapp6.onlinesbi.com 10.209.75.194
-
+[lb]
+upiuatlb.onlinesbi.com
+[masters]
+upiuatmaster[1:3].onlinesbi.com
+[etcd]
+upiuatmaster[1:3].onlinesbi.com
+[nodes]
+upiuatmaster1.onlinesbi.com openshift_node_group_name='node-config-master'
+upiuatmaster2.onlinesbi.com openshift_node_group_name='node-config-master'
+upiuatmaster3.onlinesbi.com openshift_node_group_name='node-config-master'
+upiuatinfra1.onlinesbi.com openshift_node_group_name='node-config-infra'
+upiuatinfra2.onlinesbi.com openshift_node_group_name='node-config-infra'
+upiuatlog1.onlinesbi.com openshift_node_group_name='node-config-logging'
+upiuatlog2.onlinesbi.com openshift_node_group_name='node-config-logging'
+upiuatlog3.onlinesbi.com openshift_node_group_name='node-config-logging'
+upiuatapp1.onlinesbi.com openshift_node_group_name='node-config-compute'
+upiuatapp2.onlinesbi.com openshift_node_group_name='node-config-compute'
+upiuatapp3.onlinesbi.com openshift_node_group_name='node-config-compute'
+upiuatapp4.onlinesbi.com openshift_node_group_name='node-config-compute'
+upiuatapp5.onlinesbi.com openshift_node_group_name='node-config-compute'
+upiuatapp6.onlinesbi.com openshift_node_group_name='node-config-compute'
 
