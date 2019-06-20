@@ -23,6 +23,24 @@
 ## *.cloudapps.onlinesbi.com > 10.209.75.183
 
 ## PROXY SETTINGS
+#cat /etc/yum.conf
+#proxy=http://ip-172-31-30-163.ap-south-1.compute.internal:3128
+
+### RHSM 
+## cat /etc/rhsm/rhsm.conf
+### an http proxy server to use
+#proxy_hostname = ip-172-31-30-163.ap-south-1.compute.internal
+#port for http proxy server
+#proxy_port = 3128
+
+### Docker Proxy
+###cat /etc/sysconfig/docker
+###
+###HTTP_PROXY=http://ip-172-31-30-163.ap-south-1.compute.internal:3128
+###HTTPS_PROXY=http://ip-172-31-30-163.ap-south-1.compute.internal:3128
+
+
+
 
 
 ----------------------------------------------
@@ -64,7 +82,7 @@ openshift_cluster_monitoring_operator_install=false
 openshift_logging_es_cpu_limit=5000m
 openshift_logging_es_memory_limit=5000M
 openshift_logging_fluentd_cpu_limit=1000m
-openshift_logging_fluentd_memory_limit21000M
+openshift_logging_fluentd_memory_limit=2000M
 openshift_logging_kibana_cpu_limit=2000m
 openshift_logging_kibana_memory_limit=2000M
 openshift_logging_es_nodeselector={'node-role.kubernetes.io/logging':'true'}
