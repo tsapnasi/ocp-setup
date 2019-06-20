@@ -18,6 +18,16 @@
 #upiuatapp6.onlinesbi.com 10.209.75.194    #
 ############################################
 
+## Wild card entry Corporate DNS
+## *.cloudapps.onlinesbi.com > 10.209.75.182
+## *.cloudapps.onlinesbi.com > 10.209.75.183
+
+## PROXY SETTINGS
+
+
+----------------------------------------------
+HOST_FILE START
+----------------------------------------------
 [OSEv3:children]
 masters
 nodes
@@ -33,8 +43,8 @@ deployment_type=openshift-enterprise
 openshift_master_identity_providers=[{'name': 'htpasswd_auth', 'login': 'true', 'challenge': 'true', 'kind': 'HTPasswdPasswordIdentityProvider'}]
 openshift_clock_enabled=true
 openshift_master_default_subdomain=cloudapps.onlinesbi.com
-openshift_disable_check=docker_storage,memory_availability,disk_availability,docker_image_availability,package_version
-os_firewall_use_firewalld=True
+openshift_disable_check=docker_storage,memory_availability,disk_availability
+os_firewall_use_firewalld=true
 openshift_master_cluster_public_hostname=upiuatlb.onlinesbi.com
 openshift_enable_unsupported_configurations=true
 openshift_logging_install_logging=true
@@ -51,12 +61,12 @@ oreg_test_login=false
 openshift_prometheus_state=true
 openshift_examples_modify_imagestreams=true
 openshift_cluster_monitoring_operator_install=false
-openshift_logging_es_cpu_limit=3000m
-openshift_logging_es_memory_limit=1000M
+openshift_logging_es_cpu_limit=5000m
+openshift_logging_es_memory_limit=5000M
 openshift_logging_fluentd_cpu_limit=1000m
-openshift_logging_fluentd_memory_limit=1000M
-openshift_logging_kibana_cpu_limit=1500m
-openshift_logging_kibana_memory_limit=1000M
+openshift_logging_fluentd_memory_limit21000M
+openshift_logging_kibana_cpu_limit=2000m
+openshift_logging_kibana_memory_limit=2000M
 openshift_logging_es_nodeselector={'node-role.kubernetes.io/logging':'true'}
 openshift_logging_kibana_nodeselector={'node-role.kubernetes.io/logging':'true'}
 openshift_logging_curator_nodeselector={'node-role.kubernetes.io/logging':'true'}
@@ -83,4 +93,8 @@ upiuatapp3.onlinesbi.com openshift_node_group_name='node-config-compute'
 upiuatapp4.onlinesbi.com openshift_node_group_name='node-config-compute'
 upiuatapp5.onlinesbi.com openshift_node_group_name='node-config-compute'
 upiuatapp6.onlinesbi.com openshift_node_group_name='node-config-compute'
+
+-------------------------------------------------------------------------
+HOST FILE ENDS
+-------------------------------------------------------------------------
 
