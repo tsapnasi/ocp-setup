@@ -18,6 +18,22 @@
 #upiuatapp6.onlinesbi.com 10.209.75.194    #
 ############################################
 
+HOSTS
+-----
+upiuatbastion.onlinesbi.com
+upiuatlb.onlinesbi.com
+upiuatmaster1.onlinesbi.com
+upiuatmaster2.onlinesbi.com
+upiuatmaster3.onlinesbi.com
+upiuatinfra1.onlinesbi.com
+upiuatinfra2.onlinesbi.com
+upiuatapp1.onlinesbi.com
+upiuatapp2.onlinesbi.com
+upiuatapp3.onlinesbi.com
+upiuatapp4.onlinesbi.com
+upiuatapp5.onlinesbi.com
+upiuatapp6.onlinesbi.com
+
 ## Wild card entry Corporate DNS
 ## *.cloudapps.onlinesbi.com > 10.209.75.182
 ## *.cloudapps.onlinesbi.com > 10.209.75.183
