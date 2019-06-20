@@ -132,3 +132,13 @@ upiuatapp6.onlinesbi.com openshift_node_group_name='node-config-compute'
 HOST FILE ENDS
 -------------------------------------------------------------------------
 
+
+
+
+SSH-COPY Script
+---------------
+
+for server in `cat server.txt`;  
+do  
+    sshpass -p "password" ssh-copy-id -i ~/.ssh/id_rsa.pub user@$server  
+done
