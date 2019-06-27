@@ -1,0 +1,12 @@
+yum install nfs-utils rpcbind
+systemctl enable nfs-server; systemctl start nfs-server
+systemctl enable rpcbind; systemctl start rpcbind
+
+mkdir -p /var/nfsshare/pv01
+chmod -R 755 /var/nfsshare/pv01
+chown -R nfsnobody:nfsnobody /var/nfsshare/pv01
+
+echo /var/nfsshare/pv01 *(rw,sync,no_root_squash) >> /etc/exports
+systemctl stop rpc-bind && systemctl stop nfs-server
+systemctl start rpc-bind && systemctl start nfs-server
+
