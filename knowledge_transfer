@@ -71,6 +71,27 @@ otherwise any images that were built or pushed into the registry would disappear
 
 Network-Segment
 ---------------
+OVS 
+---
+etcd ---- Nodes network Info registers
+----
+SDN
+- Maintain register
+- Assign/Unassign available cluster network subnet to node 
+
+PODS/Containers IPs
+
+Cluster network - 10.128.0.0/14 
+Nodes Allocation - 10.128.0.0/23 
+1. 2. 3. 4.....
+510 510 510 510 ... Ips--to--pods/containers 
+
+-- Created 3 network devices 
+   - br0 (Linux Bridge, all pods attached to it "Vethpair") (same nodes pods)
+   - tun0 (port 2 on br0) (netfilter and routing table rules to NAT cluster network/pods traffic to external) 
+   - vxlan (port 1 on br0) (remote node pods)
+
+
 
 Node IPs
 Route IPs
@@ -92,13 +113,36 @@ Pod to Pod
 Service to Service 
 
 
-ovs-subnet Flat
+ovs-subnet Flat no isolations for P-to-P & S-to-S
+
 ovs-multitenant Project level isolations for P-to-P & S-to-S
+"Virtual Network ID (VNID) that identifies traffic from pods assigned to the project"
+"0" is priv
+
 ovs-networkpolicy (Flat by default, Project administration Granular network isolation using NetworkPolicy objects)
+
+Networkpolicy default mode in 4.x 
+Ovssubnet default mode in 3.x 
+
+NP: object name "networkpolicy"
+- Denyall
+- Allow router only
+- Only from POD
+- Pod with specific Label
+- Protocol , HTTP/S
+- Ports 
+* Addictive ++++++
 
 * Public cloud best practise ruled out ovs-subnet 
 
+Egress & Ingress :
 
+Egress IP 
+- Same subnet as Node 
+
+Namespace/Project level : NetNamespace
+- Manually - HostSubnet node 
+- Dynamically - egressCIDRs Node config file 
 
 
 
