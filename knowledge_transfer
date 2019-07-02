@@ -1,2 +1,122 @@
-design patterns
+design patterns 3.x
+
+Basic
+-----
+
+
+LB/API            LB/APPS  
+
+3-Masters         3-Infra      3-App/compute  1/2-Bastion 
+
+
+
+Advance
+-------
+LB/API                 LB/APPS  
+
+3-Masters/etcd         3-Infra      3-App/compute  2-Logging-Nodes   2-Monitoring-Nodes  1/2 Bastion
+
+
+
+
+
+4.X 
+
+
+LB/API                 LB/APPS  
+
+3-Control_Plane        3-Routing      3-Workers  2-Logging-Nodes   2-Monitoring-Nodes  1/2 Bastion
+
+
+
+Deployment 
+----------
+
+
+
+1. Internet access to pull images for platform containers 
+2. Provide telemetry data to Red Hat
+
+
+
+Openshift Infra provider page : 
+https://cloud.redhat.com/openshift/install
+
+
+https://access.redhat.com/articles/4128421
+
+
+Baremetal 
+---------
+
+
+
+RHCOS
+1. ISO image 
+2. Network PXE booting 
+
+
+ISO
+Prerequisites
+HTTP server 
+
+
+Container Registry
+
+The registry stores images and metadata. For production environment, persistent storage should be used for the registry, 
+otherwise any images that were built or pushed into the registry would disappear if the pod were to restart.
+
+
+
+
+Network-Segment
+---------------
+
+Node IPs
+Route IPs
+Service IPs
+Pod IPs -- Internal IP 
+Container IPs ---Localhost 
+
+
+CNO Manage/deploy ---- Cluster Network Components --namespace openshift-network-operator
+                       CNI
+                       SDN 
+                       
+
+Over-lay-network created using OVS
+
+Communication 
+
+Pod to Pod 
+Service to Service 
+
+
+ovs-subnet Flat
+ovs-multitenant Project level isolations for P-to-P & S-to-S
+ovs-networkpolicy (Flat by default, Project administration Granular network isolation using NetworkPolicy objects)
+
+* Public cloud best practise ruled out ovs-subnet 
+
+
+
+
+
+Region : Geo isolation 
+No replication accross regions
+Data transfer rates between regions
+
+
+VPC (Isolated Network,storage,compute)CIDR block
+- Span accross AZs
+
+
+AZ (physical isolated)
+Caveat : Storage attachement 
+
+
+
+
+
+
 
