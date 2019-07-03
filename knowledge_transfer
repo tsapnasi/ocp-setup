@@ -376,9 +376,9 @@ SDN
 INGRESS
 -------
 
-Router: HTTP/HTTPS/SNI based traffic
-NodePort
-IngressController - LB SVC type
+1. Router: HTTP/HTTPS/SNI based traffic
+2. NodePort
+3. IngressController - LB SVC type
    - ingressIPNetworkCIDR
    - Pool ingressIPNetworkCIDR
    - master configuration file (networkConfig: ingressIPNetworkCIDR: 192.168.1.0/24)
@@ -415,9 +415,9 @@ status:
   loadBalancer: {}
 
 
-External IP
------------
-- master configuration file externalIPNetworkCIDR: 172.29.0.0/16   
+4. Manually assigning External IP to service
+
+   - master configuration file externalIPNetworkCIDR: 172.29.0.0/16   
    
    
    
@@ -462,9 +462,78 @@ External IP
 
 
 
+Integrating external Services:
+------------------------------
+
+Usecase : External Database
 
 
+Defining SVC
+------------
 
+kind: "Service"
+  apiVersion: "v1"
+  metadata:
+    name: "external-mysql-service"
+  spec:
+    ports:
+      -
+        name: "mysql"
+        protocol: "TCP"
+        port: 3306
+        targetPort: 3306
+        nodePort: 0
+  selector: {}
+  
+Defining EP
+-----------
+
+  kind: "Endpoints"
+  apiVersion: "v1"
+  metadata:
+    name: "external-mysql-service" 
+  subsets: 
+    -
+      addresses:
+        -
+          ip: "10.0.0.0" <---- External DB IP
+      ports:
+        -
+          port: 3306 
+          name: "mysql"
+          
+          
+* The port and name definition must match the port and name value in the service defined in the previous step.
+  
+  
+External Name:
+
+Service
+-------
+
+kind: "Service"
+apiVersion: "v1"
+metadata:
+  name: "external-mysql-service"
+spec:
+  type: ExternalName
+  externalName: example.domain.name
+selector: {} 
+
+Consuming service
+---------------
+
+DB server: external-mysql-service.<projectname>.svc.cluster.local
+env:
+            -
+              name: "MYSQL_USER"
+              value: "${MYSQL_USER}" 
+            -
+              name: "MYSQL_PASSWORD"
+              value: "${MYSQL_PASSWORD}" 
+            -
+              name: "MYSQL_DATABASE"
+              value: "${MYSQL_DATABASE}" 
 
 
 
