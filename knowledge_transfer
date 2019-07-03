@@ -535,7 +535,16 @@ env:
               name: "MYSQL_DATABASE"
               value: "${MYSQL_DATABASE}" 
 
-
+env:
+              -
+                name: "SAAS_API_KEY" 
+                value: "<SaaS service API key>"
+              -
+                name: "SAAS_USERNAME" 
+                value: "<SaaS service user>"
+              -
+                name: "SAAS_PASSPHRASE" 
+                value: "<SaaS service passphrase>"
 
 
 
