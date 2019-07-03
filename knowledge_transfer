@@ -1,4 +1,7 @@
-design patterns 3.x
+Design patterns
+---------------
+
+3.x
 
 Basic
 -----
@@ -14,116 +17,132 @@ Advance
 -------
 LB/API                 LB/APPS  
 
-3-Masters/etcd         3-Infra      3-App/compute  2-Logging-Nodes   2-Monitoring-Nodes  1/2 Bastion
+3-Masters/etcd         2-Infra      2-App/compute  2-Logging-Nodes   2-Monitoring-Nodes  1 Bastion
 
 
+* Jenkins CI/CD on infra or application/Compute ? 
+* https://access.redhat.com/solutions/2806991
 
 
+4.X
+---
 
-4.X 
+
+LBs
+API                 
+APPS  
+
+Cluster Term
+-------------
+
+BootStrap Machine 
+CP
+Workers
+Based on Labeling Routing,Monitoring & Alerting (Exempted from Subscriptions) 
 
 
-LB/API                 LB/APPS  
+1 Bootstrap 
+3-ControlPlane colocated ETCD         
+2-Routing        
+2-Logging  
+2-Monitoring & alerting 
 
-3-Control_Plane        3-Routing      3-Workers  2-Logging-Nodes   2-Monitoring-Nodes  1/2 Bastion
+
 
 
 
 Deployment 
 ----------
 
-
-
 1. Internet access to pull images for platform containers 
 2. Provide telemetry data to Red Hat
-
-
-
-Openshift Infra provider page : 
-https://cloud.redhat.com/openshift/install
-
-
-https://access.redhat.com/articles/4128421
+3. Openshift Infra provider page : 
+4. https://cloud.redhat.com/openshift/install
+5. https://access.redhat.com/articles/4128421
 
 
 Baremetal 
 ---------
 
-
-
 RHCOS
 1. ISO image 
 2. Network PXE booting 
-
-
-ISO
-Prerequisites
-HTTP server 
-
-
-Container Registry
-
-The registry stores images and metadata. For production environment, persistent storage should be used for the registry, 
-otherwise any images that were built or pushed into the registry would disappear if the pod were to restart.
-
-
+3. DNS 
+4. DHCP 
+5. HTTP server
 
 
 Network-Segment
 ---------------
-OVS 
+---------------
+
+L2 - MacAddress
+L3 - Ip Address 
+
+
+Underlay 
+- Physical network layer 
+- Protocol VLAN & Routing (BGP, OSPF, IS-IS) 
+- 4096 Vlan segments
+
+
+Overlay ----is our SDN story 
+
+- Virtual NL over Underlay 
+- Protocol VXLAN
+- 16 Million
+- Encapsulation Overhead 
+
+OCP-on-OSP 
+
+Common networking model 
+-----------------------
+
+Who provision ?
+Provider network - OSP admin - underlay
+Tenant network - Tenant - Overlay 
+* can be vice versa 
+
+
+Service Discovery 
+-----------------
+Q. How services , pods , EPs , applications discover each other within cluster ?
+A. In-built DNS (Sky-to-Core)
+
+- Pods IPs and HN are ephermal 
+- Services provides application tenacity 
+
+Kube-proxy : Runs on each node, Stream forwarding to end points TCP/UDP/SCTP Round robin 
+
+
+
 ---
 etcd ---- Nodes network Info registers
 ----
-SDN
-- Maintain register
-- Assign/Unassign available cluster network subnet to node 
-
-PODS/Containers IPs
-
-Cluster network - 10.128.0.0/14 
-Nodes Allocation - 10.128.0.0/23 
-1. 2. 3. 4.....
-510 510 510 510 ... Ips--to--pods/containers 
-
--- Created 3 network devices 
-   - br0 (Linux Bridge, all pods attached to it "Vethpair") (same nodes pods)
-   - tun0 (port 2 on br0) (netfilter and routing table rules to NAT cluster network/pods traffic to external) 
-   - vxlan (port 1 on br0) (remote node pods)
-
-
-
-Node IPs
-Route IPs
-Service IPs
-Pod IPs -- Internal IP 
-Container IPs ---Localhost 
-
-
-CNO Manage/deploy ---- Cluster Network Components --namespace openshift-network-operator
-                       CNI
-                       SDN 
-                       
 
 Over-lay-network created using OVS
+----------------------------------
 
-Communication 
+Enable Communication 
 
-Pod to Pod 
-Service to Service 
+- Pod to Pod 
+- Service to Service 
+- Nodes to services/pods 
+* without NAT 
+- Maintain register
+- Assign/Unassign available cluster network subnet to node
 
 
-ovs-subnet Flat no isolations for P-to-P & S-to-S
+TYPES OF SDN
+------------
 
-ovs-multitenant Project level isolations for P-to-P & S-to-S
+1. ovs-subnet Flat no isolations for P-to-P & S-to-S
+
+2. ovs-multitenant Project level isolations for P-to-P & S-to-S
 "Virtual Network ID (VNID) that identifies traffic from pods assigned to the project"
 "0" is priv
 
-ovs-networkpolicy (Flat by default, Project administration Granular network isolation using NetworkPolicy objects)
-
-Networkpolicy default mode in 4.x 
-Ovssubnet default mode in 3.x 
-
+3. ovs-networkpolicy (Flat by default, Project administration Granular network isolation using NetworkPolicy objects)
 NP: object name "networkpolicy"
 - Denyall
 - Allow router only
@@ -132,21 +151,330 @@ NP: object name "networkpolicy"
 - Protocol , HTTP/S
 - Ports 
 * Addictive ++++++
-
 * Public cloud best practise ruled out ovs-subnet 
+* Networkpolicy default mode in 4.x 
+* Ovssubnet default mode in 3.x 
 
-Egress & Ingress :
 
-Egress IP 
-- Same subnet as Node 
+Packet-Flow
+-----------
 
-Namespace/Project level : NetNamespace
+Pods on same Node - Linux br0
+Pods on Remote Node - vxlan_sys_4789 port 1 
+External network access :tun0 Port 2 
+
+
+
+Subnets
+-------
+Cluster Network or POD network - 10.128.0.0/14 hosts 262144 (Multiple CIDR)
+Service Network - 172.30.0.0/16 host 65536 (Single CIDR) 
+Nodes Allocation - 10.128.0.0/23 
+1. 2. 3. 4.....
+510 510 510 510 ... Ips--to--pods/containers 
+
+
+
+
+Egress & Ingress
+----------------
+
+
+
+Egress router : Traffic outbound --Going out from Cluster 
+-------------
+
+Restricted traffic control 
+External resources recognize application/pod traffic 
+whitelisted IP addresses 
+egress router is not compatible cloud platform that does not support layer 2 manipulations
+iptables rules for redirections 
+Macvlan : subinterface with additional mac address 
+SDN : multitenant/Network-policy 
+
+1. Egress router 
+
+apiVersion: v1
+kind: Pod
+metadata:
+  name: egress-multi
+  labels:
+    name: egress-multi
+  annotations:
+    pod.network.openshift.io/assign-macvlan: "true"
+spec:
+  initContainers:
+  - name: egress-router
+    image: registry.redhat.io/openshift3/ose-egress-router
+    securityContext:
+      privileged: true
+    env:
+    - name: EGRESS_SOURCE 
+      value: 192.168.12.99/24
+    - name: EGRESS_GATEWAY
+      value: 192.168.12.1
+    - name: EGRESS_DESTINATION 
+      value: |
+        80   tcp 203.0.113.25
+        8080 tcp 203.0.113.26 80
+        8443 tcp 203.0.113.26 443
+        203.0.113.27
+    - name: EGRESS_ROUTER_MODE
+      value: init
+  containers:
+  - name: egress-router-wait
+    image: registry.redhat.io/openshift3/ose-pod
+    
+    
+2. Egress router pod network view 
+ 
+ sh-4.2# ip a
+eth0@if26: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1450 qdisc noqueue state UP 
+inet 10.128.0.81/23 scope global eth0
+    
+macvlan0@if3: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UNKNOWN 
+inet 192.168.123.99/32 scope global macvlan0
+     
+
+3. Egress service ( Other pods can access via egress router pods)
+apiVersion: v1
+kind: Service
+metadata:
+  name: egress-1
+spec:
+  ports:
+  - name: http
+    port: 80
+  - name: https
+    port: 443
+  type: ClusterIP
+  selector:
+    name: egress-1
+    
+    
+- HTTP PROXY
+containers:
+  - name: egress-router-proxy
+    image: registry.redhat.io/openshift3/ose-egress-http-proxy
+    env:
+    - name: EGRESS_HTTP_PROXY_DESTINATION 
+      value: |
+        !*.example.com
+        !192.168.1.0/24
+        *
+- DNS PROXY
+
+containers:
+  - name: egress-dns-proxy
+    image: registry.redhat.io/openshift3/ose-egress-dns-proxy
+    env:
+    - name: EGRESS_DNS_PROXY_DEBUG 
+      value: "1"
+    - name: EGRESS_DNS_PROXY_DESTINATION 
+      value: |
+        # Egress routes for Project "Foo", version 5
+
+        80  203.0.113.25
+
+        100 example.com
+
+        8080 203.0.113.26 80
+
+        8443 foobar.com 443
+        
+        
+ - Enabling failover by replicas: 1
+ - EGRESS_DNS_PROXY_DESTINATION using a ConfigMap
+ 
+ 4. Egress firewall 
+ 
+ {
+    "kind": "EgressNetworkPolicy",
+    "apiVersion": "v1",
+    "metadata": {
+        "name": "default"
+    },
+    "spec": {
+        "egress": [
+            {
+                "type": "Allow",
+                "to": {
+                    "cidrSelector": "1.2.3.0/24"
+                }
+            },
+            {
+                "type": "Allow",
+                "to": {
+                    "dnsName": "www.foo.com"
+                }
+            },
+            {
+                "type": "Deny",
+                "to": {
+                    "cidrSelector": "0.0.0.0/0"
+                }
+            }
+        ]
+    }
+}
+       
+
+Egress IPs 
+----------
+Open for CIDR 
+
+Namespace/Project level : 
+- Apply NetNamespace
 - Manually - HostSubnet node 
 - Dynamically - egressCIDRs Node config file 
+- Same subnet as Node 
+
+
+oc patch netnamespace project1 -p '{"egressIPs": ["192.168.1.100"]}'
+oc patch netnamespace project2 -p '{"egressIPs": ["192.168.1.101"]}''
+oc patch hostsubnet node1 -p '{"egressCIDRs": ["192.168.1.0/24"]}'
+oc patch hostsubnet node2 -p '{"egressCIDRs": ["192.168.1.0/24"]}'
+
+
+Limiting the Bandwidth Available to Pods
+----------------------------------------
+QOS Traffic inbound-outbound 
+
+Common :
+{
+    "kind": "Pod",
+    "spec": {
+        "containers": [
+            {
+                "image": "openshift/hello-openshift",
+                "name": "hello-openshift"
+            }
+        ]
+    },
+    "apiVersion": "v1",
+    "metadata": {
+        "name": "iperf-slow",
+        "annotations": {
+            "kubernetes.io/ingress-bandwidth": "10M",
+            "kubernetes.io/egress-bandwidth": "10M"
+        }
+    }
+}
 
 
 
-Region : Geo isolation 
+
+
+CNO (DS)
+---
+Manage/deploy
+
+CNI 
+SDN
+
+
+INGRESS
+-------
+
+Router: HTTP/HTTPS/SNI based traffic
+NodePort
+IngressController - LB SVC type
+   - ingressIPNetworkCIDR
+   - Pool ingressIPNetworkCIDR
+   - master configuration file (networkConfig: ingressIPNetworkCIDR: 192.168.1.0/24)
+   
+ Ingress IP for service
+------------------------
+
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    openshift.io/generated-by: OpenShiftNewApp
+  creationTimestamp: 2019-07-03T18:05:02Z
+  labels:
+    app: airroute
+  name: airroute
+  namespace: new
+  resourceVersion: "2555900"
+  selfLink: /api/v1/namespaces/new/services/airroute
+  uid: 1412d90f-9dbd-11e9-bdb7-022f5fa8c0f0
+spec:
+  clusterIP: 172.30.46.197
+  ports:
+  - name: 8080-tcp
+    port: 8080
+    protocol: TCP
+    targetPort: 8080
+  selector:
+    app: airroute
+    deploymentconfig: airroute
+  sessionAffinity: None
+  type: ClusterIP
+status:
+  loadBalancer: {}
+
+
+External IP
+-----------
+- master configuration file externalIPNetworkCIDR: 172.29.0.0/16   
+   
+   
+   
+ for service
+----------------------   
+{
+    "kind": "Service",
+    "apiVersion": "v1",
+    "metadata": {
+        "name": "my-service"
+    },
+    "spec": {
+        "selector": {
+            "app": "airroute"
+        },
+        "ports": [
+            {
+                "name": "http",
+                "protocol": "TCP",
+                "port": 8080,
+                "targetPort": 8080
+            }
+        ],
+        "externalIPs" : [
+            "172.29.10.1"         
+        ]
+    }
+}
+
+    
+ 
+ Manual process IP address assignment and routing
+ ------------------------------------------------
+ ip address add 172.29.10.1 dev eth0
+ route add -net 172.29.10.0/16 gw <Node_IP> eth0
+ route add -net 172.29.0.0/16 gw 172.31.17.49 eth0
+    
+    
+* Cloud (Load Balancer services for automatic deployment of a cloud load balancer to target the service’s endpoints) 
+
+
+
+
+
+
+
+
+
+
+
+
+
+MISC
+----
+
+
+egion : Geo isolation 
 No replication accross regions
 Data transfer rates between regions
 
@@ -160,8 +488,13 @@ Caveat : Storage attachement
 
 
 
-
 https://github.com/openshift/installer/blob/master/docs/user/metal/install_upi.md
 https://blog.openshift.com/deploying-a-user-provisioned-infrastructure-environment-for-openshift-4-1-on-vsphere/
+
+Container Registry
+------------------
+
+The registry stores images and metadata. For production environment, persistent storage should be used for the registry, 
+otherwise any images that were built or pushed into the registry would disappear if the pod were to restart.
 
 
