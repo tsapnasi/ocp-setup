@@ -562,8 +562,16 @@ Monitoring target configurations based on familiar Kubernetes label queries
 time-series data
 
 AlertManager:
-Notifications and silences
-email, PagerDuty, and HipChat
+
+Notifications
+silences: simply mute alerts for a given time
+Inhibition :suppressing notifications 
+grouping 
+client behaviour 
+
+email
+PagerDuty
+HipChat
 
 Monitoring Targets:
 Promethues itself 
