@@ -628,37 +628,133 @@ Alerting Rules
 --------------
 https://docs.openshift.com/container-platform/3.11/install_config/prometheus_cluster_monitoring.html#alerting-rules
 
-Storage:
+Storage
+-------
+
+
+Factors:
+- Type of data that you want to store
+- Usage pattern
+- Scaling concerns
+- Finally your budget
+
+
+Type of Storage:
+- Block Storage ; Raw disks, SAN solutions 
+- File Storage; Formatted with a file system like FAT32, NTFS, EXT3, and EXT4, XFS, NAS solutions, Ceph file
+- Object Storage; Api/http access 
+
+
+
+BlockStorage 
+------------
+DATA Representation/organization/Hold: Volumes/LUNS 
+
+Use cases:
+
+- Application I/O performance and low-latency connectivity
+- Databases
+- Application which requires service side processing, like Java, PHP, and .Net will require block storage
+- Mission-critical applications like Oracle, SAP, Microsoft Exchange, and Microsoft SharePoint
+- Efficency and reliability 
+
+Block storage options on Prem 
+
+- SAN (netapp, EMC ...)
+- Ceph RADOS Block Device
+- Gluster 
+
+Block storage options in the cloud
+- EBS
+- Google Persistent Disk
+- Azure premium disks 
+- Rackspace cloud block storage 
+
+Limitation:
+- Block storage volumes can only be accessed when they’re attached to an operating system
+- RWO
+
+Protocol : FC, SCSI & iSCSI, FCoE
+Media : FC,ETH
+
+File Storage
+------------
+
+DATA Representation/organization/Hold: files in folders
+
+- Application scalability
+- Simultaneous Read/Write
+- RWX
+- Cost effective 
+
+Protocol : 
+CIFS 
+NFS
+SMB
+
+Media : Ethernet 
+
+
+Cloud Options 
+--------------
+
+EFS
+Azure CFS
+Google Cloud Storage 
+
+On Prem:
+--------
+Ceph
+Gluster 
+
+Object Storage
+--------------
+
+DATA Representation/organization/Hold:  objects & Metadata 
+
+- Accessed directly through APIs or http/https
+- Object store guarantees that the data will not be lost
+- Object storage data can be replicated across different data centers 
+- offer simple web services interfaces for access
+
+Use cases:
+- User generated data
+- Storage of unstructured data like music, image, and video files, Multimedia 
+- Storage for backup files, database dumps, and log files
+- storage can be used as your big data object store
+- Archive files in place of local tape drives
+
+Protocol :
+HTTP
+API
 
 SAN
-LAN of multiple storage devices 
-
-- Block level data access
-- high performance, and fast I/O
-- FC is media
-- SCSI,iSCSI
-
 NAS
-Single network device
+DAS 
 
-- File Level Data access
-- CIFS/NFS
-- Ethernet media 
-- Ok perfromance 
+
+Cloud Options 
+--------------
+
+Amazon S3
+Rackspace Cloud Files
+Azure Blob Storage
+Google cloud storage
+
+On Prem:
+--------
+Ceph
+Gluster 
+
+
+
+
 
 https://docs.openshift.com/container-platform/3.11/scaling_performance/optimizing_storage.html
 
 
-
-
-Type of data that you want to store
-Usage pattern
-Scaling concerns
-Finally your budget
-
-
 MISC
-----
+--------------------------------------------------------------------
 NVMe - Flash, 64 k command que, Latency 2.8 MS, Direct CPU, 1 M IOPS
 AHCI - Spin, 1 command que, 6 MS, sata , 100K IOPS 
 
