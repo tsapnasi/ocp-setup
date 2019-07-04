@@ -780,7 +780,14 @@ Recycle
 - volume and makes it available again for a new claim.
 
 
+Images
+-------
+Signing
+-------
+https://docs.openshift.com/container-platform/3.11/admin_guide/image_signatures.html
 
+Scanning
+--------
 
 
 
