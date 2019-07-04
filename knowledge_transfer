@@ -660,9 +660,12 @@ Use cases:
 
 Block storage options on Prem 
 
-- SAN (netapp, EMC ...)
+- SAN (netapp)
 - Ceph RADOS Block Device
 - Gluster 
+- Cinder
+- Dell/EMC Scale.IO
+- VMware vSphere Volume
 
 Block storage options in the cloud
 - EBS
@@ -706,6 +709,8 @@ On Prem:
 --------
 Ceph
 Gluster 
+RHEL NFS
+NetApp NFS
 
 Object Storage
 --------------
@@ -747,10 +752,39 @@ Ceph
 Gluster 
 
 
-
-
-
 https://docs.openshift.com/container-platform/3.11/scaling_performance/optimizing_storage.html
+
+
+Openshift Persistent storage
+----------------------------
+
+Persistent Volume --- Persistent Voume Claims----Volumes
+
+PV-PVC one to one mapping 
+
+Static Provisioning 
+Dynamic Provisioning (storage class)
+
+The reclaim policy for a PersistentVolume
+
+Retain:
+- PersistentVolume still exists and the volume is considered “released”. 
+- Volume not available for another claim because the previous claimant’s data remains on the volume
+- An administrator can manually reclaim
+
+Delete
+- Delete data and PV
+
+Recycle
+- Scrub volume rm -rf 
+- volume and makes it available again for a new claim.
+
+
+
+
+
+
+
 
 
 MISC
