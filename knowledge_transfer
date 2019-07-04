@@ -20,8 +20,15 @@ LB/API                 LB/APPS
 3-Masters/etcd         2-Infra      2-App/compute  2-Logging-Nodes   2-Monitoring-Nodes  1 Bastion
 
 
+
+
 * Jenkins CI/CD on infra or application/Compute ? 
 * https://access.redhat.com/solutions/2806991
+
+
+Wildcard DNS : *.cloudapps.example.com ----> InfraLB
+Or 
+Bind/Name/DNS Server under your control
 
 
 4.X
@@ -172,6 +179,30 @@ Service Network - 172.30.0.0/16 host 65536 (Single CIDR)
 Nodes Allocation - 10.128.0.0/23 
 1. 2. 3. 4.....
 510 510 510 510 ... Ips--to--pods/containers 
+
+
+CNI:
+Directory: 
+/etc/cni/net.d
+/opt/cni/bin
+network interface into the container
+assign the IP to the interface
+setup the routes
+IPAM plugin
+
+Kubernetes
+- Pod
+- Pod networknamespace
+- Pause container 
+- Kubernetes then invokes the CNI-plugin to join the pause container to a network
+- All containers in the pod use the pause network namespace (netns)
+
+
+
+Network namespace:
+network devices
+IP addresses
+IP routing tables
 
 
 
@@ -623,5 +654,6 @@ Container Registry
 
 The registry stores images and metadata. For production environment, persistent storage should be used for the registry, 
 otherwise any images that were built or pushed into the registry would disappear if the pod were to restart.
+https://itnext.io/kubernetes-networking-behind-the-scenes-39a1ab1792bb
 
 
