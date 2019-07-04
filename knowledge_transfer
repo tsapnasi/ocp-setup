@@ -627,6 +627,36 @@ https://docs.openshift.com/container-platform/3.11/install_config/prometheus_clu
 Alerting Rules
 --------------
 https://docs.openshift.com/container-platform/3.11/install_config/prometheus_cluster_monitoring.html#alerting-rules
+
+Storage:
+
+SAN
+LAN of multiple storage devices 
+
+- Block level data access
+- high performance, and fast I/O
+- FC is media
+- SCSI,iSCSI
+
+NAS
+Single network device
+
+- File Level Data access
+- CIFS/NFS
+- Ethernet media 
+- Ok perfromance 
+
+https://docs.openshift.com/container-platform/3.11/scaling_performance/optimizing_storage.html
+
+
+
+
+Type of data that you want to store
+Usage pattern
+Scaling concerns
+Finally your budget
+
+
 MISC
 ----
 NVMe - Flash, 64 k command que, Latency 2.8 MS, Direct CPU, 1 M IOPS
