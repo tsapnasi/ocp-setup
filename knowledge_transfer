@@ -785,6 +785,7 @@ Images
 Signing
 -------
 https://docs.openshift.com/container-platform/3.11/admin_guide/image_signatures.html
+https://access.redhat.com/articles/2750891#architecture
 
 Scanning
 --------
