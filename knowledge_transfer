@@ -825,3 +825,4 @@ otherwise any images that were built or pushed into the registry would disappear
 https://itnext.io/kubernetes-networking-behind-the-scenes-39a1ab1792bb
 
 
+https://docs.openshift.com/container-platform/3.11/install/host_preparation.html#managing-docker-container-logs
