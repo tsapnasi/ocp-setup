@@ -792,6 +792,90 @@ Scanning
 
 
 
+Quay on RH OCP 
+--------------
+
+Features of Quay include:
+
+- High availability
+- Geo-replication
+- Docker v2, schema 2 (multiarch) support
+- Continuous integration
+- Security scanning
+- Custom log rotation
+- 24/7 support
+- Quay provides support for multiple:
+- Authentication and access methods
+- Storage backends
+- SSL certificates
+- Application registries
+
+
+ARCH
+----
+
+3 Core components 
+
+1. DB (Postgres / Mysql) 
+   - MetaData storage 
+   - Not of image storage 
+
+2. Redis (Key value store)
+   - Real time events 
+   
+3. Quay (container registry) 
+
+
+HA Quay 
+-------
+
+Storage backend 
+---------------
+
+- public cloud storage 
+  S3, Rackspace Cloud Files, Azure Blob Storage, Google cloud storage
+- Privat cloud storage 
+  open stack swift, Ceph RADOS, Ceph Object Gateway
+  
+* Object storage preferred 
+
+HA Data bases 
+--------------
+
+
+Prerequisites
+
+- Cluster-admin OCP or priviledge account for namespace creation 
+- HA storage backends
+- HA Data bases 
+
+
+Steps Installation:
+
+oc login -u system:admin
+oc create -f quay-enterprise-namespace.yaml 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
