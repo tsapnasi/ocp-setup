@@ -881,6 +881,8 @@ oc create -f quay-enterprise-namespace.yaml
 
 MISC
 --------------------------------------------------------------------
+docker login -u="redhat+quay" -p="O81WSHRSJR14UAZBK54GQHJS0P1V4CLWAJV1X2C4SD7KO59CQ9N3RE12612XU1HR" quay.io
+
 NVMe - Flash, 64 k command que, Latency 2.8 MS, Direct CPU, 1 M IOPS
 AHCI - Spin, 1 command que, 6 MS, sata , 100K IOPS 
 
