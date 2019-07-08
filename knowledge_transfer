@@ -791,9 +791,9 @@ Scanning
 --------
 
 
-
-Quay on RH OCP 
---------------
+----------------
+Quay on RH OCP -
+----------------
 
 Features of Quay include:
 
@@ -844,11 +844,18 @@ HA Data bases
 
 
 Prerequisites
+--------------
 
 - Cluster-admin OCP or priviledge account for namespace creation 
 - HA storage backends
 - HA Data bases 
 
+Product Pages
+--------------
+
+https://access.redhat.com/solutions/3533201 ( Quay pull secret)
+
+https://access.redhat.com/documentation/en-us/red_hat_quay/3/
 https://access.redhat.com/documentation/en-us/red_hat_quay/3/html/deploy_red_hat_quay_on_openshift/set_up_red_hat_quay_services
 https://access.redhat.com/documentation/en-us/red_hat_quay/3/html/deploy_red_hat_quay_on_openshift/appendix_a_red_hat_quay_on_openshift_configuration_files
 
