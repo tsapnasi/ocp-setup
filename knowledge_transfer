@@ -849,12 +849,8 @@ Prerequisites
 - HA storage backends
 - HA Data bases 
 
-
-Steps Installation:
-
-oc login -u system:admin
-oc create -f quay-enterprise-namespace.yaml 
-
+https://access.redhat.com/documentation/en-us/red_hat_quay/3/html/deploy_red_hat_quay_on_openshift/set_up_red_hat_quay_services
+https://access.redhat.com/documentation/en-us/red_hat_quay/3/html/deploy_red_hat_quay_on_openshift/appendix_a_red_hat_quay_on_openshift_configuration_files
 
 
 
