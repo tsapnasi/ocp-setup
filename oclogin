@@ -1,0 +1,28 @@
+[root@upiuatmaster1 ~]# oc login
+Authentication required for https://upiuatmaster1.onlinesbi.com:8443 (openshift)
+Username: ocpadmin
+Password:
+Login successful.
+
+You have access to the following projects and can switch between them with 'oc project <projectname>':
+
+    default
+    kube-public
+    kube-service-catalog
+    kube-system
+    management-infra
+    openshift
+    openshift-ansible-service-broker
+    openshift-console
+    openshift-infra
+    openshift-logging
+    openshift-metrics-server
+    openshift-node
+    openshift-sdn
+    openshift-template-service-broker
+    openshift-web-console
+    test
+  * uatupidev
+
+Using project "uatupidev".
+[root@upiuatmaster1 ~]#
