@@ -41,3 +41,17 @@ Proxy error, unable to connect to proxy server.
 
 proxy server used: 10.191.132.21 9090
 
+[root@upiuatinfra1 ~]# telnet 10.209.75.188 2049
+Trying 10.209.75.188...
+telnet: connect to address 10.209.75.188: No route to host
+[root@upiuatinfra1 ~]#
+
+[root@upiuatbastion scripts]# rpcinfo -p | grep nfs
+    100003    3   tcp   2049  nfs
+    100003    4   tcp   2049  nfs
+    100227    3   tcp   2049  nfs_acl
+    100003    3   udp   2049  nfs
+    100003    4   udp   2049  nfs
+    100227    3   udp   2049  nfs_acl
+[root@upiuatbastion scripts]#
+
