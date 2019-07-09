@@ -1,1 +1,1001 @@
 
+c
+cat /etc/hosts
+curl  hawkular-metrics.cloudapps.onlinesbi.com
+cat /etc/hosts
+kibana.cloudapps.cloudapps.onlinesbi.com
+clear
+curl kibana.cloudapps.cloudapps.onlinesbi.com
+clear
+curl kibana.cloudapps.cloudapps.onlinesbi.com
+cd /root/temp
+ls
+oc start-build uatupiapp --from-dir=. --follow=true --wait=true
+oc login 
+oc projest  uatupiapptest
+oc project uatupiapptest
+oc projects
+oc new-build jboss-webserver31-tomcat8-openshift --name=uatupiapp --binary=true --allow-missing-imagestream-tags
+clear
+history
+oc start-build uatupiapp --from-dir=. --follow=true --wait=true
+nslookup 
+nslonslookup  hawkular-metrics.cloudapps.onlinesbi.com
+ns lookup  hawkular-metrics.cloudapps.onlinesbi.com
+nslookup  hawkular-metrics.cloudapps.onlinesbi.com
+cat /etc/hosts
+nslooup  kibana.cloudapps.cloudapps.onlinesbi.com
+nslookup  kibana.cloudapps.cloudapps.onlinesbi.com
+clear
+oc projects
+oc login
+oc get svc
+curl 172.30.145.137:8080
+curl 172.30.145.137:8443
+ssh upiuatmaster01
+cat /etc/hosts
+ssh upiuatmaster1.onlinesbi.com
+cd projects
+oc projects
+docker images
+cat /etc/hosts
+ssh upiuatapp1.onlinesbi.com
+ssh supiuatmaster1.onlinesbi.com
+ssh upiuatmaster1.onlinesbi.com
+ssh upiuatmaster2.onlinesbi.com
+ssh upiuatmaster1.onlinesbi.com
+ls
+ls /root/ocp
+pwd
+
+pwd
+oc project testocp001
+ls
+oc projects
+oc project uatupiapptest
+oc projects
+pwd
+
+ls
+mv  UPIService-1.0_BalEnq.war ROOT.war
+ls  -ltr
+mkdir /root/temp
+
+cd /root/temp
+ls
+pwd
+mkdir deployments
+cd deployments/
+cp -r /root/ocp/ROOT.war
+mv /root/ocp/ROOT.war .
+ls
+pwd
+cd ..
+pwd
+oc projects
+oc get imagesstream -n openshift |grep tomcat8
+oc get imagestream -n openshift |grep tomcat8
+ls
+oc new-build jboss-webserver31-tomcat8-openshift:1.2 --name=uatupiapp --binary=true
+oc new-build jboss-webserver31-tomcat8-openshift:latest --name=uatupiapp --binary=true
+oc new-build jboss-webserver31-tomcat8-openshift --name=uatupiapp --binary=true
+clear
+oc new-build jboss-webserver31-tomcat8-openshift --name=uatupiapp --binary=true --allow-missing-imagestream-tags
+oc start-build uatupiapp --from-dir=. --follow=true --wait=true
+oc start-build uatupiapp:latest --from-dir=. --follow=true --wait=true
+oc get pods
+clear
+oc projects
+oc project testocp001
+oc projects
+oc get svc
+cat etc/hosts
+cat/ etc/hosts
+cat /etc/hosts
+ssh  upiuatmaster1.onlinesbi.com
+cat /etc/hosts
+ssh upiuatmaster1.onlinesbi.com
+
+docker images
+docker rmi c303ee1e1273
+dcoker images
+docker images
+ssh upiuatmaster1.onlinesbi.com
+ssh upiuatmaster2.onlinesbi.com
+ssh upiuatmaster3.onlinesbi.com
+exit
+df -h
+top
+ssh root@10.209.75.175
+ssh root@10.209.75.176
+ssh root@10.209.75.177
+hisstory |more
+history |more
+cat /etc/host/
+cat /etc/hosts
+oc login upiuatlb.onlinesbi.com
+oc login
+oc projects
+docker images
+ssh upiuatmaster1.onlinesbi.com
+ssh upiuatmaster2.onlinesbi.com
+ssh upiuatmaster3.onlinesbi.com
+cat /etc/hosts
+ssh  upiuatapp1.onlinesbi.com
+ssh  upiuatmaster1.onlinesbi.com
+ upiuatinfra1.onlinesbi.com
+ssh  upiuatinfra1.onlinesbi.com
+ssh upiuatmaster3.onlinesbi.com
+ssh upiuatmaster2.onlinesbi.com
+ssh upiuatmaster1.onlinesbi.com
+exit
+l
+docker images
+clear
+docker pull registry.access.redhat.com/jboss-webserver-3/webserver31-tomcat8-openshift
+docker images
+ls
+pwd
+cd ocp/
+ls
+cat private_reg_login.sh
+docker login docker-registry.default.svc:5000 -u $(oc whoami) -p $(oc whoami -t)
+sh  private_reg_login.sh
+cat /etc/hosts
+ssh upiuatmaster1.onlinesbi.com
+ssh upiuatmaster2.onlinesbi.com
+exit
+cat /etc/hosts
+ssh  upiuatapp1.onlinesbi.com
+exit
+docker images
+cat etc/hostr
+cat /etc/hostr
+cat /etc/hosts
+ssh  upiuatapp1.onlinesbi.com
+telnet upiuatapp1.onlinesbi.com 9999
+telnet upiuatapp1.onlinesbi.com 8443
+telnet upiuatapp2.onlinesbi.com 8443
+telnet upiuatapp3.onlinesbi.com 8443
+cat /etc/hosts
+ssh upiuatlb.onlinesbi.com
+ssh upiuatmaster1.onlinesbi.com
+ssh upiuatmaster1.onlinesbi.com
+oc login upiuatmaster1.onlinesbi.com
+oc login
+oc new-project uatupitest
+docker images
+clear
+docker images
+docker tag c303ee1e1273 docker-registry.default.svc:5000/opesnhift/webserver31-tomcat8-openshift
+
+docker images
+docker rmi -f c303ee1e1273
+docker images
+dcoker iamges
+docker images
+docker pull registry.access.redhat.com/jboss-webserver-3/webserver31-tomcat8-openshift
+docker images
+clear
+docker tag c303ee1e1273 docker-registry.default.svc:5000/openshift/webserver31-tomcat8-openshift
+docker images
+clear
+docker push  docker-registry.default.svc:5000/openshift/webserver31-tomcat8-openshift
+docker login docker-registry.default.svc:5000 -u $(oc whoami) -p $(oc whoami -t)
+oc login
+docker login docker-registry.default.svc:5000 -u $(oc whoami) -p $(oc whoami -t)
+cat /etc/hosts
+ssh  upiuatlb.onlinesbi.com
+oc login
+ls
+docker login docker-registry.default.svc:5000 -u $(oc whoami) -p $(oc whoami -t)
+ssh  upiuatmaster1.onlinesbi.com
+docker login docker-registry.default.svc:5000 -u $(oc whoami) -p $(oc whoami -t)
+ls
+cat /etc/hosts
+ssh  upiuatmaster1.onlinesbi.com
+history
+history|more
+ssh  upiuatmaster1.onlinesbi.com
+cd /root/ocp
+ls
+ls -l WinZip.lnk 
+exit
+docker push docker-registry.default.svc:5000/openshift/webserver31-tomcat8-openshift
+cat /etc/hosts
+ssh upiuatmaster1.onlinesbi.com
+ls
+cd ocp
+ls
+ls *.war
+ls
+cd /temp
+cd ..
+ls
+cd ocp
+ls
+pwd
+cd ..
+ls
+cd temp/
+ls
+cd deployments/
+ls
+cd ..
+ls
+ls deployments
+oc login
+cat /etc/httpasswd
+oc login
+oc projects
+oc project uatupitest
+oc get pods
+oc get imagestream -n openshift |grep tomcat8
+oc new-build webserver31-tomcat8-openshift --name=uatupiapp --binary=true
+ls deployments
+oc start-build uatupiapp --from-dir=. --follow=true --wait=true
+ls
+ifconfig -a
+oc login
+oc get pods
+olc logs
+oc logs
+ls
+oc login
+oc project test
+oc projects
+oc new-build webserver31-tomcat8-openshift --name=uatupiapp --binary=true
+oc get pods
+cd /root
+ls
+cd temp/
+ls
+clear
+oc start-build uatupiapp --from-dir=. --follow=true --wait=true
+oc get pods
+oc logs
+oc logs uatupiapp-1-build
+oc get pods
+cat /etc/hosts
+ssh upiuatapp1.onlinesbi.com
+oc login
+oc get svc
+telnet  172.30.4.150:8080
+curl  172.30.4.150:8080
+curl 172.30.4.150
+cat /etc/hosts
+ssh upiuatmaster1.onlinesbi.com
+oc logs
+cd ocp/
+ls
+ls -ltr
+cd ..
+pwd
+cd temp/
+ls
+cd deployments/
+ls
+clear
+cd ..
+ls
+cd /root
+cd ocp/
+ls
+ ls -ltr
+ls *.war
+ls
+cd ..
+cd /root
+cd 
+cd temp
+ls
+cd deployments/
+ls
+pwd
+ls
+cd ..
+ls
+cd ..
+ls
+ls 
+ls
+pwd
+cd ocp/
+ls
+ls w*
+ls w*.*
+ls
+history
+telnet 10.189.201.221 1531
+cat /etc/hosts
+telnet 10.189.201.221 1531
+clear
+oc login
+oc project test
+oc get pods
+ls
+pwd
+cd /root
+cd temp/
+ls
+cd deployments/
+ls
+rm ROOT.war 
+cp /root/ocp/ROOT.war .
+ls
+ls -ltr
+cd ..
+pwd
+ls
+oc new-build webserver31-tomcat8-openshift --name=uatupiappv1 --binary=true
+clear
+ oc start-build uatupiappv1 --from-dir=. --follow=true --wait=true
+oc  new-app uatupiappv1
+oc get pods
+oc get service
+curl -k 172.30.255.147:8080
+curl 172.30.255.147:8080
+cat /etc/hosts
+ssh upiuatmaster1.onlinesbi.com
+oc login
+oc get pods
+cd projects
+oc projects
+exit
+ls
+cat /etc/passwd
+exit
+nslooup sbitestocp.onlinesbi.com
+nslookup sbitestocp.onlinesbi.com
+nslookup sbiocpsample.onlinesbi.com
+nslookup sbiupiappuat.onlinesbi.com
+ls -ltr
+ls -l
+ls -ltr
+clear
+oc get svc
+oc get route
+curl -k sbidemouat.onlinesbi.com:8080
+cat /etc/hosts
+upiuatmaster1.onlinesbi.com
+ssh upiuatmaster1.onlinesbi.com
+ssh root@10.209.74.98
+ssh root@10.209.74.99
+oc login
+oc projec test
+oc project test
+oc projects
+oc get route
+curl  sbiupiappuat.onlinesbi.com 
+history|more
+ curl -k 172.30.255.147:8080
+cat /etc/host
+cat /etc/hosts
+ upiuatmaster1.onlinesbi.com
+ssh  upiuatmaster1.onlinesbi.com
+oc get route
+ns lookup sbiupiappuat.onlinesbi.com
+nslookup sbiupiappuat.onlinesbi.com
+cat /etc/host
+ns lookup https://console.cloudapps.onlinesbi.com/
+nslookup console.cloudapps.onlinesbi.com
+ssh root@10.209.74.98
+rpm -qa --last | more
+w
+hostname
+\
+clear
+
+cat
+hostname
+cat /etc/hosts
+ssh  upiuatlb.onlinesbi.com
+ssh upiuatmaster2.onlinesbi.com
+cat /etc/ansible/hosts
+vi /etc/ansible/hosts
+cd /root/ocp
+ls
+vi hosts
+oc login
+oc get pv
+history|more
+cd  /usr/share/ansible/openshift-ansible/playbooks/
+ls
+ssh upiuatmaster1
+oc get pods
+oc get svc
+oc get route
+oc projects
+oc get pods
+oc get svc
+oc edit route
+ssh root@10.209.74.101
+oc edit route
+ssh root@10.209.74.101
+ping 10.209.74.101
+ssh root@10.209.74.101
+ping 10.209.74.101
+ssh root@10.209.74.101
+ssh root@10.209.74.98
+cd warupi/
+ls -ltr
+pwd
+ifconfig 
+ssh root@10.209.74.101
+ssh root@10.209.74.102
+ssh root@10.209.74.101
+ssh root@10.209.74.100
+ssh root@10.209.74.103
+ssh root@10.209.84.122
+ssh root@10.209.84.101
+ssh root@10.209.74.101
+ssh root@10.209.74.100
+ssh root@10.209.74.101
+ssh root@10.209.74.98
+ifconfig 
+ssh root@10.209.74.101
+ssh root@10.209.74.98
+ssh root@10.209.74.101
+ifconfig 
+ssh root@10.209.74.101
+ping 10.209.74.983
+ping 10.209.74.98
+ssh root@10.209.74.98
+ssh root@10.209.74.101
+ssh root@10.209.74.100
+pwd
+mkdir warupi
+pwd
+cd warupi
+pwd
+ls
+ls ltr
+ls
+fdisk -l
+lsblk
+docker images
+ls -ltr
+ls
+pwd
+cd /root/ocp
+cd deployments
+ls
+cd ..
+ls
+cd temp
+ls
+cd deployements
+cd deployments/
+ls
+cp ROOT.war  /root/warupi/
+rm -r ROOT.war 
+cp /root/warupi/* .
+ls
+rm -r ROOT.war 
+ls
+ls -ltr
+cd ..
+ls
+clear
+oc new-build webserver31-tomcat8-openshift --name=uatupiapp --binary=true
+oc new-build webserver31-tomcat8-openshift --name=uatupiappnew --binary=true
+oc start-build uatupiappnew --from-dir=. --follow=true --wait=true
+oc  new-app uatupiappnew
+oc get pods
+oc expose svc/uatupiappnew
+oc get route
+oc get svc
+cat /etc/hosts
+ssh  upiuatmaster1.onlinesbi.com
+ls
+cd deployments/
+ls
+cd ..
+cd /root/warupi/
+ls
+cd ..
+cd temp/
+ls
+cd deployments/
+ls
+clear
+oc new-build webserver31-tomcat8-openshift --name=uatupiappv2 --binary=true
+ls
+cd ..
+cd temp
+ls
+oc start-build uatupiappv2 --from-dir=. --follow=true --wait=true
+oc new-app uatupiappv2
+oc get pods -w
+oc get svc
+cat /etc/hosts
+ssh  upiuatmaster1.onlinesbi.com
+oc login
+hostname
+oc get pods
+oc get svc
+oc get route
+oc projects
+oc project  testocp001
+oc login
+oc get route
+pwd
+cd temp/
+ls
+oc login
+oc new-build webserver31-tomcat8-openshift --name=uatupiappv3 --binary=true
+oc start-build uatupiappv3 --from-dir=. --follow=true --wait=true
+oc  new-app uatupiappv3
+oc get pods -w
+oc get svc
+curl -X POST http://172.30.182.232:8080/upi/api/getAccBal -d {"pspId":"201"}
+ssh  upiuatmaster1.onlinesbi.com
+oc login
+oc get route
+curl -k https:// sbiupiappuat.onlinesbi.com
+curl -k https:/sbiupiappuat.onlinesbi.com
+cat/etc/hosts
+cat /etc/hosts
+ssh upiuatmaster1.onlinesbi.com
+cd ocp/
+ls
+cd /tmp/
+ls -ltr
+scp -r RSCD88-P2-LIN64.rpm root@10.209.74.98:/tmp/
+ifconfig
+ssh root@10.209.74.98
+ifconfig 
+ll
+ip r l
+man rhn_check
+ssh root@10.209.74.99
+ping 10.209.74.99
+ssh root@10.209.74.99
+dmidecode | grep UUID
+ssh root@10.209.74.99
+ifconfig 
+ssh root@10.209.75.32
+ifconfig 
+ssh root@10.209.75.33
+ssh addmitam@10.209.75.33
+ifconfig 
+cd /root
+ls -ltr
+cd warupi/
+ls -ltr
+ip r
+ls -ltr
+cd warupi/
+ls -ltr
+ls
+cp UPIService-1.0_POC_BalEn_without_JNDI.war /root/temp
+cd /root/temp
+ks
+ls
+cd deployments/
+ls
+rm -rf
+ls
+rm -rf UPIService-1.0_POC_BalEnq.war 
+ls
+pwd
+cd ..
+ls
+cp UPIService-1.0_POC_BalEn_without_JNDI.war /root/temp/deployments/
+cd deployments/
+ls
+mv UPIService-1.0_POC_BalEn_without_JNDI.war ROOT.WAR
+ls
+exit
+ssh 10.209.75.197
+exit
+cd /root/ocp
+ssh 10.209.75.197
+history
+history|more
+ping 10.209.75.197
+ping 10.209.75.198
+10.209.75.197
+cd /root
+ls
+cd warupi/
+ls
+ls ltr
+ls -ltr
+cd /root/temp
+ls
+cd deployments/
+rm -rf 
+ls
+rm -rf ROOT.war 
+ls
+cd ..
+oc login
+oc new-build webserver31-tomcat8-openshift --name=uatupiservicev12 --binary=true
+ls
+oc start-build uatupiservicev12 --from-dir=. --follow=true --wait=true
+oc  new-app uatupiservicev12
+oc expose svc/uatupiservicev12
+oc get svc
+cat /etc/host
+cat /etc/hosts
+ssh  upiuatmaster1.onlinesbi.com
+cat /etc/hosts
+ssh upiuatmaster1.onlinesbi.com
+ls
+cd ..
+pwd
+cd /root
+cd warupi/
+ls
+rm /root/temp/deployments/*
+ls /root/temp/deployments/*
+ls /root/temp/deployments/
+cp UPIService-1.0_POC_BalEnq.war /root/temp/deployments/
+ls /root/temp/deployments/
+cd /root/temp/deployments/
+ls
+mv UPIService-1.0_POC_BalEnq.war ROOT.war
+ls
+cd ..
+oc project
+oc projects
+oc project testocp001
+oc projects
+clear
+ls
+rm UPIService-1.0_POC_BalEn_without_JNDI.war 
+ls
+oc new-build webserver31-tomcat8-openshift --name=uatupiservicev11 --binary=true
+oc start-build uatupiservice --from-dir=. --follow=true --wait=true
+oc start-build uatupiservicev11 --from-dir=. --follow=true --wait=true
+oc  new-app uatupiservicev11
+oc expose svc/uatupiservicev11
+oc get svc
+curl -k 172.30.15.167:8080
+cat /etc/hosts
+ssh upiuatmaster1.onlinesbi.com
+cd /root/ocp
+ls
+ls *.war
+cd ..
+ls
+cd warupi/
+ls
+ls -ltr
+pwd
+cd /root
+cd temp/
+ls
+cd deployments/
+ls
+rm -rf *
+ls
+cp /root/warupi/UPIService-1.0_POC_BalEnq.war .
+ls -ltr
+oc login
+os get pods
+oc get pods
+cd ..
+ls
+oc project
+oc project test
+oc projects
+oc get pods
+oc new-build webserver31-tomcat8-openshift --name=uatupiservice --binary=true
+oc start-build uatupiservice --from-dir=. --follow=true --wait=true
+oc  new-app uatupiservice
+oc get pods
+oc expose svc/uatupiservice
+oc get svc
+cat /etc/hosts
+ssh  upiuatmaster1.onlinesbi.com
+cd ..
+ls
+cd ocp
+ls
+ls -ltr 
+pwd
+ls -ltr
+cd /root/warupi/
+ls -ltr
+oc get pods
+oc projects
+oc get pods
+oc new-build webserver31-tomcat8-openshift --name=uatupiservicev10 --binary=true
+pwd
+cd ..
+cd /root
+cd temp/
+ls
+ls deployments/
+oc start-build uatupiservicev10 --from-dir=. --follow=true --wait=true
+ls
+cd deployments/
+ls
+cd ..
+oc  new-app uatupiservicev10
+oc expose svc/uatupiservicev10
+oc get svc
+oc get route
+oc get svc
+ls
+cd deployments/
+ls
+cp /root/warupi/UPIService-1.0_POC_BalEnq.war 
+cp /root/warupi/UPIService-1.0_POC_BalEnq.war .
+ls
+mv UPIService-1.0_POC_BalEnq.war ROOT.war
+cd ..
+ls
+cd deployments/
+ls
+cd ..
+oc projects
+oc new-build webserver31-tomcat8-openshift --name=uatupiservicev13 --binary=true
+oc start-build uatupiservicev13 --from-dir=. --follow=true --wait=true
+oc  new-app uatupiservicev13
+oc expose svc/uatupiservicev13
+oc get svc
+curl -k 172.30.54.242:8080
+cat /etc/hosts
+ssh  upiuatmaster1.onlinesbi.com
+oc login
+oc get pods
+oc get route
+ssh 10.209.75.197
+pwd
+ cd warupi/
+ls -ltr
+openssl x509 -in uatupi_onlinesbi_com.cer -text -noout
+vi Dockerfile
+pwd
+ls -ltr
+cp /root/temp/deployments/ROOT.war .
+ls -ltr
+vi Dockerfile 
+oc project -q
+docker build upiuatv14 .
+docker build --help
+docker build . upiuatv14
+ls -ltr
+docker build .
+vi Dockerfile 
+docker build .
+docker iamges
+docker images
+docker build . upiuat
+docker build --help
+docker build . -t upiuat
+docker images
+docker tag upiuat docker-registry.default.svc:5000/upiuat
+docker images
+docker push docker-registry.default.svc:5000/upiuat
+ls -ltr
+mkdir sbiimage
+cp Dockerfile sbiimage/
+cp ROOT.war sbiimage/
+cat /etc/hosts
+scp sbiimage/ root@10.209.75.179
+scp -R sbiimage/ root@10.209.75.179
+scp -R sbiimage/ root@10.209.75.179:/root/ocp
+scp -r sbiimage/ root@10.209.75.179:/root/ocp
+ssh 10.209.75.179
+oc status
+oc project
+oc projects
+oc delete project uatupitest
+oc delete project uatupidev
+oc delete project uatupiapptest
+oc delete project testkkjha
+oc delete project test
+oc delete project testocp001
+ls -ltr
+cd warupi
+ls -ltr
+cd sbiimage/
+ls -ltr
+oc new-project upi
+pwd
+cd ..
+ls -ltr
+openssl x509 -in DigiCert_Global_CA_G2.cer -test -noout
+openssl x509 -in DigiCert_Global_CA_G2.cer -text -noout
+openssl x509 -in DigiCert_Global_Root_G2.cer -text -noout
+openssl x509 -in DigiCert_Global_CA_G2.cer -text -noout
+ Issuer: C=US, O=DigiCert Inc, OU=www.digicert.com, CN=DigiCert Global Root G2
+ls -ltr
+diff DigiCert_Global_Root_G2.cer DigiCert_Global_CA_G2.cer
+ls -ltr
+openssl x509 -in DigiCert_Global_CA_G2.cer -text -nooutDigiCert_Global_CA_G2.cer
+openssl x509 -in DigiCert_Global_Root_G2.cer -text -noout
+ls -ltr
+openssl x509 -in uatupi_onlinesbi_com.cer -text -noout
+ls -ltr
+openssl verify uatupi_onlinesbi_com.cer -CAfile 
+DigiCert_Global_CA_G2.cer openssl verify uatupi_onlinesbi_com.cer -CAfile
+ openssl verify uatupi_onlinesbi_com.cer -CAfile DigiCert_Global_CA_G2.cer
+ls -ltr
+chmod 777 DigiCert_Global_Root_G2.cer
+ openssl verify uatupi_onlinesbi_com.cer -CAfile DigiCert_Global_CA_G2.cer
+openssl x509 -in uatupi_onlinesbi_com.cer -text -noout
+ openssl verify uatupi_onlinesbi_com.cer -CAfile DigiCert_Global_CA_G2.cer
+ openssl verify uatupi_onlinesbi_com.cer -CAfile DigiCert_Global_Root_G2.cer
+openssl verify --help
+openssl verify -CAfile DigiCert_Global_Root_G2.cer uatupi_onlinesbi_com.cer 
+openssl verify -CAfile DigiCert_Global_Root_G2.cer -untrusted DigiCert_Global_CA_G2.cer uatupi_onlinesbi_com.cer 
+cat DigiCert_Global_CA_G2.cer DigiCert_Global_Root_G2.cer > cafile.cer
+openssl verify -CAfile cafile.cer uatupi_onlinesbi_com.cer 
+oc new-build webserver31-tomcat8-openshift --name=upiservice --binary=true
+ls -ltr
+oc new-build webserver31-tomcat8-openshift --name=upiservice --binary=true
+oc start-build uatupiservice --from-dir=. --follow=true --wait=true
+oc start-build upiservice --from-dir=. --follow=true --wait=true
+oc new-app upiservice
+oc get pods -w
+oc get pods
+ls -ltr
+pwd
+oc cp help
+oc get ods
+oc get pods
+oc cp cafile.cer upiservice-1-n2jkd /etc/ssl/certs/
+oc cp cafile.cer upiservice-1-n2jk:/home/
+oc cp cafile.cer upiservice-1-n2jkd:/home/
+ls -ltr
+chmod 777 cafile.cer
+oc cp cafile.cer upiservice-1-n2jkd:/home/
+ls -ltr
+oc cp cafile.cer upiservice-1-n2jkd:/home/jboss
+vi Dockerfile 
+docker build -t upi:v1 .
+docker run upi:v1 -d
+docker run help
+docker run --help
+docker run --help | d
+docker run --help | grep d
+docker run --help | grep -d
+docker run -d upi:v1
+docker ps 
+docker ps -a
+docker logs c71ae02ce6ce
+vi Dockerfile 
+docker build -t upi:v2
+docker build -t upi:v2 .
+docker run -d upi:v2
+docker ps -a
+docker logs 58091ab9f32b
+vi Dockerfile 
+docker build -t upi:v3 .
+docker run -d upi:v3
+docker ps
+docker ps -a
+docker logs 434c0f1f9474
+vi D
+vi Dockerfile 
+docker run -d upi:v4
+docker build -t upi:v4 .
+docker run -d upi:v4
+docker ps -a
+docker ps
+docker rsh 3883ec1870bc
+docker sh 3883ec1870bc
+docker --help
+docker ps
+docker exec 3883ec1870bc
+docker exec -it 3883ec1870bc
+docker exec -it 3883ec1870bc /bin/bash
+docker ps
+docker stop 3883ec1870bc
+docker rm 3883ec1870bc
+docker ps -a
+docker rm 434c0f1f9474 58091ab9f32b c71ae02ce6ce e520065252af
+docker ps -a
+docker rm b09f64165187
+docker iamges
+docker images
+docker rmi upi:v1 upi:v2 upi:v3 upi:v4
+docker iamges
+docker images
+docker rmi upiuat docker-registry.default.svc
+docker rmi upiuat docker-registry.default.svc:5000/upiuat
+scp Dockerfile root@10.209.75.179:/root/ocp
+ssh 10.209.75.179
+scp cafile.cer root@10.209.75.179:/root/ocp
+ssh 10.209.75.179
+exit
+ls
+history |more
+pwd
+cd .ssh/
+ls
+pwd
+ls
+cd /etc
+cat yum.conf
+cat /etc/hosts
+ssh upiuatmaster1.onlinesbi.com
+ssh genericuatapp1.onlinesbi.com
+ssh upiuatmaster1.onlinesbi.com
+ls
+cat /etc/hosts
+ssh genericuatapp1.onlinesbi.com
+ssh genericuatapp2.onlinesbi.com
+exit
+ifconfig
+ssh genericuatapp1.onlinesbi.com
+clear
+ssh 10.209.75.197
+cat /etc/host
+cat /etc/hosts
+10.209.75.188   upiuatbastion.onlinesbi.com
+10.209.75.184   upiuatlb.onlinesbi.com
+10.209.75.179   upiuatmaster1.onlinesbi.com
+10.209.75.180   upiuatmaster2.onlinesbi.com
+10.209.75.181   upiuatmaster3.onlinesbi.com
+10.209.75.182   upiuatinfra1.onlinesbi.com
+10.209.75.183   upiuatinfra2.onlinesbi.com
+10.209.75.185   upiuatlog1.onlinesbi.com
+10.209.75.186   upiuatlog2.onlinesbi.com
+10.209.75.187   upiuatlog3.onlinesbi.com
+10.209.75.189   upiuatapp1.onlinesbi.com
+10.209.75.190   upiuatapp2.onlinesbi.com
+10.209.75.191   upiuatapp3.onlinesbi.com
+10.209.75.192   upiuatapp4.onlinesbi.com
+10.209.75.193   upiuatapp5.onlinesbi.com
+10.209.75.194   upiuatapp6.onlinesbi.com
+172.30.102.208  docker-registry.default.svc
+10.209.75.182   hawkular-metrics.cloudapps.onlinesbi.com
+10.209.75.183   hawkular-metrics.cloudapps.onlinesbi.com
+10.209.75.182   kibana.cloudapps.cloudapps.onlinesbi.com
+10.209.75.183   kibana.cloudapps.cloudapps.onlinesbi.com
+ifconfig
+ssh 10.209.75.197
+ssh 10.209.75.198
+ssh 
+ssh genericuatapp1.onlinesbi.com
+ssh genericuatapp2.onlinesbi.com
+ssh upiuatmaster1.onlinesbi.com
+ssh upiuatmaster2.onlinesbi.com
+ssh upiuatmaster3.onlinesbi.com
+cd .ssh/
+ls -ltr
+cat id_rsa
+ssh-copy-id -i ~/.ssh/id_rsa.pub genericuatapp1.onlinesbi.com
+ssh-copy-id -i ~/.ssh/id_rsa.pub genericuatapp2.onlinesbi.com
+ssh genericuatapp2.onlinesbi.com
+ssh genericuatapp1.onlinesbi.com
+cd /
+cat /etc/yum.conf 
+proxy=http://10.191.132.21:9090
+ssh genericuatapp1.onlinesbi.com
+ssh genericuatapp2.onlinesbi.com
+cat /etc/rhsm/rhsm.conf
+ll
+cd /etc/rhsm/
+scp rhsm.conf root@genericuatapp1.onlinesbi.com:/etc/rhsm/
+scp rhsm.conf root@genericuatapp2.onlinesbi.com:/etc/rhsm/
+cat /etc/sysconfig/docker
+HTTP_PROXY=http://10.191.132.21:9090
+ssh genericuatapp1.onlinesbi.com
+cat /etc/environment 
+cat 
+cat ~/.bash_profile 
+cat ~/.bashrc
+cat ~/.bash_history 
+echo $HTTP_PROXY
+ssh genericuatapp1.onlinesbi.com
+ssh genericuatapp2.onlinesbi.com
+vi /etc/ansible/hosts 
+cd /
+cd /root/ocp/
+ls -ltr
+vi host
+vi hosts
+cp hosts hosts_bak
+vi hosts
+ansible -i hosts new_nodes -a 'getenforce'
+ansible -i hosts new_nodes -a 'ls -ltr /etc/sysconfig/network-scripts/'
+ansible -i hosts new_nodes -a 'ls -ltr /etc/sysconfig/network-scripts/ifcfg-lo'
+ansible -i hosts new_nodes -a 'cat /etc/sysconfig/network-scripts/ifcfg-lo'
+cat  /etc/sysconfig/network-scripts/ifcfg-lo
