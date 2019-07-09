@@ -33,3 +33,11 @@ Name:   uatupi.onlinesbi.com
 Address: 10.209.75.182
 
 [root@upiuatbastion pv01]#
+
+
+[root@genericuatapp2 ~]# subscription-manager register --username=sbi_ocp --password=Sbi@12345
+Registering to: subscription.rhsm.redhat.com:443/subscription
+Proxy error, unable to connect to proxy server.
+
+proxy server used: 10.191.132.21 9090
+
