@@ -1,0 +1,72 @@
+[root@upiuatbastion ~]# hostname
+upiuatbastion.onlinesbi.com
+[root@upiuatbastion ~]# oc get nodes
+NAME                          STATUS    ROLES     AGE       VERSION
+upiuatapp1                    Ready     compute   16h       v1.11.0+d4cacc0
+upiuatapp2                    Ready     compute   16h       v1.11.0+d4cacc0
+upiuatapp3.onlinesbi.com      Ready     compute   16h       v1.11.0+d4cacc0
+upiuatapp4.onlinesbi.com      Ready     compute   16h       v1.11.0+d4cacc0
+upiuatapp5.onlinesbi.com      Ready     compute   16h       v1.11.0+d4cacc0
+upiuatapp6.onlinesbi.com      Ready     compute   16h       v1.11.0+d4cacc0
+upiuatinfra1.onlinesbi.com    Ready     infra     16h       v1.11.0+d4cacc0
+upiuatinfra2.onlinesbi.com    Ready     infra     16h       v1.11.0+d4cacc0
+upiuatlog1.onlinesbi.com      Ready     logging   16h       v1.11.0+d4cacc0
+upiuatlog2.onlinesbi.com      Ready     logging   16h       v1.11.0+d4cacc0
+upiuatlog3.onlinesbi.com      Ready     logging   16h       v1.11.0+d4cacc0
+upiuatmaster1.onlinesbi.com   Ready     master    19h       v1.11.0+d4cacc0
+upiuatmaster2.onlinesbi.com   Ready     master    18h       v1.11.0+d4cacc0
+upiuatmaster3.onlinesbi.com   Ready     master    18h       v1.11.0+d4cacc0
+[root@upiuatbastion ~]#
+
+
+User Creation
+
+
+User /Role
+@Master (All)
+
+htpasswd -b /etc/origin/master/htpasswd ocpdmin redhat0000
+
+Clsuter Admin Role (At Master1)
+oc adm policy add-cluster-role-to-user cluster-admin ocpadmin
+ 
+Developer Role
+oc adm policy add-role-to-user edit user1 -n  uatupidev
+
+
+Sample App Test
+
+[root@upiuatmaster1 ~]# curl sbitestocp.onlinesbi.com
+<!DOCKTYPE html>
+<html>
+<head>AIR ROUTES V1</head>
+<body>
+<img src="world-air-route-map.png" title="AIRROUTE V1" alt="AIR ROUTE V1" height="100%" width="100%">
+</body>
+</html>
+[root@upiuatmaster1 ~]#
+
+
+
+
+
+user1:$apr1$RXnrAdba$B7OmFoDyEMAuOGJzHIZYw0
+user2:$apr1$XzayOPBq$.VNnJoY7IBbidjRZYLWNW.
+user3:$apr1$Tt2Uprur$D08bjNJIWXi1b5hcpV0Gv/
+uatupidev:$apr1$HHoVGuzH$qFeXUYIudZUUIgLIRUv9g1
+ocpadmin:$apr1$MIX5L8dR$J7LmQrXJeFdvX4zfb5Z5h0
+ocpdevuser:$apr1$HlU0iWRD$vv.r3HnD7uQHRB6jfMzkg0
+
+
+
+Connection to upiuatmaster1.onlinesbi.com closed.
+[root@upiuatbastion temp]# oc login
+Authentication required for https://upiuatlb.onlinesbi.com:8443 (openshift)
+Username: ocpdevuser
+Password:
+Login successful.
+
+You have one project on this server: "uatupitest"
+
+Using project "uatupitest".
+[root@upiuatbastion temp]#
