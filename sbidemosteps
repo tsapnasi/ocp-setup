@@ -1,0 +1,63 @@
+UPI Build
+----------------------
+
+Path >>>>>   master1  path /root/ocp/upi
+
+docker build -t upi .
+docker tag upi docker-registry.default.svc:5000/sbiupidemo/upi
+docker push docker-registry.default.svc:5000/sbiupidemo/upi
+ certificate - D:\working cert , 
+edge termination
+First - doamin ca cert
+second - pvt key
+last - cafile
+
+
+GCON BUild
+---------------------
+
+Path >>>>>   master1  path /root/ocp/gcons
+
+docker build -t gcons .
+docker tag gcons docker-registry.default.svc:5000/sbigconstest/gcons:v1
+docker push docker-registry.default.svc:5000/sbigconstest/gcons:v1
+oc new-app gcons:v1
+
+Sending build context to Docker daemon 43.13 MB
+Step 1/4 : FROM registry.redhat.io/openjdk/openjdk-8-rhel8
+ ---> 74ed141057b4
+Step 2/4 : WORKDIR /
+ ---> Using cache
+ ---> 3f8f87409b9f
+Step 3/4 : ADD recon-engine-service-taskmanager-1.0.0.jar recon-engine-service-taskmanager-1.0.0.jar
+ ---> Using cache
+ ---> 83b47c8440fe
+Step 4/4 : CMD java -jar recon-engine-service-taskmanager-1.0.0.jar
+ ---> Using cache
+ ---> 27e063fcf39f
+Successfully built 27e063fcf39f
+[root@upiuatmaster1 gcons]# docker tag gcons docker-registry.default.svc:5000/sbigconstest/gcons:v1
+[root@upiuatmaster1 gcons]# docker push docker-registry.default.svc:5000/sbigconstest/gcons:v1
+The push refers to a repository [docker-registry.default.svc:5000/sbigconsuat/gcons]
+ca214d280f78: Layer already exists
+5a54b5648818: Layer already exists
+614abdb6064c: Layer already exists
+7c3e45609beb: Layer already exists
+latest: digest: sha256:450798daf8b00ec5fe51dcac7cd0d1c22326d56d44292392154cbfe75e8a3d76 size: 1162
+7cccf5079614: Layer already exists
+5a54b5648818: Layer already exists
+614abdb6064c: Layer already exists
+7c3e45609beb: Layer already exists
+v1: digest: sha256:4c7f5335775cccac5538748838d1cfeac18d3abaace36c53ad0f4b921d072363 size: 1162
+ca214d280f78: Layer already exists
+5a54b5648818: Layer already exists
+614abdb6064c: Layer already exists
+7c3e45609beb: Layer already exists
+v2: digest: sha256:450798daf8b00ec5fe51dcac7cd0d1c22326d56d44292392154cbfe75e8a3d76 size: 1162
+[root@upiuatmaster1 gcons]# oc new-app gcons
+
+3) CI/CD demo 
+Run pipeline from UI , demo sit and uat project and code roll out
+
+4) Rolling upgrade
+ oc rollout latest dc/upi
