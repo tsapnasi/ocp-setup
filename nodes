@@ -1,0 +1,16 @@
+[root@upiuatbastion ~]# oc get nodes
+NAME                           STATUS    ROLES     AGE       VERSION
+genericuatapp1.onlinesbi.com   Ready     compute   1d        v1.11.0+d4cacc0
+genericuatapp2.onlinesbi.com   Ready     compute   1d        v1.11.0+d4cacc0
+upiuatapp1                     Ready     compute   16d       v1.11.0+d4cacc0
+upiuatapp2                     Ready     compute   16d       v1.11.0+d4cacc0
+upiuatapp3.onlinesbi.com       Ready     compute   16d       v1.11.0+d4cacc0
+upiuatapp4.onlinesbi.com       Ready     compute   16d       v1.11.0+d4cacc0
+upiuatinfra1.onlinesbi.com     Ready     infra     16d       v1.11.0+d4cacc0
+upiuatinfra2.onlinesbi.com     Ready     infra     16d       v1.11.0+d4cacc0
+upiuatlog1.onlinesbi.com       Ready     logging   16d       v1.11.0+d4cacc0
+upiuatlog2.onlinesbi.com       Ready     logging   16d       v1.11.0+d4cacc0
+upiuatlog3.onlinesbi.com       Ready     logging   16d       v1.11.0+d4cacc0
+upiuatmaster1.onlinesbi.com    Ready     master    16d       v1.11.0+d4cacc0
+upiuatmaster2.onlinesbi.com    Ready     master    16d       v1.11.0+d4cacc0
+upiuatmaster3.onlinesbi.com    Ready     master    16d       v1.11.0+d4cacc0
