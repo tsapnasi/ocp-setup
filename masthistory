@@ -1,0 +1,375 @@
+ifconfig
+df -h
+pvs
+df -h
+cat /etc/fstab 
+cd /etc/sysconfig/network-scripts/
+ls -ltr
+vi ifcfg-ens192 
+ifconfig
+vi ifcfg-ens192 
+service network restart
+ifconfig
+cat ifcfg-ens192 
+vi ifcfg-ens192 
+service network restart
+ifconfig
+ifdown ens192
+ifup ens192
+ifconfig
+cat /etc/fstab 
+df -h
+ssh root@10.209.75.180
+cat /etc/fstab 
+fdisk -l
+df -h
+hostnamectl upiuatmaster1.onlinesbi.com 
+hostnamectl set-hostname upiuatmaster1.onlinesbi.com 
+exit
+f -h 
+df -h 
+10.209.75.179
+clear
+exit
+cat /etc/fstab 
+exit
+hostname
+hostnamectl 
+subscription-manager register --username=sbi_ocp@redhat.com  --password=Sbi@12345
+exit
+vi proxy.sh
+chmod 755 proxy.sh 
+./proxy.sh 
+vi proxy.sh 
+sed -i 's/proxy_hostname =/proxy_hostname = 10.191.132.21/g' /etc/rhsm/rhsm.conf
+cat proxy.sh 
+sed -i 's/proxy_port =/proxy_port = 9090/g' /etc/rhsm/rhsm.conf
+echo "proxy=https://10.191.132.21:9090" >> /etc/yum.conf"
+echo "proxy=https://10.191.132.21:9090" >> /etc/yum.conf
+vi proxy.sh 
+subscription-manager register --username=sbi_ocp@redhat.com  --password=Sbi@12345
+subscription-manager register
+subscription-manager --list
+subscription-manager --list attach
+subscription-manager list --available --pool-only
+subscription-manager repos --disable="*"
+clear
+subscription-manager repos --enable={rhel-7-server-rpms,rhel-7-server-extras-rpms,rhel-7-server-ose-3.11-rpms,rhel-7-server-ansible-2.6-rpms}
+yum repolist all
+cat /etc/yum.conf 
+exit
+ls
+cat /etc/yum.conf 
+yum repolist all
+kill -9 7864
+ls
+rm yum
+clear
+yum repolist all
+vi /etc/yum.conf 
+yum repolist all
+kill -9  7913
+subscription-manager --help
+subscription-manager list
+vi /etc/rhsm/rhsm.conf 
+subscription-manager list
+yum repolist all
+clear
+cat /etc/rhsm/rhsm.conf 
+cat /etc/yum.conf 
+clear
+subscription-manager repos --disable="*"
+subscription-manager repos --enable={rhel-7-server-rpms,rhel-7-server-extras-rpms,rhel-7-server-ose-3.11-rpms,rhel-7-server-ansible-2.6-rpms}
+yum -y update && yum -y install wget git net-tools bind-utils yum-utils iptables-services bridge-utils bash-completion kexec-tools sos psacct openshift-ansible
+fdisk -l 
+ls
+clear
+exit
+cd /tmp/
+ls
+fdisk -l
+cat docker-storage.sh 
+ls
+./docker-storage.sh 
+exit
+ifconfig 
+ifconfig
+exit
+oc projects
+exit
+oc 
+pwd
+cd ocp
+ls
+pwd
+cd ocp
+pwd
+exit
+fdisk -l | grep GB
+lscpu
+free -g
+ssh root@10.209.75.180
+cat /etc/fstab 
+IP R L
+ip r l
+lscpu 
+free -g
+fdisk -l | grep GB
+hostname
+docker ps
+ps -a
+docker ps -a
+
+oc projects
+docker ps -aef
+df -h
+lsblk
+df -hP
+fdisk -l | grep "GB"
+ifconfig
+df -h
+fdisk -l | grep -i GB
+PVS
+pvs
+df -h
+cat /etc/fstab 
+df -h
+pvs
+fdisk /dev/sdc
+partprobe /dev/sdc1
+pvcreate /dev/sdc1
+pvs
+vgextend rhel /dev/sdc1
+vgs
+df -h
+lvresize --resize --size +7G /dev/mapper/rhel-root 
+df -h
+lvresize --resize --size +80G /dev/mapper/rhel-var 
+df -h
+history 
+ssh root@10.209.75.180
+ip r l
+ssh root@10.209.75.180
+ifconfig 
+df -h
+cd /home/
+ll
+vi ping.sh
+vi ping.txt
+chmod +x ping.sh 
+./ping.sh 
+ifconfig 
+clear
+PVS
+pvs
+df -h
+lscpu
+free -g
+ssh root@10.209.75.180
+cd .ssh/
+ls -lta
+cd
+fdisk -l
+set history=50000
+history
+wget google.co.in
+exit
+docker images
+exit
+docker images
+exit
+docker ps
+docker ps -a
+exit
+oc whoami
+oc get projects
+oc get nodes
+journalctl -xe
+docker ps
+exit
+cd /etc/
+ls
+cd /etc/origin/master/
+ls
+cat master-config.yaml 
+vi master-config.yaml 
+ls
+cd
+cleaer
+clear
+oc get nodes
+systemctl status atomic-openshift-node.service 
+docker images
+docker pull registry.redhat.io/openshift3/ose-node:v3.11.104
+docker pull registry.redhat.io/openshift3/ose-control-plane:v3.11.104
+docker pull registry.redhat.io/openshift3/ose-node:v3.11.104
+docker pull registry.redhat.io/openshift3/ose-web-console:v3.11.104
+docker ps
+docker images
+exit
+curl registry.redhat.io
+curl -v GET https://access.redhat.com/
+curl -v -x https://access.redhat.com/
+curl -v -x GET https://access.redhat.com/
+curl -v telnet://cdn.redhat.com:443
+systemctl firewalld status
+systemctl status firewalld
+systemctl stop firewalld
+systemctl disable firewalld
+curl -v telnet://cdn.redhat.com:443
+
+systemctl status firewalld
+curl -Is https://cdn.redhat.com:443
+
+curl -v telnet://cdn.redhat.com:443
+curl -v telnet:\\cdn.redhat.com:443
+curl -v telnet://cdn.redhat.com:443
+netstat -ant | grep -i :443
+netstat -ant | grep -i :22
+netstat -ant | grep -i :443
+
+systemctl start firewalld
+systemctl enable firewalld
+netstat -ant | grep -i :443
+netstat -ant | grep -i :22
+netstat -ant | grep -i :443
+netstat -ant | grep -i :22
+netstat -ant | grep -i :443
+curl -v telnet:\\cdn.redhat.com:443
+ifconfig
+curl -v telnet://10.191.132.21:9090
+curl -v GET https://access.redhat.com
+ssh root@10.209.75.188
+cd /etc/dnsmasq.d/
+ls
+cat origin-
+cat origin-upstream-dns.conf 
+systemctl status dnsmasq.service
+nslookup upiuatmaster1
+nslookup upiuatmaster2
+nslookup upiuatmaster3
+nslookup upiuatlb
+ls
+cd
+init 6
+docker pull registry.redhat.io/openshift3/ose-deployer:v3.11.104
+docker pull  registry.redhat.io/openshift3/registry-console:v3.11.104
+cat /root/.docker/config.json 
+docker pull registry.redhat.io/openshift3/ose-pod:v3.11.104
+docker pull registry.redhat.io/openshift3/registry-console:v3.11.104
+exit
+systemctl status docker
+systemctl status dnsmasq
+systemctl status atomic-openshift-node.service 
+systemctl status NetworkManager
+cat /etc/sysconfig/network-scripts/ifcfg-ens192 
+hostname
+nslookup upiuatmaster1.onlinesbi.com
+ip addr
+vi /etc/sysconfig/network-scripts/ifcfg-ens192 
+systemctl restart network
+systemctl status network
+nslookup upiuatmaster1.onlinesbi.com
+nslookup upiuatlb.onlinesbi.com
+clear
+systemctl status dnsmasq.service 
+nslookup $(hostname)
+nslookup $(hostname -i)
+exit
+vi /etc/hosts
+exit
+nslookup upiuatmaster1.onlinesbi.com
+nslookup 10.209.75.179
+cat /etc/hosts
+cat /tmp/hosts_only >> /etc/hosts
+cat /etc/hosts
+exit
+cat /etc/hosts
+exit
+df -h
+lsblk
+pvs
+vgs
+lvs
+lvdisplay
+df -h
+cat /etc/fstab
+df -h
+history
+cat /etc/dnsmasq.d/origin-upstream-dns.conf 
+systemctl status dnsmasq.service
+nslookup upiuatmaster1
+cat /etc/sysconfig/network-scripts/ifcfg-ens192
+df -h
+nslookup upiuatmaster2
+nslookup upiuatmaster3
+ls -ltr
+cd /
+ls -ltr
+df -h
+lsblk
+df -h
+history | grep -i docker
+systemctl status docker
+df -h
+history | grep -i docker
+history
+subscription-manager --list
+subscription-manager list --available --pool-only
+df -h
+
+subscription-manager --list
+yum repolist all
+history
+df -h
+pvs
+cd /var/lib/docker
+ls -ltr
+cd containers/
+ls -ltr
+cd ..
+cd devicemapper/
+ls -ltr
+pwd
+cd
+df -h
+netstat -anu| grep -i :4789
+netstat -anu| grep -i :53
+netstat -anu| grep -i :8053
+netstat -anu| grep -i :443
+netstat -ant| grep -i :443
+netstat -ant| grep -i :8443
+date
+ntpq -p
+history
+locate docker
+locate docker-storage.sh
+locate docker-storage
+cat /etc/rhsm/rhsm.conf
+cat /root/.docker/config.json 
+cat /etc/hosts
+cat /tmp/hosts_only
+df -h
+cd /var/lib/docker/devicemapper/mnt/
+ls -ltr
+ls -ltr |wc -l
+cd
+df -h
+ifconfig 
+cat /etc/fstab
+df -h
+cd /home/
+ll
+./ping.sh 
+vi ping.sh 
+clear
+cd 
+df -h
+ifconfig 
+cd /home/
+ll
+vi uptime.sh
+vi serverlist.txt
+vi uptime.sh 
+chmod +x uptime.sh 
+clear
