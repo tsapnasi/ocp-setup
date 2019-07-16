@@ -1,0 +1,4 @@
+Using project "sbigconsuat" on server "https://upiuatmaster1.onlinesbi.com:8443".
+[root@upiuatmaster1 gcons]# oc delete dc gcons
+deploymentconfig.apps.openshift.io "gcons" deleted
+[root@upiuatmaster1 gcons]#
