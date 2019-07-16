@@ -116,5 +116,47 @@ Login Succeeded
 [root@upiuatmaster1 gcons]#
 
 
+[root@upiuatmaster1 gcons]# oc projects
+You have access to the following projects and can switch between them with 'oc project <projectname>':
+
+    cicd-ocpadmin - CI/CD
+    default
+    dev-ocpadmin - Tasks - Dev
+    kube-public
+    kube-service-catalog
+    kube-system
+    management-infra
+    openshift
+    openshift-ansible-service-broker
+    openshift-console
+    openshift-infra
+    openshift-logging
+    openshift-metrics-server
+    openshift-monitoring
+    openshift-node
+    openshift-sdn
+    openshift-template-service-broker
+    openshift-web-console
+    sbigconstest
+  * sbigconsuat
+    sbiupidemo
+    sbiupisit
+    sbiupiuat
+    stage-ocpadmin - Tasks - Stage
+    testcicd
+
+Using project "sbigconsuat" on server "https://upiuatmaster1.onlinesbi.com:8443".
+[root@upiuatmaster1 gcons]# docker login docker-registry.default.svc:5000 -u $(oc whoami) -p $(oc whoami -t)
+Login Succeeded
+[root@upiuatmaster1 gcons]# ^C
+[root@upiuatmaster1 gcons]# docker push docker-registry.default.svc:5000/sbigconsuat/gcons:v1
+The push refers to a repository [docker-registry.default.svc:5000/sbigconsuat/gcons]
+8b47f96841df: Pushed
+5a54b5648818: Layer already exists
+614abdb6064c: Layer already exists
+7c3e45609beb: Layer already exists
+v1: digest: sha256:6240ba6ba428a2309b968e86fd65ce68bdb2fea34360555e29145e99fb5b6053 size: 1162
+[root@upiuatmaster1 gcons]#
+
 
 
