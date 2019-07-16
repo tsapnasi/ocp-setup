@@ -1,0 +1,10 @@
+Microsoft Windows [Version 10.0.16299.1087]
+(c) 2017 Microsoft Corporation. All rights reserved.
+
+C:\Users\RH00079362>nslookup hawkular-metrics.cloudapps.onlinesbi.com
+Server:  corpchilddc11.corp.ad.sbi
+Address:  10.0.239.236
+
+*** corpchilddc11.corp.ad.sbi can't find hawkular-metrics.cloudapps.onlinesbi.com: Non-existent domain
+
+C:\Users\RH00079362>
