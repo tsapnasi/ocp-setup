@@ -1,0 +1,32 @@
+
+
+docker tag gcons docker-registry.default.svc:5000/sbigconstest/gconsapp:v1
+
+docker push docker-registry.default.svc:5000/sbigconstest/gconsapp:v1
+
+
+
+--> Found Docker image 1e239fb (3 days old) from  for "gconsapp:latest"
+
+    Java Applications
+    -----------------
+    Platform for building and running plain Java applications (fat-jar and flat classpath)
+
+    Tags: builder, java
+
+    * This image will be deployed in deployment config "gconsapp"
+    * Ports 8080/tcp, 8443/tcp, 8778/tcp will be load balanced by service "gconsapp"
+      * Other containers can access this service through the hostname "gconsapp"
+
+--> Creating resources ...
+    deploymentconfig.apps.openshift.io "gconsapp" created
+    service "gconsapp" created
+--> Success
+    Application is not exposed. You can expose services to the outside world by executing one or more of the commands below:
+     'oc expose svc/gconsapp'
+    Run 'oc status' to view your app.
+[root@upiuatmaster1 gcons]#
+
+
+
+
