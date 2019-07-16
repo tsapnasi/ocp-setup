@@ -53,6 +53,68 @@ Successfully built 1e239fbc3c1a
 [root@upiuatmaster1 gcons]# docker tag gcons docker-registry.default.svc:5000/sbigconsuat/gcons:v1
 [root@upiuatmaster1 gcons]#
 
+docker push docker-registry.default.svc:5000/sbigconsuat/gcons:v1
+
+
+[root@upiuatmaster1 gcons]# docker push docker-registry.default.svc:5000/sbigconsuat/gcons:v1
+The push refers to a repository [docker-registry.default.svc:5000/sbigconsuat/gcons]
+8b47f96841df: Preparing
+5a54b5648818: Preparing
+614abdb6064c: Preparing
+7c3e45609beb: Preparing
+unauthorized: authentication required
+[root@upiuatmaster1 gcons]#
+
+\
+
+
+
+
+[root@upiuatmaster1 gcons]# oc project sbigconsuat
+Now using project "sbigconsuat" on server "https://upiuatmaster1.onlinesbi.com:8443".
+[root@upiuatmaster1 gcons]# oc projets
+Error: unknown command "projets" for "oc"
+
+Did you mean this?
+        process
+        project
+        projects
+
+Run 'oc --help' for usage.
+[root@upiuatmaster1 gcons]# oc projects
+You have access to the following projects and can switch between them with 'oc project <projectname>':
+
+    cicd-ocpadmin - CI/CD
+    default
+    dev-ocpadmin - Tasks - Dev
+    kube-public
+    kube-service-catalog
+    kube-system
+    management-infra
+    openshift
+    openshift-ansible-service-broker
+    openshift-console
+    openshift-infra
+    openshift-logging
+    openshift-metrics-server
+    openshift-monitoring
+    openshift-node
+    openshift-sdn
+    openshift-template-service-broker
+    openshift-web-console
+    sbigconstest
+  * sbigconsuat
+    sbiupidemo
+    sbiupisit
+    sbiupiuat
+    stage-ocpadmin - Tasks - Stage
+    testcicd
+
+Using project "sbigconsuat" on server "https://upiuatmaster1.onlinesbi.com:8443".
+[root@upiuatmaster1 gcons]# docker login docker-registry.default.svc:5000 -u $(oc whoami) -p $(oc whoami -t)
+Login Succeeded
+[root@upiuatmaster1 gcons]#
+
 
 
 
