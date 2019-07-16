@@ -23,3 +23,29 @@ Address:  10.0.239.236
 
 *** corpchilddc11.corp.ad.sbi can't find kibana.cloudapps.onlinesbi.com: Non-existent domain
 
+
+
+[root@upiuatmaster1 ocp]# cd gcons
+[root@upiuatmaster1 gcons]# ls
+docker-compose.yaml  Dockerfile  recon-engine-service-taskmanager-1.0.0.jar  recon_secrets.json
+[root@upiuatmaster1 gcons]# cat Dockerfile
+FROM registry.redhat.io/openjdk/openjdk-8-rhel8
+WORKDIR /
+ADD recon-engine-service-taskmanager-1.0.0.jar recon-engine-service-taskmanager-1.0.0.jar
+CMD ["java","-jar","recon-engine-service-taskmanager-1.0.0.jar"]
+[root@upiuatmaster1 gcons]# docker build -t gcons .
+Sending build context to Docker daemon 43.13 MB
+Step 1/4 : FROM registry.redhat.io/openjdk/openjdk-8-rhel8
+ ---> 74ed141057b4
+Step 2/4 : WORKDIR /
+ ---> Using cache
+ ---> 3f8f87409b9f
+Step 3/4 : ADD recon-engine-service-taskmanager-1.0.0.jar recon-engine-service-taskmanager-1.0.0.jar
+ ---> Using cache
+ ---> aa14d701501d
+Step 4/4 : CMD java -jar recon-engine-service-taskmanager-1.0.0.jar
+ ---> Using cache
+ ---> 1e239fbc3c1a
+Successfully built 1e239fbc3c1a
+[root@upiuatmaster1 gcons]#
+
