@@ -1,0 +1,1549 @@
+upi                                                                          v1                  8fbf86b308a3        7 days ago          606 MB
+docker-registry.default.svc:5000/upi/upiservice                              latest              8fbf86b308a3        7 days ago          606 MB
+docker-registry.default.svc:5000/upi/upi                                     <none>              8fbf86b308a3        7 days ago          606 MB
+docker-registry.default.svc:5000/test/upiuat3                                latest              69f2e322f468        7 days ago          606 MB
+upiuat                                                                       3                   69f2e322f468        7 days ago          606 MB
+docker-registry.default.svc:5000/test/upiuat2                                latest              26f161d3c57a        7 days ago          605 MB
+docker-registry.default.svc:5000/test/upiuat                                 latest              26f161d3c57a        7 days ago          605 MB
+upiuat                                                                       2                   26f161d3c57a        7 days ago          605 MB
+upiuat                                                                       1                   2db1f63f81ba        7 days ago          605 MB
+docker-registry.default.svc:5000/openshift/upiuat                            latest              93e1c9c14b2f        7 days ago          605 MB
+docker-registry.default.svc:5000/test/upiuat                                 1                   93e1c9c14b2f        7 days ago          605 MB
+docker-registry.default.svc:5000/upiuat                                      latest              93e1c9c14b2f        7 days ago          605 MB
+upiuat                                                                       latest              93e1c9c14b2f        7 days ago          605 MB
+docker-registry.default.svc:5000/openshift/postgresql                        9.5                 ed9cfea73df2        2 weeks ago         374 MB
+registry.redhat.io/rhel8/postgresql-96                                       latest              ed9cfea73df2        2 weeks ago         374 MB
+registry.redhat.io/openjdk/openjdk-8-rhel8                                   latest              74ed141057b4        2 weeks ago         484 MB
+docker-registry.default.svc:5000/openshift/openjdk18-openshift               latest              c130ff0b929a        3 weeks ago         476 MB
+registry.access.redhat.com/redhat-openjdk-18/openjdk18-openshift             latest              c130ff0b929a        3 weeks ago         476 MB
+docker-registry.default.svc:5000/dev-admin/wildfly                           latest              c1f14222d62c        4 weeks ago         1.17 GB
+docker-registry.default.svc:5000/dev-ocpadmin/wildfly                        latest              c1f14222d62c        4 weeks ago         1.17 GB
+docker.io/openshift/wildfly-120-centos7                                      latest              c1f14222d62c        4 weeks ago         1.17 GB
+docker-registry.default.svc:5000/dev-admin/wildfly-120-centos7               latest              c1f14222d62c        4 weeks ago         1.17 GB
+docker-registry.default.svc:5000/openshift/mysql-57-rhel7                    latest              be3a82ac9dda        6 weeks ago         431 MB
+registry.access.redhat.com/rhscl/mysql-57-rhel7                              latest              be3a82ac9dda        6 weeks ago         431 MB
+registry.access.redhat.com/openshift3/jenkins-slave-maven-rhel7              latest              65752fed4ed8        6 weeks ago         1.88 GB
+docker-registry.default.svc:5000/openshift/jenkins                           2                   a44e1a46ef08        6 weeks ago         2.01 GB
+registry.redhat.io/openshift3/jenkins-2-rhel7                                latest              a44e1a46ef08        6 weeks ago         2.01 GB
+registry.redhat.io/openshift3/ose-node                                       v3.11               be8a09b5514c        7 weeks ago         1.97 GB
+registry.redhat.io/openshift3/ose-node                                       v3.11.104           be8a09b5514c        7 weeks ago         1.97 GB
+registry.redhat.io/openshift3/ose-control-plane                              v3.11               c33fa4c530a3        7 weeks ago         1.6 GB
+registry.redhat.io/openshift3/ose-control-plane                              v3.11.104           c33fa4c530a3        7 weeks ago         1.6 GB
+docker-registry.default.svc:5000/openshift/ose-deployer                      v3.11.104           1500740029de        7 weeks ago         1.16 GB
+registry.redhat.io/openshift3/ose-deployer                                   v3.11.104           1500740029de        7 weeks ago         1.16 GB
+registry.redhat.io/openshift3/ose-console                                    v3.11.104           6e555a73ff6e        7 weeks ago         1.05 GB
+docker-registry.default.svc:5000/openshift/ose-pod                           v3.11.104           6759d8752074        7 weeks ago         1.03 GB
+registry.redhat.io/openshift3/ose-pod                                        v3.11               6759d8752074        7 weeks ago         1.03 GB
+registry.redhat.io/openshift3/ose-pod                                        v3.11.104           6759d8752074        7 weeks ago         1.03 GB
+registry.redhat.io/openshift3/ose-service-catalog                            v3.11.104           410f55e8c706        7 weeks ago         1.1 GB
+registry.redhat.io/openshift3/ose-web-console                                v3.11.104           4c147a14b66f        7 weeks ago         1.12 GB
+registry.redhat.io/openshift3/ose-kube-rbac-proxy                            v3.11.104           cdfa9d0da060        7 weeks ago         1.06 GB
+registry.redhat.io/openshift3/ose-template-service-broker                    v3.11.104           e0f28a2f2555        7 weeks ago         1.11 GB
+registry.redhat.io/openshift3/ose-logging-fluentd                            v3.11.104           56eef41ced15        7 weeks ago         1.08 GB
+registry.redhat.io/openshift3/registry-console                               v3.11.104           38a5af0ed6c5        7 weeks ago         1.03 GB
+registry.redhat.io/openshift3/prometheus-node-exporter                       v3.11.104           0f508556d522        7 weeks ago         1.02 GB
+registry.access.redhat.com/jboss-webserver-3/webserver31-tomcat8-openshift   latest              c303ee1e1273        2 months ago        546 MB
+registry.redhat.io/jboss-webserver-3/webserver31-tomcat8-openshift           latest              c303ee1e1273        2 months ago        546 MB
+docker-registry.default.svc:5000/openshift/webserver31-tomcat8-openshift     latest              c303ee1e1273        2 months ago        546 MB
+registry.redhat.io/rhel7/etcd                                                3.2.22              d636cc8689ea        2 months ago        259 MB
+docker-registry.default.svc:5000/openshift/airroute                          v1                  c2addc3b397a        6 months ago        256 MB
+docker.io/giriraj789/airroute                                                v1                  c2addc3b397a        6 months ago        256 MB
+docker-registry.default.svc:5000/openshift/sonarqube                         latest              b568b3299776        8 months ago        1.16 GB
+docker.io/siamaksade/sonarqube                                               latest              b568b3299776        8 months ago        1.16 GB
+docker-registry.default.svc:5000/cicd-ocpadmin/nexus                         3.13.0              777b20c20405        10 months ago       505 MB
+docker-registry.default.svc:5000/openshift/nexus3                            3.13.0              777b20c20405        10 months ago       505 MB
+docker.io/sonatype/nexus3                                                    3.13.0              777b20c20405        10 months ago       505 MB
+docker-registry.default.svc:5000/openshift/nodejs-4-rhel7                    latest              a8fd5c530c44        14 months ago       533 MB
+registry.access.redhat.com/rhscl/nodejs-4-rhel7                              latest              a8fd5c530c44        14 months ago       533 MB
+docker-registry.default.svc:5000/openshift/php-56-rhel                       latest              520f0e9ceee7        15 months ago       581 MB
+registry.access.redhat.com/rhscl/php-56-rhel7                                latest              520f0e9ceee7        15 months ago       581 MB
+docker-registry.default.svc:5000/openshift/gogs                              0.11.34             d44302ef5b2f        16 months ago       449 MB
+docker.io/openshiftdemos/gogs                                                0.11.34             d44302ef5b2f        16 months ago       449 MB
+[root@upiuatmaster1 gcons]# clear
+[root@upiuatmaster1 gcons]#
+[root@upiuatmaster1 gcons]# docker tag gcons docker-registry.default.svc:5000/sbigconsuat/gcons:v1
+[root@upiuatmaster1 gcons]# ^C
+[root@upiuatmaster1 gcons]# docker push docker-registry.default.svc:5000/sbigconsuat/gcons:v1
+The push refers to a repository [docker-registry.default.svc:5000/sbigconsuat/gcons]
+8b47f96841df: Preparing
+5a54b5648818: Preparing
+614abdb6064c: Preparing
+7c3e45609beb: Preparing
+unauthorized: authentication required
+[root@upiuatmaster1 gcons]# ^C
+[root@upiuatmaster1 gcons]# docker login docker-registry.default.svc:5000 -u $(oc whoami) -p $(oc whoami -t)
+error: You must be logged in to the server (Unauthorized)
+"docker login" requires at most 1 argument(s).
+See 'docker login --help'.
+
+Usage:  docker login [OPTIONS] [SERVER]
+
+Log in to a Docker registry
+[root@upiuatmaster1 gcons]# docker login docker-registry.default.svc:5000 -u $(oc whoami) -p $(oc whoami -t)
+error: You must be logged in to the server (Unauthorized)
+"docker login" requires at most 1 argument(s).
+See 'docker login --help'.
+
+Usage:  docker login [OPTIONS] [SERVER]
+
+Log in to a Docker registry
+[root@upiuatmaster1 gcons]# oc login
+Authentication required for https://upiuatmaster1.onlinesbi.com:8443 (openshift)
+Username: ocpadmin
+Password:
+Login successful.
+
+You have access to the following projects and can switch between them with 'oc project <projectname>':
+
+    cicd-ocpadmin
+    default
+    dev-ocpadmin
+    kube-public
+    kube-service-catalog
+    kube-system
+    management-infra
+    openshift
+    openshift-ansible-service-broker
+    openshift-console
+    openshift-infra
+    openshift-logging
+    openshift-metrics-server
+    openshift-monitoring
+    openshift-node
+    openshift-sdn
+    openshift-template-service-broker
+    openshift-web-console
+    sbigconstest
+    sbigconsuat
+  * sbiupidemo
+    sbiupisit
+    sbiupiuat
+    stage-ocpadmin
+    testcicd
+
+Using project "sbiupidemo".
+[root@upiuatmaster1 gcons]# oc project sbigconsuat
+Now using project "sbigconsuat" on server "https://upiuatmaster1.onlinesbi.com:8443".
+[root@upiuatmaster1 gcons]# oc projets
+Error: unknown command "projets" for "oc"
+
+Did you mean this?
+        process
+        project
+        projects
+
+Run 'oc --help' for usage.
+[root@upiuatmaster1 gcons]# oc projects
+You have access to the following projects and can switch between them with 'oc project <projectname>':
+
+    cicd-ocpadmin - CI/CD
+    default
+    dev-ocpadmin - Tasks - Dev
+    kube-public
+    kube-service-catalog
+    kube-system
+    management-infra
+    openshift
+    openshift-ansible-service-broker
+    openshift-console
+    openshift-infra
+    openshift-logging
+    openshift-metrics-server
+    openshift-monitoring
+    openshift-node
+    openshift-sdn
+    openshift-template-service-broker
+    openshift-web-console
+    sbigconstest
+  * sbigconsuat
+    sbiupidemo
+    sbiupisit
+    sbiupiuat
+    stage-ocpadmin - Tasks - Stage
+    testcicd
+
+Using project "sbigconsuat" on server "https://upiuatmaster1.onlinesbi.com:8443".
+[root@upiuatmaster1 gcons]# docker login docker-registry.default.svc:5000 -u $(oc whoami) -p $(oc whoami -t)
+Login Succeeded
+[root@upiuatmaster1 gcons]# ^C
+[root@upiuatmaster1 gcons]# docker push docker-registry.default.svc:5000/sbigconsuat/gcons:v1
+The push refers to a repository [docker-registry.default.svc:5000/sbigconsuat/gcons]
+8b47f96841df: Pushed
+5a54b5648818: Layer already exists
+614abdb6064c: Layer already exists
+7c3e45609beb: Layer already exists
+v1: digest: sha256:6240ba6ba428a2309b968e86fd65ce68bdb2fea34360555e29145e99fb5b6053 size: 1162
+[root@upiuatmaster1 gcons]# ^C
+[root@upiuatmaster1 gcons]# oc new-app gcons:v1
+--> Found image 1e239fb (3 days old) in image stream "sbigconsuat/gcons" under tag "v1" for "gcons:v1"
+
+    Java Applications
+    -----------------
+    Platform for building and running plain Java applications (fat-jar and flat classpath)
+
+    Tags: builder, java
+
+    * This image will be deployed in deployment config "gcons"
+    * Ports 8080/tcp, 8443/tcp, 8778/tcp will be load balanced by service "gcons"
+      * Other containers can access this service through the hostname "gcons"
+
+--> Creating resources ...
+    error: deploymentconfigs.apps.openshift.io "gcons" already exists
+    error: services "gcons" already exists
+--> Failed
+[root@upiuatmaster1 gcons]# oc new-app gconsdemo:v1
+W0716 16:27:20.614046  123370 dockerimagelookup.go:233] Docker registry lookup failed: Get https://registry-1.docker.io/v2/: dial tcp: lookup registry-1.docker.io on 10.209.75.179:53: server misbehaving
+error: multiple images or templates matched "gconsdemo:v1"
+
+Argument 'gconsdemo:v1' was classified as an image, image~source, or loaded template reference.
+
+The argument "gconsdemo:v1" could apply to the following Docker images, OpenShift image streams, or templates:
+
+* Docker image "docker-registry.default.svc:5000/sbigconstest/gcons:v1", 1e239fb, from local, 502.550mb
+  Use --docker-image="docker-registry.default.svc:5000/sbigconstest/gcons:v1" to specify this image or template
+
+* Docker image "docker-registry.default.svc:5000/sbigconsuat/gcons:v1", 1e239fb, from local, 502.550mb
+  Use --docker-image="docker-registry.default.svc:5000/sbigconsuat/gcons:v1" to specify this image or template
+
+* Docker image "gcons:latest", 1e239fb, from local, 502.550mb
+  Use --docker-image="gcons:latest" to specify this image or template
+
+[root@upiuatmaster1 gcons]# history|more
+   21   GOGS_SVC=$(oc get svc gogs -o template --template='{{.spec.clusterIP}}')
+   22              GOGS_USER=gogs
+   23              GOGS_PWD=gogs
+   24              oc rollout status dc gogs
+   25  exit
+   26  ls -ltr
+   27  cd ocp/cicd/openshift-cd-demo-ocp-3.11/scripts/
+   28  ls -ltr
+   29  vi provision.sh
+   30  ./provision.sh --ephemeral true deploy
+   31  ./provision.sh deploy --ephemeral true
+   32  ./provision.sh delete
+   33  ./provision.sh deploy --ephemeral true
+   34  oc get pods
+   35  oc logs cicd-demo-installer-vzg4t
+   36  oc get pods
+   37  oc logs cicd-demo-installer-vzg4t
+   38  cat /root/ocp/cicd/openshift-cd-demo-ocp-3.11/gogs-template.yaml
+   39  cd ..
+   40  ls -ltr
+   41  cd ..
+   42  chmod 777 -R openshift-cd-demo-ocp-3.11
+   43  cd openshift-cd-demo-ocp-3.11/
+   44  ls -ltr
+   45  cd scripts/
+   46  ./provision.sh delete
+   47  ./provision.sh deploy --ephemeral true
+   48  oc get pods
+   49  oc logs cicd-demo-installer-nvwhx
+   50  oc copy --help
+   51  oc cp
+   52  oc get pods -w
+   53  oc logs cicd-demo-installer-crq54
+   54  oc import-image wildfly --from=openshift/wildfly-120-centos7 --confirm -n dev-ocpadmin
+   55  oc get os
+   56  oc get is
+   57  oc project dev-ocpadmin
+   58  oc get is
+   59   HOSTNAME=$(oc get route jenkins -o template --template='{{.spec.host}}' | sed "s/jenkins-${CICD_NAMESPACE}.//g")
+   60  oc get is -n openshift | grep jenkins
+   61  Bash
+   62  oc import-image jenkins:2 --from=registry.redhat.io/openshift3/jenkins-2-rhel7 --confirm -n openshift
+   63  Bash
+   64  oc import-image openshift3/jenkins-2-rhel7 --from=registry.redhat.io/openshift3/jenkins-2-rhel7 --confirm -n openshift
+   65  docker pull registry.redhat.io/openshift3/jenkins-2-rhel7
+   66  cat /etc/resolv.conf
+   67  env
+   68  env | grep proxy
+   69  cat /etc/sysconfig/docker
+   70  HTTP_PROXY=http://10.191.132.21:9090
+   71  HTTPS_PROXY=http://10.191.132.21:9090
+   72  NO_PROXY=docker-registry.default.svc.cluster.local,172.30.102.208,upiuatmaster1.onlinesbi.com,upiuatmaster2.onlinesbi.com,upiuatmaster3.onlinesbi.com,docker-registry.default.svc,*.onlinesbi.com
+   73  oc import-image openshift3/jenkins-2-rhel7 --from=registry.redhat.io/openshift3/jenkins-2-rhel7 --confirm -n openshift
+   74  echo $HTTP_PROXY
+   75  http_proxy=http://10.191.132.21:9090
+   76  export https_proxy=http://10.191.132.21:9090
+   77  export http_proxy=http://10.191.132.21:9090
+   78  export NO_PROXY=docker-registry.default.svc.cluster.local,172.30.102.208,upiuatmaster1.onlinesbi.com,upiuatmaster2.onlinesbi.com,upiuatmaster3.onlinesbi.com,docker-registry.default.svc,*.onlinesbi.com
+   79  export HTTPS_PROXY=http://10.191.132.21:9090
+   80  export HTTP_PROXY=http://10.191.132.21:9090
+   81  oc import-image openshift3/jenkins-2-rhel7 --from=registry.redhat.io/openshift3/jenkins-2-rhel7 --confirm -n openshift
+   82  nslookup registry.redhat.io
+   83  cat /etc/hosts
+   84  docker images
+   85  docker images | grep jenkins
+   86  oc get is -n openshift| grep jenkins
+   87  docker tag registry.redhat.io/openshift3/jenkins-2-rhel7 docker-registry.default.svc:5000/openshift/jenkins:2
+   88  docker push docker-registry.default.svc:5000/openshift/jenkins:2 -n openshift
+   89  docker push docker-registry.default.svc:5000/openshift/jenkins:2
+   90  oc get is
+   91  oc get is -n openshift
+   92  oc get is -n openshift | grep jenkins
+   93  oc delete is jenkins jenkins-2-rhel7 -n openshift
+   94  oc project default
+   95  oc get dc
+   96  oc rollback dc/docker-registry
+   97  oc get dc
+   98  oc rollback dc/docker-registry
+   99  history | grep jenkins
+  100  docker push docker-registry.default.svc:5000/openshift/jenkins:2
+  101  cd /root/ocp/
+  102  cd cicd/openshift-cd-demo-ocp-3.11/
+  103  ls -ltr
+  104  vi nexus-functions.yaml
+  105  pwd
+  106  /root/ocp/cicd/openshift-cd-demo-ocp-3.11
+  107  vi nexus3-template.yaml
+  108  cp nexus-functions.yaml nexus-functions
+  109  ls -ltr
+  110  oc project cicd-ocpadmin
+  111  oc get all
+  112  oc delete all --app=nexus
+  113  oc delete all --selector app=nexus
+  114  oc new-app -f nexus3-template.yaml
+  115  oc rollback dc/docker-registry -n default
+  116  oc rollback dc/docker-registry --to-revision=1 -n default
+  117  history | grep revision
+  118  oc rollout dc/docker-registry --revision=1
+  119  oc rollout latest dc/docker-registry --revision=1
+  120  oc rollout dc/docker-registry --revision=1
+  121  history | grep revision
+  122   oc rollout latest dc/docker-registry --revision=1
+  123  oc rollout --help
+  124  oc rollback
+  125  oc rollback --help
+  126  oc rollback docker-registry --to-version=3
+  127  oc rollback docker-registry --to-version=1
+  128  oc rollback docker-registry --to-version=1 -n default
+  129  oc project default
+  130  oc get pvc
+  131   oc set volume deploymentconfigs/docker-registry --add --name=registry-storage -t pvc --claim-name=reg-claim --overwrite
+  132  exit
+  133  docker images
+  134  docker images | grep nexus
+  135  docker push docker-registry.default.svc:5000/openshift/nexus3:3.13.0
+  136  oc project default
+  137  oc get scc
+  138  oc adm policy add-scc-to-user restricted system:serviceaccount:default:registry
+  139  oc adm policy remove-scc-from-user privileged system:serviceaccount:default:registry
+  140  oc rollout latest docker-registry
+  141   oc rollout latest dc/docker-registry --revision=1
+  142  history | grep revision
+  143  oc rollout dc/docker-registry --revision=1
+  144  oc rollback dc/docker-registry --to-revision=1 -n default
+  145  history
+  146  oc rollback docker-registry --to-version=1 -n default
+  147  oc project default
+  148  oc rollback docker-registry --to-version=1
+  149  oc rollback dc/docker-registry --to-version=1
+  150  oc get dc
+  151  oc rollback dc/docker-registry --to-version=2
+  152  oc rollback dc/docker-registry --to-version=4
+  153  oc rollback dc/docker-registry --to-version=5
+  154  oc rollback dc/docker-registry --to-version=10
+  155  oc rollback dc/docker-registry --to-version=12
+  156  oc rollback dc/docker-registry --to-version=18
+  157  oc rollback dc/docker-registry --to-version=16
+  158  oc rollback dc/docker-registry --to-version=10
+  159  oc rollback dc/docker-registry --to-version=19
+  160  oc rollback dc/docker-registry
+  161  oc rollout latest  dc/docker-registry
+  162  exit
+  163  oc edit dc/docker-registry -oyaml
+  164  oc set volume deploymentconfigs/docker-registry --add --name=registry-storage -t emptyDir= {}
+  165  oc set volume deploymentconfigs/docker-registry --add --name=registry-storage -t emptyDir
+  166  oc set volume deploymentconfigs/docker-registry --add --name=registry-storage -t emptyDir --overqrite
+  167  oc set volume deploymentconfigs/docker-registry --add --name=registry-storage -t emptyDir --overwrite
+  168  oc rollout dc/docker-registry
+  169  oc get dc
+  170  oc rollout latest dc/docker-registry
+  171  oc get pvc
+  172  oc set volume deploymentconfigs/docker-registry --add --name=registry-storage -t pvc --claim-name=reg-claim --overwrite
+  173  oc adm policy add-scc-to-user restricted system:serviceaccount:default:registry
+  174  oc adm policy remove-scc-from-user privileged system:serviceaccount:default:registry
+  175  oc rollout latest docker-registry
+  176   oc adm policy add-scc-to-user restricted system:serviceaccount:default:registry
+  177  oc adm policy remove-scc-from-user privileged system:serviceaccount:default:registry
+  178  oc rollback dc/docker-registry
+  179   oc adm policy add-scc-to-user restricted system:serviceaccount:default:registry
+  180  oc adm policy remove-scc-from-user privileged system:serviceaccount:default:registry
+  181   oc set volume deploymentconfigs/docker-registry --add --name=registry-storage -t pvc --claim-name=reg-claim --overwrite
+  182  docker push docker-registry.default.svc:5000/openshift/nexus3:3.13.0
+  183  exit
+  184  docker push docker-registry.default.svc:5000/openshift/nexus3:3.13.0
+  185  exit
+  186  cd /root/ocp/
+  187  ls -ltr
+  188  oc rollout history dc/docker-registry --revision=1
+  189  oc rollback --help
+  190  oc get dc
+  191  oc rollback dc/docker-registry --to-version=1
+  192  oc get dc
+  193  cd cicd/openshift-cd-demo-ocp-3.11/
+  194  ls -ltr
+  195  cd scripts/
+  196  ./provision.sh delete
+  197  ./provision.sh deploy --ephemeral=true
+  198  oc get pods -w
+  199  oc logs cicd-demo-installer-v25vx
+  200  docker images
+  201  docker push docker-registry.default.svc:5000/openshift/jenkins:2
+  202  oc get pods
+  203  oc logs cicd-demo-installer-bfpx9
+  204  docker images | grep wildfly
+  205  docker project dev-ocpadmin
+  206  oc project dev-ocpadmin
+  207  docker push docker-registry.default.svc:5000/dev-ocpadmin/wildfly
+  208  docker tag docker-registry.default.svc:5000/dev-admin/wildfly docker-registry.default.svc:5000/dev-ocpadmin/wildfly
+  209  docker push docker-registry.default.svc:5000/dev-ocpadmin/wildfly
+  210  oc new-build --name=tasks --image-stream=wildfly:latest --binary=true
+  211  oc new-app tasks:latest --allow-missing-images
+  212  oc set triggers dc -l app=tasks --containers=tasks --from-image=tasks:latest --manual
+  213  oc new-app tasks:stage --allow-missing-images -n stage-ocpadmin
+  214  HOSTNAME=$(oc get route jenkins -o template --template='{{.spec.host}}' | sed "s/jenkins-${CICD_NAMESPACE}.//g")
+  215  oc project cicd
+  216  HOSTNAME=$(oc get route jenkins -o template --template='{{.spec.host}}' | sed "s/jenkins-${CICD_NAMESPACE}.//g")
+  217  oc get route
+  218  oc projects
+  219  oc project cicd-ocpadmin
+  220  HOSTNAME=$(oc get route jenkins -o template --template='{{.spec.host}}' | sed "s/jenkins-${CICD_NAMESPACE}.//g")
+  221  GOGS_HOSTNAME="gogs-$CICD_NAMESPACE.$HOSTNAME"
+  222  cd ..
+  223  oc new-app -f gogs-template.yaml --param=GOGS_VERSION=0.11.34                   --param=HOSTNAME=$GOGS_HOSTNAME                   --param=SKIP_TLS_VERIFY=true
+  224  oc get all
+  225  oc delete --all app=gogs
+  226  oc delete deploymentconfig.apps.openshift.io/gogs deploymentconfig.apps.openshift.io/gogs-postgresql service/gogs service/gogs-postgresql
+  227  HOSTNAME=$(oc get route jenkins -o template --template='{{.spec.host}}' | sed "s/jenkins-${CICD_NAMESPACE}.//g")
+  228   GOGS_HOSTNAME="gogs-cicd-ocpadmin.$HOSTNAME"
+  229  oc new-app -f gogs-template.yaml
+  230  HOSTNAME=$(oc get route jenkins -o template --template='{{.spec.host}}' | sed "s/jenkins-${CICD_NAMESPACE}.//g")
+  231   GOGS_HOSTNAME="gogs-cicd-ocpadmin.$HOSTNAME"
+  232  oc new-app -f gogs-template.yaml--param=GOGS_VERSION=0.11.34                   --param=HOSTNAME=$GOGS_HOSTNAME                   --param=SKIP_TLS_VERIFY=true
+  233  docker pull registry.redhat.io/rhel8/postgresql-96
+  234  docker pull docker.io/openshiftdemos/gogs:0.11.34
+  235  docker images
+  236  docker tag docker.io/openshiftdemos/gogs docker-registry.default.svc:5000/openshift/gogs:0.11.34
+  237  docker tag docker.io/openshiftdemos/gogs docker-registry.default.svc:5000/openshift/gogs
+  238  docker tag docker.io/openshiftdemos/gogs:0.11.34 docker-registry.default.svc:5000/openshift/gogs:0.11.34
+  239  docker push docker-registry.default.svc:5000/openshift/gogs:0.11.34
+  240  docker images | grep post
+  241  docker tag registry.redhat.io/rhel8/postgresql-96  docker-registry.default.svc:5000/openshift/postgresql:9.5
+  242  docker push docker-registry.default.svc:5000/openshift/postgresql:9.5
+  243  oc new-app -f gogs-template.yaml--param=GOGS_VERSION=0.11.34                   --param=HOSTNAME=$GOGS_HOSTNAME                   --param=SKIP_TLS_VERIFY=true
+  244  oc new-app -f gogs-template.yaml --param=GOGS_VERSION=0.11.34                   --param=HOSTNAME=$GOGS_HOSTNAME                   --param=SKIP_TLS_VERIFY=true
+  245  oc get all
+  246  oc new-app -f sonarqube-template.yml --param=SONARQUBE_MEMORY_LIMIT=6Gi
+  247  ls -ltr
+  248  oc new-app -f sonarqube-template.yaml --param=SONARQUBE_MEMORY_LIMIT=6Gi
+  249  oc project openshift
+  250  oc get is
+  251  oc get is | grep postgresql
+  252  history
+  253  docker pull docker.io/siamaksade/sonarqube:latest
+  254  docker images | grep sonar
+  255  docker images
+  256  docker tag docker.io/siamaksade/sonarqube docker-registry.default.svc:5000/openshift/sonarqube
+  257  docker push docker-registry.default.svc:5000/openshift/sonarqube
+  258  cd /root/ocp/cicd/openshift-cd-demo-ocp-3.11/
+  259  ls -ltr
+  260  oc new-app -f nexus3-template.yaml --param=NEXUS_VERSION=3.13.0 --param=MAX_MEMORY=2Gi
+  261  oc project
+  262  oc get all
+  263  docker push docker-registry.default.svc:5000/openshift/nexus3:3.13.0
+  264  docker pull registry.access.redhat.com/openshift3/jenkins-slave-maven-rhel7
+  265  docker images
+  266  oc project cicd-admin
+  267  oc project cicd-ocpadmin
+  268  oc get is
+  269  jenkins-slave-maven-rhel7
+  270  oc get is -n openshift | grep jenkins-slave-maven-rhel7
+  271  exit
+  272  docker images
+  273  docker push docker-registry.default.svc:5000/openshift/openjdk18-openshift
+  274  docker push docker-registry.default.svc:5000/openshift/webserver31-tomcat8-openshift
+  275  cat /etc/hosts
+  276  127.0.0.1   localhost localhost.localdomain localhost4 localhost4.localdomain4
+  277  ::1         localhost localhost.localdomain localhost6 localhost6.localdomain6
+  278  10.209.75.188   upiuatbastion.onlinesbi.com
+  279  10.209.75.184   upiuatlb.onlinesbi.com
+  280  10.209.75.179   upiuatmaster1.onlinesbi.com
+  281  10.209.75.180   upiuatmaster2.onlinesbi.com
+  282  10.209.75.181   upiuatmaster3.onlinesbi.com
+  283  10.209.75.182   upiuatinfra1.onlinesbi.com
+  284  10.209.75.183   upiuatinfra2.onlinesbi.com
+  285  10.209.75.185   upiuatlog1.onlinesbi.com
+  286  10.209.75.186   upiuatlog2.onlinesbi.com
+  287  10.209.75.187   upiuatlog3.onlinesbi.com
+  288  10.209.75.189   upiuatapp1.onlinesbi.com
+  289  10.209.75.190   upiuatapp2.onlinesbi.com
+  290  10.209.75.191   upiuatapp3.onlinesbi.com
+  291  10.209.75.192   upiuatapp4.onlinesbi.com
+  292  10.209.75.193   upiuatapp5.onlinesbi.com
+  293  10.209.75.194   upiuatapp6.onlinesbi.com
+  294  10.209.75.197   genericuatapp1.onlinesbi.com
+  295  10.209.75.198   genericuatapp2.onlinesbi.com
+  296  10.209.75.182   sbitestocp.onlinesbi.com
+  297  10.209.75.183   sbitestocp.onlinesbi.com
+  298  10.209.75.197   genericuatapp1.onlinesbi.com
+  299  10.209.75.198   genericuatapp2.onlinesbi.com
+  300  exit
+  301  oc get is
+  302  oc get is -n openshift | grep nexus
+  303  docker tag  docker-registry.default.svc:5000/openshift/nexus3  docker-registry.default.svc:5000/cicd-ocpadmin/nexus:3.13.0
+  304  docker tag  docker-registry.default.svc:5000/openshift/nexus3:3.13.0  docker-registry.default.svc:5000/cicd-ocpadmin/nexus:3.13.0
+  305  docker push docker-registry.default.svc:5000/cicd-ocpadmin/nexus:3.13.0
+  306  oc project cicd-ocpadmin
+  307  oc get is
+  308  oc new-app nexus
+  309  oc new-app nexus:3.13.0
+  310  oc delete all --selector app=nexus
+  311  oc new-app nexus:3.13.0
+  312  oc new-app openshift/nexus:3.13.0
+  313  docker push docker-registry.default.svc:5000/cicd-ocpadmin/nexus:3.13.0
+  314  oc get is
+  315  oc new-app nexus
+  316  oc new-app docker-registry.default.svc:5000/openshift/nexus3:3.13.0
+  317  oc expose svc/nexus3
+  318  oc get dc
+  319  oc patch dc nexus3
+  320  oc rollout latest dc nexus3
+  321  oc rollout latest dc/nexus3
+  322  oc rollout resumedc/nexus3
+  323  oc rollout resume dc/nexus3
+  324  curl -v https://uatupi.onlinesbi.com
+  325  histor
+  326  history
+  327   curl -g -X POST http://uatupi.onlinesbi.com/upi/api/getAccBal -d {"pspId":"201", "requestMsg":"4386E89FFA9DC90CD0561BC2D3BB46EF81A6B956F715EE33884CA162AA0A52A29C3004A06594E45473DA96CE71C6EA60787B007A4299401E3961C3AB7C2D8E5B9E41F7
+1CB2CF00583B3B5CA8049F4B5C682F22466C7E3877B181469257340049446FDBA8D67E9AB51E6332D231DF6CBCD74441D82D7F3734B8C19EB4A8E46045DAB6E28A4CCA4B6FE8DF1440DF8FE2E0F4523BF63E97E58ACEA9C9FC176F19445CFA3FCF03B8648BE80E6330977CA28F83C5020BEA4E8C029CD
+4EC3820D2B8C127AFA7F159655F192E1F14B5B661AFEC804BC905CEB4FC215321A1B422977DA32825DE10C2DDAADB1A4B55E225954C56CB596B5974EED3CA49555CD3846B39188D178D4B5CEAB04FA5112F5F45B464BAA60D04211F2F51C5CE9EDC13289B6DFD558018A2B29CA2FF4177ED42D3011550
+FF3A2E9136C00D1B89D609246ABBE683CEC1788E8C0A6B494839DE1B3577275FD18668705108105E5F8C106A60DBE406B783ACD4CCEA619E0A5B2FE51A7E7E5403E252A2BFE7CBF4873AAF3435B800C65400A4E8A65541189793037A0C950E227FE11ACCAC3B8AFA6FEECFF61261D5678FD6EE453B7AE
+F3EFA4DF854917336A9D9D6E0B66D9262DAE50BF4DD8FEAB97B8DE93643A885CB7703188F9A591C400C2805360AED59E1911BE3089F3610F316E9227D2A9174DFA844C96D0419D01A9EAE22E21F1BBAF64DF621C10E755950B2546DBCB51549193667D61C766DCA0813CC613BF7C1D89189AA28D3B7D6
+674D2816C27F3E6DC4BC5CF17EDAF135BB96508C5B4782CCC74314B324B1DB5CD41C05CA8B9CD005E64ACAB0E24FAE829857E28E6B37E4564544D89627461A49D7799B53A9DAB781044F881324DD0A093A702F8C557EEAFC879B11C701D8CAD6AF99055B3FF50033FD968693589A18B8B8907B352A48B
+DDB15C067CCEC885C4B570048E607E9887C2ABB6DE702914ACBE60037BDD005D717BDCCB8EBF6E9B569C117184BEC00B1F1AE9510CB8A3E1E13FD421A9412575BCEB43275F19A4D443300DB0CB9B835B266B3C02925955837266A7CDCE2D232C09628DECB09523C5C9E0331834F02F687C95E3B4A1372
+53DFFD25C47B72A175D03A8513F792C9E675AD2BBBBB73301CB19C2A9D78D9D25207ADA0CFE07DBFCE1545738AF1594F8132BF1669024541B292CF8FEF5F66333F4C6C5576092C3D04365D91DAD0D0F0B5DBE39E3C038179864AE049775FA3B49A3D44630CF60397CDA6353A78BD3CA3C3FD3C54911FA
+6D0E1296263FF18AF7FD4712C9E1F6A339A03154544A7F2A427B80BE064F8E1A831D863D70B4B0129871DAFF8DCDD74D5AD6FE53D7831B6DC7DF420471DBB4DE343CC2979C486FE1A45E9969A993EB1"}
+  328   curl -g -X POST https://uatupi.onlinesbi.com/upi/api/getAccBal -d {"pspId":"201", "requestMsg":"4386E89FFA9DC90CD0561BC2D3BB46EF81A6B956F715EE33884CA162AA0A52A29C3004A06594E45473DA96CE71C6EA60787B007A4299401E3961C3AB7C2D8E5B9E41F
+71CB2CF00583B3B5CA8049F4B5C682F22466C7E3877B181469257340049446FDBA8D67E9AB51E6332D231DF6CBCD74441D82D7F3734B8C19EB4A8E46045DAB6E28A4CCA4B6FE8DF1440DF8FE2E0F4523BF63E97E58ACEA9C9FC176F19445CFA3FCF03B8648BE80E6330977CA28F83C5020BEA4E8C029C
+D4EC3820D2B8C127AFA7F159655F192E1F14B5B661AFEC804BC905CEB4FC215321A1B422977DA32825DE10C2DDAADB1A4B55E225954C56CB596B5974EED3CA49555CD3846B39188D178D4B5CEAB04FA5112F5F45B464BAA60D04211F2F51C5CE9EDC13289B6DFD558018A2B29CA2FF4177ED42D301155
+0FF3A2E9136C00D1B89D609246ABBE683CEC1788E8C0A6B494839DE1B3577275FD18668705108105E5F8C106A60DBE406B783ACD4CCEA619E0A5B2FE51A7E7E5403E252A2BFE7CBF4873AAF3435B800C65400A4E8A65541189793037A0C950E227FE11ACCAC3B8AFA6FEECFF61261D5678FD6EE453B7A
+EF3EFA4DF854917336A9D9D6E0B66D9262DAE50BF4DD8FEAB97B8DE93643A885CB7703188F9A591C400C2805360AED59E1911BE3089F3610F316E9227D2A9174DFA844C96D0419D01A9EAE22E21F1BBAF64DF621C10E755950B2546DBCB51549193667D61C766DCA0813CC613BF7C1D89189AA28D3B7D
+6674D2816C27F3E6DC4BC5CF17EDAF135BB96508C5B4782CCC74314B324B1DB5CD41C05CA8B9CD005E64ACAB0E24FAE829857E28E6B37E4564544D89627461A49D7799B53A9DAB781044F881324DD0A093A702F8C557EEAFC879B11C701D8CAD6AF99055B3FF50033FD968693589A18B8B8907B352A48
+BDDB15C067CCEC885C4B570048E607E9887C2ABB6DE702914ACBE60037BDD005D717BDCCB8EBF6E9B569C117184BEC00B1F1AE9510CB8A3E1E13FD421A9412575BCEB43275F19A4D443300DB0CB9B835B266B3C02925955837266A7CDCE2D232C09628DECB09523C5C9E0331834F02F687C95E3B4A137
+253DFFD25C47B72A175D03A8513F792C9E675AD2BBBBB73301CB19C2A9D78D9D25207ADA0CFE07DBFCE1545738AF1594F8132BF1669024541B292CF8FEF5F66333F4C6C5576092C3D04365D91DAD0D0F0B5DBE39E3C038179864AE049775FA3B49A3D44630CF60397CDA6353A78BD3CA3C3FD3C54911F
+A6D0E1296263FF18AF7FD4712C9E1F6A339A03154544A7F2A427B80BE064F8E1A831D863D70B4B0129871DAFF8DCDD74D5AD6FE53D7831B6DC7DF420471DBB4DE343CC2979C486FE1A45E9969A993EB1"}
+  329  oc rollout pause dc nexus3
+  330  oc patch dc nexus3 --patch='{ "spec": { "strategy": { "type": "Recreate" }}}'
+  331  oc set resources dc nexus3 --limits=memory=2Gi,cpu=2 --requests=memory=1Gi,cpu=500m
+  332  oc set probe dc/nexus3 --liveness --failure-threshold 3 --initial-delay-seconds 60 -- echo ok
+  333  oc set probe dc/nexus3 --readiness --failure-threshold 3 --initial-delay-seconds 60 --get-url=http://:8081/
+  334  oc rollout resume dc nexus3
+  335  pwd
+  336  cd ocp/cicd/
+
+[root@upiuatmaster1 gcons]# history|more
+   21   GOGS_SVC=$(oc get svc gogs -o template --template='{{.spec.clusterIP}}')
+   22              GOGS_USER=gogs
+   23              GOGS_PWD=gogs
+   24              oc rollout status dc gogs
+   25  exit
+   26  ls -ltr
+   27  cd ocp/cicd/openshift-cd-demo-ocp-3.11/scripts/
+   28  ls -ltr
+   29  vi provision.sh
+   30  ./provision.sh --ephemeral true deploy
+   31  ./provision.sh deploy --ephemeral true
+   32  ./provision.sh delete
+   33  ./provision.sh deploy --ephemeral true
+   34  oc get pods
+   35  oc logs cicd-demo-installer-vzg4t
+   36  oc get pods
+   37  oc logs cicd-demo-installer-vzg4t
+   38  cat /root/ocp/cicd/openshift-cd-demo-ocp-3.11/gogs-template.yaml
+   39  cd ..
+   40  ls -ltr
+   41  cd ..
+   42  chmod 777 -R openshift-cd-demo-ocp-3.11
+   43  cd openshift-cd-demo-ocp-3.11/
+   44  ls -ltr
+   45  cd scripts/
+   46  ./provision.sh delete
+   47  ./provision.sh deploy --ephemeral true
+   48  oc get pods
+   49  oc logs cicd-demo-installer-nvwhx
+   50  oc copy --help
+   51  oc cp
+   52  oc get pods -w
+   53  oc logs cicd-demo-installer-crq54
+   54  oc import-image wildfly --from=openshift/wildfly-120-centos7 --confirm -n dev-ocpadmin
+   55  oc get os
+   56  oc get is
+   57  oc project dev-ocpadmin
+   58  oc get is
+   59   HOSTNAME=$(oc get route jenkins -o template --template='{{.spec.host}}' | sed "s/jenkins-${CICD_NAMESPACE}.//g")
+   60  oc get is -n openshift | grep jenkins
+   61  Bash
+   62  oc import-image jenkins:2 --from=registry.redhat.io/openshift3/jenkins-2-rhel7 --confirm -n openshift
+   63  Bash
+   64  oc import-image openshift3/jenkins-2-rhel7 --from=registry.redhat.io/openshift3/jenkins-2-rhel7 --confirm -n openshift
+   65  docker pull registry.redhat.io/openshift3/jenkins-2-rhel7
+   66  cat /etc/resolv.conf
+   67  env
+   68  env | grep proxy
+   69  cat /etc/sysconfig/docker
+   70  HTTP_PROXY=http://10.191.132.21:9090
+   71  HTTPS_PROXY=http://10.191.132.21:9090
+   72  NO_PROXY=docker-registry.default.svc.cluster.local,172.30.102.208,upiuatmaster1.onlinesbi.com,upiuatmaster2.onlinesbi.com,upiuatmaster3.onlinesbi.com,docker-registry.default.svc,*.onlinesbi.com
+   73  oc import-image openshift3/jenkins-2-rhel7 --from=registry.redhat.io/openshift3/jenkins-2-rhel7 --confirm -n openshift
+   74  echo $HTTP_PROXY
+   75  http_proxy=http://10.191.132.21:9090
+   76  export https_proxy=http://10.191.132.21:9090
+   77  export http_proxy=http://10.191.132.21:9090
+   78  export NO_PROXY=docker-registry.default.svc.cluster.local,172.30.102.208,upiuatmaster1.onlinesbi.com,upiuatmaster2.onlinesbi.com,upiuatmaster3.onlinesbi.com,docker-registry.default.svc,*.onlinesbi.com
+   79  export HTTPS_PROXY=http://10.191.132.21:9090
+   80  export HTTP_PROXY=http://10.191.132.21:9090
+   81  oc import-image openshift3/jenkins-2-rhel7 --from=registry.redhat.io/openshift3/jenkins-2-rhel7 --confirm -n openshift
+   82  nslookup registry.redhat.io
+   83  cat /etc/hosts
+   84  docker images
+   85  docker images | grep jenkins
+   86  oc get is -n openshift| grep jenkins
+   87  docker tag registry.redhat.io/openshift3/jenkins-2-rhel7 docker-registry.default.svc:5000/openshift/jenkins:2
+   88  docker push docker-registry.default.svc:5000/openshift/jenkins:2 -n openshift
+   89  docker push docker-registry.default.svc:5000/openshift/jenkins:2
+   90  oc get is
+   91  oc get is -n openshift
+   92  oc get is -n openshift | grep jenkins
+   93  oc delete is jenkins jenkins-2-rhel7 -n openshift
+   94  oc project default
+   95  oc get dc
+   96  oc rollback dc/docker-registry
+   97  oc get dc
+   98  oc rollback dc/docker-registry
+   99  history | grep jenkins
+  100  docker push docker-registry.default.svc:5000/openshift/jenkins:2
+  101  cd /root/ocp/
+  102  cd cicd/openshift-cd-demo-ocp-3.11/
+  103  ls -ltr
+  104  vi nexus-functions.yaml
+  105  pwd
+  106  /root/ocp/cicd/openshift-cd-demo-ocp-3.11
+  107  vi nexus3-template.yaml
+  108  cp nexus-functions.yaml nexus-functions
+  109  ls -ltr
+  110  oc project cicd-ocpadmin
+  111  oc get all
+  112  oc delete all --app=nexus
+  113  oc delete all --selector app=nexus
+  114  oc new-app -f nexus3-template.yaml
+  115  oc rollback dc/docker-registry -n default
+  116  oc rollback dc/docker-registry --to-revision=1 -n default
+  117  history | grep revision
+  118  oc rollout dc/docker-registry --revision=1
+  119  oc rollout latest dc/docker-registry --revision=1
+  120  oc rollout dc/docker-registry --revision=1
+  121  history | grep revision
+  122   oc rollout latest dc/docker-registry --revision=1
+  123  oc rollout --help
+  124  oc rollback
+  125  oc rollback --help
+  126  oc rollback docker-registry --to-version=3
+  127  oc rollback docker-registry --to-version=1
+  128  oc rollback docker-registry --to-version=1 -n default
+  129  oc project default
+  130  oc get pvc
+  131   oc set volume deploymentconfigs/docker-registry --add --name=registry-storage -t pvc --claim-name=reg-claim --overwrite
+  132  exit
+  133  docker images
+  134  docker images | grep nexus
+  135  docker push docker-registry.default.svc:5000/openshift/nexus3:3.13.0
+  136  oc project default
+  137  oc get scc
+  138  oc adm policy add-scc-to-user restricted system:serviceaccount:default:registry
+  139  oc adm policy remove-scc-from-user privileged system:serviceaccount:default:registry
+  140  oc rollout latest docker-registry
+  141   oc rollout latest dc/docker-registry --revision=1
+  142  history | grep revision
+  143  oc rollout dc/docker-registry --revision=1
+  144  oc rollback dc/docker-registry --to-revision=1 -n default
+  145  history
+  146  oc rollback docker-registry --to-version=1 -n default
+  147  oc project default
+  148  oc rollback docker-registry --to-version=1
+  149  oc rollback dc/docker-registry --to-version=1
+  150  oc get dc
+  151  oc rollback dc/docker-registry --to-version=2
+  152  oc rollback dc/docker-registry --to-version=4
+  153  oc rollback dc/docker-registry --to-version=5
+  154  oc rollback dc/docker-registry --to-version=10
+  155  oc rollback dc/docker-registry --to-version=12
+  156  oc rollback dc/docker-registry --to-version=18
+  157  oc rollback dc/docker-registry --to-version=16
+  158  oc rollback dc/docker-registry --to-version=10
+  159  oc rollback dc/docker-registry --to-version=19
+  160  oc rollback dc/docker-registry
+  161  oc rollout latest  dc/docker-registry
+  162  exit
+  163  oc edit dc/docker-registry -oyaml
+  164  oc set volume deploymentconfigs/docker-registry --add --name=registry-storage -t emptyDir= {}
+  165  oc set volume deploymentconfigs/docker-registry --add --name=registry-storage -t emptyDir
+  166  oc set volume deploymentconfigs/docker-registry --add --name=registry-storage -t emptyDir --overqrite
+  167  oc set volume deploymentconfigs/docker-registry --add --name=registry-storage -t emptyDir --overwrite
+  168  oc rollout dc/docker-registry
+  169  oc get dc
+  170  oc rollout latest dc/docker-registry
+  171  oc get pvc
+  172  oc set volume deploymentconfigs/docker-registry --add --name=registry-storage -t pvc --claim-name=reg-claim --overwrite
+  173  oc adm policy add-scc-to-user restricted system:serviceaccount:default:registry
+  174  oc adm policy remove-scc-from-user privileged system:serviceaccount:default:registry
+  175  oc rollout latest docker-registry
+  176   oc adm policy add-scc-to-user restricted system:serviceaccount:default:registry
+  177  oc adm policy remove-scc-from-user privileged system:serviceaccount:default:registry
+  178  oc rollback dc/docker-registry
+  179   oc adm policy add-scc-to-user restricted system:serviceaccount:default:registry
+  180  oc adm policy remove-scc-from-user privileged system:serviceaccount:default:registry
+  181   oc set volume deploymentconfigs/docker-registry --add --name=registry-storage -t pvc --claim-name=reg-claim --overwrite
+  182  docker push docker-registry.default.svc:5000/openshift/nexus3:3.13.0
+  183  exit
+  184  docker push docker-registry.default.svc:5000/openshift/nexus3:3.13.0
+  185  exit
+  186  cd /root/ocp/
+  187  ls -ltr
+  188  oc rollout history dc/docker-registry --revision=1
+  189  oc rollback --help
+  190  oc get dc
+  191  oc rollback dc/docker-registry --to-version=1
+  192  oc get dc
+  193  cd cicd/openshift-cd-demo-ocp-3.11/
+  194  ls -ltr
+  195  cd scripts/
+  196  ./provision.sh delete
+  197  ./provision.sh deploy --ephemeral=true
+  198  oc get pods -w
+  199  oc logs cicd-demo-installer-v25vx
+  200  docker images
+  201  docker push docker-registry.default.svc:5000/openshift/jenkins:2
+  202  oc get pods
+  203  oc logs cicd-demo-installer-bfpx9
+  204  docker images | grep wildfly
+  205  docker project dev-ocpadmin
+  206  oc project dev-ocpadmin
+  207  docker push docker-registry.default.svc:5000/dev-ocpadmin/wildfly
+  208  docker tag docker-registry.default.svc:5000/dev-admin/wildfly docker-registry.default.svc:5000/dev-ocpadmin/wildfly
+  209  docker push docker-registry.default.svc:5000/dev-ocpadmin/wildfly
+  210  oc new-build --name=tasks --image-stream=wildfly:latest --binary=true
+  211  oc new-app tasks:latest --allow-missing-images
+  212  oc set triggers dc -l app=tasks --containers=tasks --from-image=tasks:latest --manual
+  213  oc new-app tasks:stage --allow-missing-images -n stage-ocpadmin
+  214  HOSTNAME=$(oc get route jenkins -o template --template='{{.spec.host}}' | sed "s/jenkins-${CICD_NAMESPACE}.//g")
+  215  oc project cicd
+  216  HOSTNAME=$(oc get route jenkins -o template --template='{{.spec.host}}' | sed "s/jenkins-${CICD_NAMESPACE}.//g")
+  217  oc get route
+  218  oc projects
+  219  oc project cicd-ocpadmin
+  220  HOSTNAME=$(oc get route jenkins -o template --template='{{.spec.host}}' | sed "s/jenkins-${CICD_NAMESPACE}.//g")
+  221  GOGS_HOSTNAME="gogs-$CICD_NAMESPACE.$HOSTNAME"
+  222  cd ..
+  223  oc new-app -f gogs-template.yaml --param=GOGS_VERSION=0.11.34                   --param=HOSTNAME=$GOGS_HOSTNAME                   --param=SKIP_TLS_VERIFY=true
+  224  oc get all
+  225  oc delete --all app=gogs
+  226  oc delete deploymentconfig.apps.openshift.io/gogs deploymentconfig.apps.openshift.io/gogs-postgresql service/gogs service/gogs-postgresql
+  227  HOSTNAME=$(oc get route jenkins -o template --template='{{.spec.host}}' | sed "s/jenkins-${CICD_NAMESPACE}.//g")
+  228   GOGS_HOSTNAME="gogs-cicd-ocpadmin.$HOSTNAME"
+  229  oc new-app -f gogs-template.yaml
+  230  HOSTNAME=$(oc get route jenkins -o template --template='{{.spec.host}}' | sed "s/jenkins-${CICD_NAMESPACE}.//g")
+  231   GOGS_HOSTNAME="gogs-cicd-ocpadmin.$HOSTNAME"
+  232  oc new-app -f gogs-template.yaml--param=GOGS_VERSION=0.11.34                   --param=HOSTNAME=$GOGS_HOSTNAME                   --param=SKIP_TLS_VERIFY=true
+  233  docker pull registry.redhat.io/rhel8/postgresql-96
+  234  docker pull docker.io/openshiftdemos/gogs:0.11.34
+  235  docker images
+  236  docker tag docker.io/openshiftdemos/gogs docker-registry.default.svc:5000/openshift/gogs:0.11.34
+  237  docker tag docker.io/openshiftdemos/gogs docker-registry.default.svc:5000/openshift/gogs
+  238  docker tag docker.io/openshiftdemos/gogs:0.11.34 docker-registry.default.svc:5000/openshift/gogs:0.11.34
+  239  docker push docker-registry.default.svc:5000/openshift/gogs:0.11.34
+  240  docker images | grep post
+  241  docker tag registry.redhat.io/rhel8/postgresql-96  docker-registry.default.svc:5000/openshift/postgresql:9.5
+  242  docker push docker-registry.default.svc:5000/openshift/postgresql:9.5
+  243  oc new-app -f gogs-template.yaml--param=GOGS_VERSION=0.11.34                   --param=HOSTNAME=$GOGS_HOSTNAME                   --param=SKIP_TLS_VERIFY=true
+  244  oc new-app -f gogs-template.yaml --param=GOGS_VERSION=0.11.34                   --param=HOSTNAME=$GOGS_HOSTNAME                   --param=SKIP_TLS_VERIFY=true
+  245  oc get all
+  246  oc new-app -f sonarqube-template.yml --param=SONARQUBE_MEMORY_LIMIT=6Gi
+  247  ls -ltr
+  248  oc new-app -f sonarqube-template.yaml --param=SONARQUBE_MEMORY_LIMIT=6Gi
+  249  oc project openshift
+  250  oc get is
+  251  oc get is | grep postgresql
+  252  history
+  253  docker pull docker.io/siamaksade/sonarqube:latest
+  254  docker images | grep sonar
+  255  docker images
+  256  docker tag docker.io/siamaksade/sonarqube docker-registry.default.svc:5000/openshift/sonarqube
+  257  docker push docker-registry.default.svc:5000/openshift/sonarqube
+  258  cd /root/ocp/cicd/openshift-cd-demo-ocp-3.11/
+  259  ls -ltr
+  260  oc new-app -f nexus3-template.yaml --param=NEXUS_VERSION=3.13.0 --param=MAX_MEMORY=2Gi
+  261  oc project
+  262  oc get all
+  263  docker push docker-registry.default.svc:5000/openshift/nexus3:3.13.0
+  264  docker pull registry.access.redhat.com/openshift3/jenkins-slave-maven-rhel7
+  265  docker images
+  266  oc project cicd-admin
+  267  oc project cicd-ocpadmin
+  268  oc get is
+  269  jenkins-slave-maven-rhel7
+  270  oc get is -n openshift | grep jenkins-slave-maven-rhel7
+  271  exit
+  272  docker images
+  273  docker push docker-registry.default.svc:5000/openshift/openjdk18-openshift
+  274  docker push docker-registry.default.svc:5000/openshift/webserver31-tomcat8-openshift
+  275  cat /etc/hosts
+  276  127.0.0.1   localhost localhost.localdomain localhost4 localhost4.localdomain4
+  277  ::1         localhost localhost.localdomain localhost6 localhost6.localdomain6
+  278  10.209.75.188   upiuatbastion.onlinesbi.com
+  279  10.209.75.184   upiuatlb.onlinesbi.com
+  280  10.209.75.179   upiuatmaster1.onlinesbi.com
+  281  10.209.75.180   upiuatmaster2.onlinesbi.com
+  282  10.209.75.181   upiuatmaster3.onlinesbi.com
+  283  10.209.75.182   upiuatinfra1.onlinesbi.com
+  284  10.209.75.183   upiuatinfra2.onlinesbi.com
+  285  10.209.75.185   upiuatlog1.onlinesbi.com
+  286  10.209.75.186   upiuatlog2.onlinesbi.com
+  287  10.209.75.187   upiuatlog3.onlinesbi.com
+  288  10.209.75.189   upiuatapp1.onlinesbi.com
+  289  10.209.75.190   upiuatapp2.onlinesbi.com
+  290  10.209.75.191   upiuatapp3.onlinesbi.com
+  291  10.209.75.192   upiuatapp4.onlinesbi.com
+  292  10.209.75.193   upiuatapp5.onlinesbi.com
+  293  10.209.75.194   upiuatapp6.onlinesbi.com
+  294  10.209.75.197   genericuatapp1.onlinesbi.com
+  295  10.209.75.198   genericuatapp2.onlinesbi.com
+  296  10.209.75.182   sbitestocp.onlinesbi.com
+  297  10.209.75.183   sbitestocp.onlinesbi.com
+  298  10.209.75.197   genericuatapp1.onlinesbi.com
+  299  10.209.75.198   genericuatapp2.onlinesbi.com
+  300  exit
+  301  oc get is
+  302  oc get is -n openshift | grep nexus
+  303  docker tag  docker-registry.default.svc:5000/openshift/nexus3  docker-registry.default.svc:5000/cicd-ocpadmin/nexus:3.13.0
+  304  docker tag  docker-registry.default.svc:5000/openshift/nexus3:3.13.0  docker-registry.default.svc:5000/cicd-ocpadmin/nexus:3.13.0
+  305  docker push docker-registry.default.svc:5000/cicd-ocpadmin/nexus:3.13.0
+  306  oc project cicd-ocpadmin
+  307  oc get is
+  308  oc new-app nexus
+  309  oc new-app nexus:3.13.0
+  310  oc delete all --selector app=nexus
+  311  oc new-app nexus:3.13.0
+  312  oc new-app openshift/nexus:3.13.0
+  313  docker push docker-registry.default.svc:5000/cicd-ocpadmin/nexus:3.13.0
+  314  oc get is
+  315  oc new-app nexus
+  316  oc new-app docker-registry.default.svc:5000/openshift/nexus3:3.13.0
+  317  oc expose svc/nexus3
+  318  oc get dc
+  319  oc patch dc nexus3
+  320  oc rollout latest dc nexus3
+  321  oc rollout latest dc/nexus3
+  322  oc rollout resumedc/nexus3
+  323  oc rollout resume dc/nexus3
+  324  curl -v https://uatupi.onlinesbi.com
+  325  histor
+  326  history
+  327   curl -g -X POST http://uatupi.onlinesbi.com/upi/api/getAccBal -d {"pspId":"201", "requestMsg":"4386E89FFA9DC90CD0561BC2D3BB46EF81A6B956F715EE33884CA162AA0A52A29C3004A06594E45473DA96CE71C6EA60787B007A4299401E3961C3AB7C2D8E5B9E41F7
+1CB2CF00583B3B5CA8049F4B5C682F22466C7E3877B181469257340049446FDBA8D67E9AB51E6332D231DF6CBCD74441D82D7F3734B8C19EB4A8E46045DAB6E28A4CCA4B6FE8DF1440DF8FE2E0F4523BF63E97E58ACEA9C9FC176F19445CFA3FCF03B8648BE80E6330977CA28F83C5020BEA4E8C029CD
+4EC3820D2B8C127AFA7F159655F192E1F14B5B661AFEC804BC905CEB4FC215321A1B422977DA32825DE10C2DDAADB1A4B55E225954C56CB596B5974EED3CA49555CD3846B39188D178D4B5CEAB04FA5112F5F45B464BAA60D04211F2F51C5CE9EDC13289B6DFD558018A2B29CA2FF4177ED42D3011550
+FF3A2E9136C00D1B89D609246ABBE683CEC1788E8C0A6B494839DE1B3577275FD18668705108105E5F8C106A60DBE406B783ACD4CCEA619E0A5B2FE51A7E7E5403E252A2BFE7CBF4873AAF3435B800C65400A4E8A65541189793037A0C950E227FE11ACCAC3B8AFA6FEECFF61261D5678FD6EE453B7AE
+F3EFA4DF854917336A9D9D6E0B66D9262DAE50BF4DD8FEAB97B8DE93643A885CB7703188F9A591C400C2805360AED59E1911BE3089F3610F316E9227D2A9174DFA844C96D0419D01A9EAE22E21F1BBAF64DF621C10E755950B2546DBCB51549193667D61C766DCA0813CC613BF7C1D89189AA28D3B7D6
+674D2816C27F3E6DC4BC5CF17EDAF135BB96508C5B4782CCC74314B324B1DB5CD41C05CA8B9CD005E64ACAB0E24FAE829857E28E6B37E4564544D89627461A49D7799B53A9DAB781044F881324DD0A093A702F8C557EEAFC879B11C701D8CAD6AF99055B3FF50033FD968693589A18B8B8907B352A48B
+DDB15C067CCEC885C4B570048E607E9887C2ABB6DE702914ACBE60037BDD005D717BDCCB8EBF6E9B569C117184BEC00B1F1AE9510CB8A3E1E13FD421A9412575BCEB43275F19A4D443300DB0CB9B835B266B3C02925955837266A7CDCE2D232C09628DECB09523C5C9E0331834F02F687C95E3B4A1372
+53DFFD25C47B72A175D03A8513F792C9E675AD2BBBBB73301CB19C2A9D78D9D25207ADA0CFE07DBFCE1545738AF1594F8132BF1669024541B292CF8FEF5F66333F4C6C5576092C3D04365D91DAD0D0F0B5DBE39E3C038179864AE049775FA3B49A3D44630CF60397CDA6353A78BD3CA3C3FD3C54911FA
+6D0E1296263FF18AF7FD4712C9E1F6A339A03154544A7F2A427B80BE064F8E1A831D863D70B4B0129871DAFF8DCDD74D5AD6FE53D7831B6DC7DF420471DBB4DE343CC2979C486FE1A45E9969A993EB1"}
+  328   curl -g -X POST https://uatupi.onlinesbi.com/upi/api/getAccBal -d {"pspId":"201", "requestMsg":"4386E89FFA9DC90CD0561BC2D3BB46EF81A6B956F715EE33884CA162AA0A52A29C3004A06594E45473DA96CE71C6EA60787B007A4299401E3961C3AB7C2D8E5B9E41F
+71CB2CF00583B3B5CA8049F4B5C682F22466C7E3877B181469257340049446FDBA8D67E9AB51E6332D231DF6CBCD74441D82D7F3734B8C19EB4A8E46045DAB6E28A4CCA4B6FE8DF1440DF8FE2E0F4523BF63E97E58ACEA9C9FC176F19445CFA3FCF03B8648BE80E6330977CA28F83C5020BEA4E8C029C
+D4EC3820D2B8C127AFA7F159655F192E1F14B5B661AFEC804BC905CEB4FC215321A1B422977DA32825DE10C2DDAADB1A4B55E225954C56CB596B5974EED3CA49555CD3846B39188D178D4B5CEAB04FA5112F5F45B464BAA60D04211F2F51C5CE9EDC13289B6DFD558018A2B29CA2FF4177ED42D301155
+0FF3A2E9136C00D1B89D609246ABBE683CEC1788E8C0A6B494839DE1B3577275FD18668705108105E5F8C106A60DBE406B783ACD4CCEA619E0A5B2FE51A7E7E5403E252A2BFE7CBF4873AAF3435B800C65400A4E8A65541189793037A0C950E227FE11ACCAC3B8AFA6FEECFF61261D5678FD6EE453B7A
+EF3EFA4DF854917336A9D9D6E0B66D9262DAE50BF4DD8FEAB97B8DE93643A885CB7703188F9A591C400C2805360AED59E1911BE3089F3610F316E9227D2A9174DFA844C96D0419D01A9EAE22E21F1BBAF64DF621C10E755950B2546DBCB51549193667D61C766DCA0813CC613BF7C1D89189AA28D3B7D
+6674D2816C27F3E6DC4BC5CF17EDAF135BB96508C5B4782CCC74314B324B1DB5CD41C05CA8B9CD005E64ACAB0E24FAE829857E28E6B37E4564544D89627461A49D7799B53A9DAB781044F881324DD0A093A702F8C557EEAFC879B11C701D8CAD6AF99055B3FF50033FD968693589A18B8B8907B352A48
+BDDB15C067CCEC885C4B570048E607E9887C2ABB6DE702914ACBE60037BDD005D717BDCCB8EBF6E9B569C117184BEC00B1F1AE9510CB8A3E1E13FD421A9412575BCEB43275F19A4D443300DB0CB9B835B266B3C02925955837266A7CDCE2D232C09628DECB09523C5C9E0331834F02F687C95E3B4A137
+253DFFD25C47B72A175D03A8513F792C9E675AD2BBBBB73301CB19C2A9D78D9D25207ADA0CFE07DBFCE1545738AF1594F8132BF1669024541B292CF8FEF5F66333F4C6C5576092C3D04365D91DAD0D0F0B5DBE39E3C038179864AE049775FA3B49A3D44630CF60397CDA6353A78BD3CA3C3FD3C54911F
+A6D0E1296263FF18AF7FD4712C9E1F6A339A03154544A7F2A427B80BE064F8E1A831D863D70B4B0129871DAFF8DCDD74D5AD6FE53D7831B6DC7DF420471DBB4DE343CC2979C486FE1A45E9969A993EB1"}
+  329  oc rollout pause dc nexus3
+  330  oc patch dc nexus3 --patch='{ "spec": { "strategy": { "type": "Recreate" }}}'
+  331  oc set resources dc nexus3 --limits=memory=2Gi,cpu=2 --requests=memory=1Gi,cpu=500m
+  332  oc set probe dc/nexus3 --liveness --failure-threshold 3 --initial-delay-seconds 60 -- echo ok
+  333  oc set probe dc/nexus3 --readiness --failure-threshold 3 --initial-delay-seconds 60 --get-url=http://:8081/
+  334  oc rollout resume dc nexus3
+  335  pwd
+  336  cd ocp/cicd/
+  337  vi setup_nexus.sh
+  338  chmod +x setup_nexus.sh
+  339  ./setup_nexus.sh admin admin123 http://$(oc get route nexus-repository-manager --template='{{.spec.host }}')
+  340  ./setup_nexus.sh admin admin123 http://$(oc get route nexus3 --template='{{.spec.host }}')
+  341  oc get route
+  342  curl http://nexus3-cicd-ocpadmin.cloudapps.onlinesbi.com
+  343  oc get svc
+  344  curl http://172.30.59.213:8081
+  345  echo $.spec.host
+  346  echo .spec.host
+  347  ./setup_nexus3.sh admin admin123 http://$(oc get route nexus3 --template='{{.spec.host }}')
+  348  ls -ltr
+  349  ./setup_nexus.sh admin admin123 http://$(oc get route nexus3 --template='{{.spec.host }}')
+  350  echo $(oc get route nexus3 --template='{{.spec.host }}')
+  351  oc get dc
+  352  oc get svc
+  353  ./setup_nexus.sh admin admin123 http://172.30.59.213:8081
+  354  exit
+  355  oc get nodes
+  356  oc get node
+  357  cat /etc/hosts
+  358  exit
+  359  oc get pv
+  360  oc login -u ocpadmin
+  361  oc get pv
+  362  exit
+  363  oc get pv
+  364  oc project cicd-ocpadmin
+  365  pwd
+  366  cd ocp/cicd/
+  367  ll
+  368  mkdir upi
+  369  cd upi/
+  370  vi pipeline.yml
+  371  oc create -f pipeline.yml
+  372  vi pipeline.yml
+  373  oc create -f pipeline.yml
+  374  vi pipeline.yml
+  375  oc create -f pipeline.yml
+  376  vi pipeline.yml
+  377  ssh genericuatapp2.onlinesbi.com
+  378  exit
+  379  cd /root/ocp/cicd/
+  380  ls -ltr
+  381  cd upi/
+  382  ls -ltr
+  383  vi pipeline.yml
+  384  exit
+  385  cd /root/ocp/cicd/
+  386  ls -ltr
+  387  cd upi/
+  388  ls -ltr
+  389  vi pipeline.yml
+  390  oc create -f pipeline.yml
+  391  oc get pvc
+  392  oc project
+  393  oc create -f pipeline.yml
+  394  vi pipeline.yml
+  395  cd /root/ocp/cicd/upi
+  396  oc create -f pipeline.yml
+  397  exit
+  398  ls -ltr
+  399  cd ocp/cicd/upi/
+  400  ls -ltr
+  401  cp pipeline.yml pipeline-upi.yml
+  402  vi pipeline-upi.yml
+  403  oc project cicd-ocpadmin
+  404  oc create -f pipeline-upi.yml
+  405  vi pipeline-upi.yml
+  406  oc create -f pipeline-upi.yml
+  407  vi pipeline-upi.yml
+  408  oc create -f pipeline-upi.yml
+  409  vi pipeline-upi.yml
+  410  oc create -f pipeline-upi.yml
+  411  oc new-project UPI-SIT
+  412  oc new-project UPI_SIT
+  413  oc new-project upi-sit
+  414  oc new-project upi-uat
+  415  ll
+  416  vi pipeline-upi.yml
+  417  oc create -f pipeline-upi.yml
+  418  oc project cicd-ocpadmin
+  419  oc create -f pipeline-upi.yml
+  420  oc project upi-sit
+  421  exit
+  422  cd ocp/cicd/upi/
+  423  ls -ltr
+  424  vi pipeline
+  425  vi pipeline.yml
+  426  oc project cicd-ocpadmin
+  427  oc create -f pipeline.yml
+  428  oc get nodes
+  429  vi pipeline-upi.yml
+  430  vi pipeline.yml
+  431  exit
+  432  vi /etc/hosts
+  433  exit
+  434  ls -ltr
+  435  cd ocp
+  436  ls -ltr
+  437  exit
+  438  history | grep airroute
+  439  locate airroute
+  440  oc get ndoes
+  441  oc get nodes
+  442  exit
+  443  oc get ndoes
+  444  oc get nodes
+  445  oc adm drain upiuatapp5.onlinesbi.com upiuatapp6.onlinesbi.com
+  446  oc adm drain upiuatapp5.onlinesbi.com
+  447  oc adm drain upiuatapp5.onlinesbi.com --delete-local-data
+  448  oc adm drain upiuatapp5.onlinesbi.com --delete-local-data  --ignore-daemonsets
+  449  oc adm manage-node upiuatapp5.onlinesbi.com upiuatapp6.onlinesbi.com  --schedulable=false
+  450  oc adm drain upiuatapp5.onlinesbi.com --delete-local-data  --ignore-daemonsets
+  451  oc adm drain upiuatapp6.onlinesbi.com --delete-local-data  --ignore-daemonsets
+  452  oc adm drain upiuatapp6.onlinesbi.com --delete-local-data
+  453  oc delete node upiuatapp6.onlinesbi.com upiuatapp5.onlinesbi.com
+  454  oc get nodes
+  455  ssh upiuatapp6.onlinesbi.com
+  456  exit
+  457  history | grep label
+  458  history
+  459  exit
+  460  docker images | grep sonar
+  461  docker push docker-registry.default.svc:5000/openshift/sonarqube
+  462  oc login -u ocpadmin
+  463  docker push docker-registry.default.svc:5000/openshift/sonarqube
+  464  docker login docker-registry.default.svc:5000 -u $(oc whoami) -p $(oc whoami -t)
+  465  docker push docker-registry.default.svc:5000/openshift/sonarqube
+  466  oc project upi
+  467  oc get hpa
+  468  oc autoscale --help
+  469   oc autoscale dc/upi --min=1 --max=3--cpu-percent=10
+  470   oc autoscale dc/upi --min=1 --max=3 --cpu-percent=10
+  471  oc get hpa
+  472  ab
+  473  ab -n 100 http://uatupi.onlinesbi.com/upi/noaouth/getAccBal
+  474  ab -n 1000 http://uatupi.onlinesbi.com/upi/noaouth/getAccBal
+  475  ab -n 10000 http://uatupi.onlinesbi.com/upi/noaouth/getAccBal
+  476  docker images
+  477  history | grep label
+  478  history
+  479  oc get nodes
+  480   oc label node/genericuatapp1.onlinesbi.com reconn=true
+  481   oc label node/genericuatapp2.onlinesbi.com reconn=true
+  482  oc project upi
+  483  oc get pod
+  484  cd ..
+  485  ls -ltr
+  486  cd ocp
+  487  cd /root/ocp
+  488  ls -ltr
+  489  vi Dockerfile
+  490  pwd
+  491  ls -ltr
+  492  vi Dockerfile
+  493  ls -ltr
+  494  docker build -t upi .
+  495  docker images | grep upi
+  496  docker tag upi docker-registry.default.svc:5000/upi/upi
+  497  docker push docker-registry.default.svc:5000/upi/upi
+  498  oc delete dc/upi
+  499  oc new-app upi
+  500  oc project default
+  501  oc get all
+  502  oc status
+  503  vi Dockerfile
+  504  ls -ltr
+  505  docker build -t upi .
+  506  vi Dockerfile
+  507  docker build -t upi .
+  508  vi Dockerfile
+  509  docker build -t upi .
+  510  vi Dockerfile
+  511  docker build -t upi .
+  512  docker tag upi docker-registry.default.svc:5000/upi/upi
+  513  docker push docker-registry.default.svc:5000/upi/upi
+  514  oc new-app upi
+  515  oc project
+  516  oc delete all --selector app=upi
+  517  oc project upi
+  518  oc delete dc/upi
+  519  oc new-app upi
+  520  cd ocp/cicd/
+  521  ls -ltr
+  522  cd upi/
+  523  ls -ltr
+  524  rm pipeline-upi.yml
+  525  vi pipeline-upi.yml
+  526  oc project -q
+  527  oc project cicd-ocpadmin
+  528  oc create -f pipeline-upi.yml
+  529  vi pipeline-upi.yml
+  530  oc create -f pipeline-upi.yml
+  531  vi pipeline-upi.yml
+  532  oc create -f pipeline-upi.yml
+  533  oc delete bc "upi-image-pipeline"
+  534  oc create -f pipeline-upi.yml
+  535  oc policy add-role-to-group edit system:serviceaccount:cicd-ocpadmin -n upi-sit
+  536  oc policy add-role-to-group edit system:serviceaccount:cicd-ocpadmin -n upi-uat
+  537  oc get nodes
+  538  oc get nodes -l
+  539  oc get nodes --help
+  540  oc get nodes --show-labels
+  541  oc adm new-project sbigconsuat --node-selector='reconn=true'
+  542  oc adm new-project sbigconstest --node-selector='reconn=true'
+  543  oc project sbigconsuat
+  544  pwd
+  545  cd ../..
+  546  pwd
+  547  ls -ltr
+  548  oc new-build webserver31-tomcat8-openshift --name=upi --binary=true
+  549  oc start-build upi --from-dir=. --follow=true --wait=true
+  550  oc new-app upi
+  551  oc get nodes --show-labels
+  552  history | grep label
+  553  oc projects
+  554  oc delete project upi upi-uat upi-sit
+  555  oc delete dev-admin
+  556  oc delete project dev-admin
+  557  oc get nodes
+  558  oc label node/upiuatapp1 node/upiuatapp2 node/upiuatapp3.onlinesbi.com node/upiuatapp4.onlinesbi.com upi=true
+  559  oc new-project sbiupiuat --node-selector='upi=true'
+  560  history | grep project
+  561  oc adm new-project sbiupiuat --node-selector='upi=true'
+  562  oc adm new-project sbiupisit --node-selector='upi=true'
+  563  oc adm new-project sbiupidemo --node-selector='upi=true'
+  564  oc project sbiupidemo
+  565  ls -ltr
+  566  oc new-build webserver31-tomcat8-openshift --name=upi --binary=true
+  567  oc start-build upi --from-dir=. --follow=true --wait=true
+  568  oc delete all --all
+  569  ls -ltr
+  570  docker images
+  571  docker images | grep upi
+  572  docker tag docker-registry.default.svc:5000/upi/upi docker-registry.default.svc:5000/sbiupiuat/upi
+  573  docker tag docker-registry.default.svc:5000/upi/upi docker-registry.default.svc:5000/sbiupisit/upi
+  574  docker tag docker-registry.default.svc:5000/upi/upi docker-registry.default.svc:5000/sbiupidemo/upi
+  575  docker push  docker-registry.default.svc:5000/sbiupiuat/upi
+  576  docker push  docker-registry.default.svc:5000/sbiupisit/upi
+  577  docker push  docker-registry.default.svc:5000/sbiupidemo/upi
+  578  oc new-app upi
+  579  oc expose svc/upi
+  580  oc project sbiupiuat
+  581  oc get all
+  582  oc new-app upi
+  583  oc project sbiupisit
+  584  oc new-app upi
+  585  oc expose svc/upi
+  586  oc project sbiupiuat
+  587  oc expose svc/upi
+  588  curl https://uatupi.onlinesbi.com
+  589  htpasswd --help
+  590  htpasswd gconndev
+  591  htpasswd gconndev gconndev
+  592  htpasswd -c gconsdevuser sbigcons@12345
+  593  htpasswd -c gconsdevuser
+  594  ls /etc/origin/master/
+  595  ls /etc/origin/master/ | grep htpasswd
+  596  htpasswd -b /etc/origin/master/htpasswd gconsdevuser sbigcons@12345
+  597  htpasswd
+  598  /usr/local/bin/master-restart api api
+  599  /usr/local/bin/master-restart controllers controllers
+  600  oc adm policy add-to-user --help
+  601  oc adm policy add-role-to-user edit gconsdevuser -n sbigconstest
+  602  oc adm policy add-role-to-user edit gconsdevuser -n sbigconsuat
+  603  exit
+  604  htpasswd -b /etc/origin/master/htpasswd upidevuser sbiupi@12345
+  605  exit
+  606  history
+  607  history|more
+  608  ls -ltr
+  609  cd /root/ocp/
+  610  ls -ltr
+  611  mkdir upi
+  612  mv log4j2.xml upi/
+  613  mv hsm.config upi/
+  614  mv ROOT.war upi/
+  615  mv Dockerfile upi/
+  616  mv cafile.cer upi/
+  617  ls -ltr
+  618  mv TaskManager_test_files/ sbi/
+  619  ls -ltr
+  620  mv sbi/ gcons/
+  621  cd gcons/
+  622  ls -ltr
+  623  oc project sbigconsuat
+  624  vi Dockerfile
+  625  docker build -t gcons .
+  626  docker images | grep openjdk
+  627  docker images
+  628  docker images | grep gcons
+  629  docker tag gcons docker-registry.default.svc:5000/sbigconsuat/gcons
+  630  docker push docker-registry.default.svc:5000/sbigconsuat/gcons
+  631  ls -ltr
+  632  cat docker-compose.yaml
+  633  ls -ltr
+  634  oc project -q
+  635  oc create secret generic recon_secrets --from-file=recon_secrets.json
+  636  cat recon_secrets.json
+  637  oc create secret generic recon --from-file=recon_secrets.json
+  638  oc get secrets
+  639  oc new-app --help
+  640  oc new-app --help | grep secret
+  641  oc ge is
+  642  oc get is
+  643  oc get secrets
+  644  oc new-app gcons --source-secret=recon
+  645  ls -ltr
+  646  vi Dockerfile
+  647  oc delete all --all
+  648  history | grep push
+  649  docker push docker-registry.default.svc:5000/sbigconsuat/gcons
+  650  oc delete is gcons
+  651  docker build -t gcon .
+  652  whoami
+  653  oc whoami
+  654  oc new-app gcons
+  655  docker push docker-registry.default.svc:5000/sbigconsuat/gcons
+  656  oc new-app gcons
+  657  vi Dockerfile
+  658  docker images
+  659  docker images | grep openjdk
+  660  history | grep policy
+  661   oc policy add-role-to-group edit system:serviceaccounts:cicd-ocpadmin -n sbiupiuat
+  662   oc policy add-role-to-group edit system:serviceaccounts:cicd-ocpadmin -n sbiupisit
+  663  oc projects
+  664  cd ../cicd
+  665  ls -ltr
+  666  cd upi
+  667  vi pipeline-upi.yml
+  668  oc project cicd-ocpadmin
+  669  oc create -f pipeline-upi.yml
+  670  curl http://gogs-cicd-ocpadmin.icd-ocpadmin.cloudapps.onlinesbi.com
+  671  curl http://nexus-cicd-ocpadmin.cloudapps.onlinesbi.com
+  672  oc get svc
+  673  curl -o /tmp/curl.log -sL --post302 -w "%{http_code}" http://gogs:3000/user/sign_up               --form user_name=$GOGS_USER               --form password=$GOGS_PWD               --form retype=$GOGS_PWD               --form email
+=admin@gogs.com
+  674   cat <<EOF > /tmp/data.json
+  675              {
+  676                "clone_addr": "https://github.com/OpenShiftDemos/openshift-tasks.git",
+  677                "uid": 1,
+  678                "repo_name": "openshift-tasks"
+  679              }
+  680  pwd
+  681  ls -ltr
+  682  cd ../..
+  683  pwd
+  684  ls -ltr
+  685  cd cicd
+  686  ls -ltr
+  687  cd upi
+  688  ls -ltr
+  689  rm pipeline.yml
+  690  ls -ltr
+  691  curl https://hawkular-metrics.cloudapps.onlinesbi.com/
+  692  ls
+  693  scp pipeline-upi.yml root@upiuatbastion:/root/ocp
+  694  ls
+  695  cat /root/
+  696  pwd
+  697  cd /root
+  698  ls -a
+  699  cat .bash
+  700  cat .bash_history
+  701  scp  .bash_history root@upiuatbastion:/root/ocp/masterlog1.txt
+  702  cleaR
+  703  cat /etc/hosts
+  704  ssh genericuatapp1.onlinesbi.com
+  705  ls
+  706  ls /home/
+  707  ls
+  708  exit
+  709  cd /root/ocp/gcons/
+  710  ls -ltr
+  711  docker rmi gcons
+  712  docker build -t gcons:v1 .
+  713  docker images | grep gconc
+  714  docker images | grep gcons
+  715  docker tag gcons:v1 docker-registry.default.svc:5000/sbigconsuat/gcons:v1
+  716  ls -ltr
+  717  oc delete dc gcons
+  718  docker push docker-registry.default.svc:5000/sbigconsuat/gcons:v1
+  719  oc login -u system:admin
+  720  docker push docker-registry.default.svc:5000/sbigconsuat/gcons:v1
+  721  docker login docker-registry.default.svc:5000 -u $(oc whoami) -p $(oc whoami -t)
+  722  oc login -u ocpadmin
+  723  docker login docker-registry.default.svc:5000 -u $(oc whoami) -p $(oc whoami -t)
+  724  docker push docker-registry.default.svc:5000/sbigconsuat/gcons:v1
+  725  oc get is
+  726  oc new-app gcons:v1 --source-secret=recon
+  727  oc get secrets
+  728  exit
+  729  history
+  730  history|more
+  731  os get route
+  732  os get svc
+  733  oc login
+  734  oc project sbiupiuat
+  735  os get pods
+  736  oc get pods
+  737  oc get route
+  738  oc get svc
+  739  clear
+  740  curl -X POST http:// 172.30.108.240:8080/upi2/upi/api/getAccBalConfWeb -d {"pspId":"201","requestMsg":"CA6098FC4384549D212083965DC2B49B12F053CCA42B713EBEA71349A8FE70360ECD39AE765EC7187FCDE9EC502A8A4D1AF29EE2F96B08B0407F576B68BD9D4
+4E0D984D80DD6042F401BDE8E9FDDEE4CF5E78024304BD55EC4663F70A8E4CB396D641429164A2C1EC338215FA659244F2007FEE45E6693BD150D76BD56CF5065FDEC4F52E4A4913BEB01ED1E0185C1F306A179B15C6F31DBF6CC20F0A86645F526C8E94E35A23735993060C08DA6C87595541C005985
+CA10CF0CDE5CB5AF6D41B8C9A25716A063389206B51FE307561E2AAFA1EDA350C304B87D03F9C99D2C0B8D8375DE264BADB2E71E8E8246B07230EBAFEA79589A215634A179DB90FF35C6B0C20A9D76ED3281594082F91BE9D8CAE329DC0022947212A75B829109C4B5691815050EC7682F3BEB385F87D
+E8F4442D36E53451D63CF5E714321EEF37E95C17BCEA3761C76E795C69663A44485CE083DD974F3529F28A69CFAC0AC4B6E66EE1EB3442B84FDB600265EDA7478FECFE9074A215E4D2374542E3DBD1AC3B50C66E84C3AF440543F5998D36D45C08883629ABAC3B6551F1BF5F318317983B84F5F6AAF36
+C2EEA1BFCDBAC19B57A5AB911722439FA924CE2CD9741CE6F8F98CBDCFF35FBEC997B64935D472159542F3819652A9C92D0BFD826D97FE0CBCB151D2BC1738613F435C9A5BE4F3DA17E3F62C480090A60438E70983F487F3B522E229F1255702F0D052BAC40C53B53BD3BB089A9B1B0D83EC0F5188041
+E05BC84B99F4A3ABB2B310EFC5C857D69A6068CDEED59ED5E4B154A4081DFE1E3561F4A5601D629F249770BB70F304A8396598C7E1A0AC99F9FBF28BAE58E773E37B392B5274DFFFA574CCAFC2B81C771F74A14295FDC2DB5370EB828D28C593C9DEA88527CC94FC809660A8EDE2C8C508FEA936C1238
+13E6739F884775AB7643059D1BA5B4F6AB835E317398E07286FDC70C6A33F5C05D3DB2153115EF9BCF2CFE4F7608F4D1288099E95453FCC1E6DF617363C58FACBD0F46C43B9273A9AFF1289E0BC7DB8DCAF0F2017FFD730EDC295473F11D65A12166798ED072F88A6E0D39D86E49BC341AA8D17076B47
+430FF7997F7FBB97BB6A931E1C49BC858D43E31F0F25FD0014809D73E53FAF9134CCEF188E10D2CC4077567817363889FA0D16D78E7946CCA7AFDA57B68D94A02BBB98EB27B04E9BEBEF2C683ECF34344F7ECC8473BBA2768CDD70DB381B2518A765288A2A2FE3D0EFA9FBA5F9F1F6E1F889A889848BC
+2DED3B1EBDF0778F4445C6CAF576CCFB16476C1B45C2456C04741A84905B238FA44146AE3B925AC8BB76CAC0A7960A5525BD2DC3CF875E3003588E6B65668FD151284CA7B616D4D31356C7EAC9F74A0A284A7F269229FFF981B1B44657246A44486C2A4C628A694009DCB2B6DBBCA8D13D5903980F421
+3BA1D13627F7AAA79558692F5781519317F3FB14B3AB1B0E42BDE0529F860E00C375AFEA5E004000BD2BD99B69FA010B8C176EA3D4D2A09967C5C9E76AB6554729E27ABAD76A154AAB295CC7F8EE38B5E212B1D5872ABB9B4C662EBAE74F3B7C5E2FD33E5A291F7EE439D3B9DF5FAFF808ED2951C10D9
+0978375561AD8A42D97CF2DCC4A9943BD99AE12C7E00BEAE33165B8DF6C011F0AB620AE2301DDE21D5D0F4AD782A968F4D385C2C9B86B30626F6D63E36EB107AC2D11BF31AEE225CE77B3E3E175C238D7A0653934D8791E8A03C67B56A776AD895628983EAA701AFEBFE8031FFA25426F2BE8612F6B81
+42CC4857CC68D5ADFFE96E5DAD5F9F361E1FD5A08B34271F3CF408C6FBBEF7E7F011BD006DC3E48764F89A6D4D7BFBC85DE47FDB932AE262C4D4E884EE348C2072C0C8F6BB6C1FDE9EC71D171456434E48AA9F7F1C92B2FCF61E873E9DE7CF20FC222C1688037E15A645A66DA45459451B3AF4D634FEF
+A9494018A48F9E7BF946AC707F2C4F16FC98A7497C62AC5C8266A4518BE0F75B54E033730B6F5B857363E78E3EA7A9C382CBC33FFF6A2A89776BF0AF54704F3BC51A168A175E8E26D8076098FA98F595F98272AC1693B5B4C841564A78A5FDFE3FEE6BF081321070512AA7913FEEF7FDDBD6303EB8465
+841E326AFE83041039E281B96BFFB63B24E6B4FD49279DAA1FBFC7DED738B990F579709CCEA419B415181AD6B3A7440D9386A3140626A003E0EB7BD73CFE93AF60E75952D0A71FC7DAB7A0218ED2C1AD5E0DB45E2E4474F03A71E14F87AFA1E336192F36EF6C9E64C2F0087336E9CEAA530014F558953
+59DB2C82A4B07EEA4AB67680A9370672AE242C5EF44E1A654E21E5E4B1C8E41193456A8C6EFD79D8AD3C51D3860D65D628D0919D2B082172782C70E9"}
+  741  curl -X POST https://uatupi.onlinesbi.com/upi2/upi/api/getAccBalConfWeb -d {"pspId":"201","requestMsg":"CA6098FC4384549D212083965DC2B49B12F053CCA42B713EBEA71349A8FE70360ECD39AE765EC7187FCDE9EC502A8A4D1AF29EE2F96B08B0407F576B68BD9D
+44E0D984D80DD6042F401BDE8E9FDDEE4CF5E78024304BD55EC4663F70A8E4CB396D641429164A2C1EC338215FA659244F2007FEE45E6693BD150D76BD56CF5065FDEC4F52E4A4913BEB01ED1E0185C1F306A179B15C6F31DBF6CC20F0A86645F526C8E94E35A23735993060C08DA6C87595541C00598
+5CA10CF0CDE5CB5AF6D41B8C9A25716A063389206B51FE307561E2AAFA1EDA350C304B87D03F9C99D2C0B8D8375DE264BADB2E71E8E8246B07230EBAFEA79589A215634A179DB90FF35C6B0C20A9D76ED3281594082F91BE9D8CAE329DC0022947212A75B829109C4B5691815050EC7682F3BEB385F87
+DE8F4442D36E53451D63CF5E714321EEF37E95C17BCEA3761C76E795C69663A44485CE083DD974F3529F28A69CFAC0AC4B6E66EE1EB3442B84FDB600265EDA7478FECFE9074A215E4D2374542E3DBD1AC3B50C66E84C3AF440543F5998D36D45C08883629ABAC3B6551F1BF5F318317983B84F5F6AAF3
+6C2EEA1BFCDBAC19B57A5AB911722439FA924CE2CD9741CE6F8F98CBDCFF35FBEC997B64935D472159542F3819652A9C92D0BFD826D97FE0CBCB151D2BC1738613F435C9A5BE4F3DA17E3F62C480090A60438E70983F487F3B522E229F1255702F0D052BAC40C53B53BD3BB089A9B1B0D83EC0F518804
+1E05BC84B99F4A3ABB2B310EFC5C857D69A6068CDEED59ED5E4B154A4081DFE1E3561F4A5601D629F249770BB70F304A8396598C7E1A0AC99F9FBF28BAE58E773E37B392B5274DFFFA574CCAFC2B81C771F74A14295FDC2DB5370EB828D28C593C9DEA88527CC94FC809660A8EDE2C8C508FEA936C123
+813E6739F884775AB7643059D1BA5B4F6AB835E317398E07286FDC70C6A33F5C05D3DB2153115EF9BCF2CFE4F7608F4D1288099E95453FCC1E6DF617363C58FACBD0F46C43B9273A9AFF1289E0BC7DB8DCAF0F2017FFD730EDC295473F11D65A12166798ED072F88A6E0D39D86E49BC341AA8D17076B4
+7430FF7997F7FBB97BB6A931E1C49BC858D43E31F0F25FD0014809D73E53FAF9134CCEF188E10D2CC4077567817363889FA0D16D78E7946CCA7AFDA57B68D94A02BBB98EB27B04E9BEBEF2C683ECF34344F7ECC8473BBA2768CDD70DB381B2518A765288A2A2FE3D0EFA9FBA5F9F1F6E1F889A889848B
+C2DED3B1EBDF0778F4445C6CAF576CCFB16476C1B45C2456C04741A84905B238FA44146AE3B925AC8BB76CAC0A7960A5525BD2DC3CF875E3003588E6B65668FD151284CA7B616D4D31356C7EAC9F74A0A284A7F269229FFF981B1B44657246A44486C2A4C628A694009DCB2B6DBBCA8D13D5903980F42
+13BA1D13627F7AAA79558692F5781519317F3FB14B3AB1B0E42BDE0529F860E00C375AFEA5E004000BD2BD99B69FA010B8C176EA3D4D2A09967C5C9E76AB6554729E27ABAD76A154AAB295CC7F8EE38B5E212B1D5872ABB9B4C662EBAE74F3B7C5E2FD33E5A291F7EE439D3B9DF5FAFF808ED2951C10D
+90978375561AD8A42D97CF2DCC4A9943BD99AE12C7E00BEAE33165B8DF6C011F0AB620AE2301DDE21D5D0F4AD782A968F4D385C2C9B86B30626F6D63E36EB107AC2D11BF31AEE225CE77B3E3E175C238D7A0653934D8791E8A03C67B56A776AD895628983EAA701AFEBFE8031FFA25426F2BE8612F6B8
+142CC4857CC68D5ADFFE96E5DAD5F9F361E1FD5A08B34271F3CF408C6FBBEF7E7F011BD006DC3E48764F89A6D4D7BFBC85DE47FDB932AE262C4D4E884EE348C2072C0C8F6BB6C1FDE9EC71D171456434E48AA9F7F1C92B2FCF61E873E9DE7CF20FC222C1688037E15A645A66DA45459451B3AF4D634FE
+FA9494018A48F9E7BF946AC707F2C4F16FC98A7497C62AC5C8266A4518BE0F75B54E033730B6F5B857363E78E3EA7A9C382CBC33FFF6A2A89776BF0AF54704F3BC51A168A175E8E26D8076098FA98F595F98272AC1693B5B4C841564A78A5FDFE3FEE6BF081321070512AA7913FEEF7FDDBD6303EB846
+5841E326AFE83041039E281B96BFFB63B24E6B4FD49279DAA1FBFC7DED738B990F579709CCEA419B415181AD6B3A7440D9386A3140626A003E0EB7BD73CFE93AF60E75952D0A71FC7DAB7A0218ED2C1AD5E0DB45E2E4474F03A71E14F87AFA1E336192F36EF6C9E64C2F0087336E9CEAA530014F55895
+359DB2C82A4B07EEA4AB67680A9370672AE242C5EF44E1A654E21E5E4B1C8E41193456A8C6EFD79D8AD3C51D3860D65D628D0919D2B082172782C70E9"}
+  742  ls -ltr
+  743  cd /home/
+  744  ls -ltr
+  745  cp recon-engine-service-taskmanager-1.0.0.jar /root/ocp/gcons/
+  746  cd /root/ocp/gcons/
+  747  ls -ltr
+  748  oc projects
+  749  oc project sbigconstest
+  750  ls -ltr
+  751  docker build -t gcons .
+  752  vi Dockerfile
+  753  docker build -t gcons .
+  754  pwd
+  755  histroy | gcons
+  756  history | grep gcons
+  757  docker images
+  758  docker images | grep gcons
+  759  docker tag gcons docker-registry.default.svc:5000/sbigconsuat/gcons
+  760  oc project sbigconsuat
+  761  oc new-app gcons
+  762  oc delete dc gcons
+  763  oc new-app gcons
+  764  oc delete dc gcons
+  765  oc secrets
+  766  oc get secrets
+  767  oc new-app gcons --source-secret=recon
+  768  oc projects
+  769  oc new-app --help | grep secrets
+  770  oc new-app --help | grep secret
+  771  curl -X POST https://uatupi.onlinesbi.com/upi/api/getAccBalConfWeb -d {"pspId":"201","requestMsg":"CA6098FC4384549D212083965DC2B49B12F053CCA42B713EBEA71349A8FE70360ECD39AE765EC7187FCDE9EC502A8A4D1AF29EE2F96B08B0407F576B68BD9D44E0D
+984D80DD6042F401BDE8E9FDDEE4CF5E78024304BD55EC4663F70A8E4CB396D641429164A2C1EC338215FA659244F2007FEE45E6693BD150D76BD56CF5065FDEC4F52E4A4913BEB01ED1E0185C1F306A179B15C6F31DBF6CC20F0A86645F526C8E94E35A23735993060C08DA6C87595541C005985CA10
+CF0CDE5CB5AF6D41B8C9A25716A063389206B51FE307561E2AAFA1EDA350C304B87D03F9C99D2C0B8D8375DE264BADB2E71E8E8246B07230EBAFEA79589A215634A179DB90FF35C6B0C20A9D76ED3281594082F91BE9D8CAE329DC0022947212A75B829109C4B5691815050EC7682F3BEB385F87DE8F4
+442D36E53451D63CF5E714321EEF37E95C17BCEA3761C76E795C69663A44485CE083DD974F3529F28A69CFAC0AC4B6E66EE1EB3442B84FDB600265EDA7478FECFE9074A215E4D2374542E3DBD1AC3B50C66E84C3AF440543F5998D36D45C08883629ABAC3B6551F1BF5F318317983B84F5F6AAF36C2EE
+A1BFCDBAC19B57A5AB911722439FA924CE2CD9741CE6F8F98CBDCFF35FBEC997B64935D472159542F3819652A9C92D0BFD826D97FE0CBCB151D2BC1738613F435C9A5BE4F3DA17E3F62C480090A60438E70983F487F3B522E229F1255702F0D052BAC40C53B53BD3BB089A9B1B0D83EC0F5188041E05B
+C84B99F4A3ABB2B310EFC5C857D69A6068CDEED59ED5E4B154A4081DFE1E3561F4A5601D629F249770BB70F304A8396598C7E1A0AC99F9FBF28BAE58E773E37B392B5274DFFFA574CCAFC2B81C771F74A14295FDC2DB5370EB828D28C593C9DEA88527CC94FC809660A8EDE2C8C508FEA936C123813E6
+739F884775AB7643059D1BA5B4F6AB835E317398E07286FDC70C6A33F5C05D3DB2153115EF9BCF2CFE4F7608F4D1288099E95453FCC1E6DF617363C58FACBD0F46C43B9273A9AFF1289E0BC7DB8DCAF0F2017FFD730EDC295473F11D65A12166798ED072F88A6E0D39D86E49BC341AA8D17076B47430F
+F7997F7FBB97BB6A931E1C49BC858D43E31F0F25FD0014809D73E53FAF9134CCEF188E10D2CC4077567817363889FA0D16D78E7946CCA7AFDA57B68D94A02BBB98EB27B04E9BEBEF2C683ECF34344F7ECC8473BBA2768CDD70DB381B2518A765288A2A2FE3D0EFA9FBA5F9F1F6E1F889A889848BC2DED
+3B1EBDF0778F4445C6CAF576CCFB16476C1B45C2456C04741A84905B238FA44146AE3B925AC8BB76CAC0A7960A5525BD2DC3CF875E3003588E6B65668FD151284CA7B616D4D31356C7EAC9F74A0A284A7F269229FFF981B1B44657246A44486C2A4C628A694009DCB2B6DBBCA8D13D5903980F4213BA1
+D13627F7AAA79558692F5781519317F3FB14B3AB1B0E42BDE0529F860E00C375AFEA5E004000BD2BD99B69FA010B8C176EA3D4D2A09967C5C9E76AB6554729E27ABAD76A154AAB295CC7F8EE38B5E212B1D5872ABB9B4C662EBAE74F3B7C5E2FD33E5A291F7EE439D3B9DF5FAFF808ED2951C10D90978
+375561AD8A42D97CF2DCC4A9943BD99AE12C7E00BEAE33165B8DF6C011F0AB620AE2301DDE21D5D0F4AD782A968F4D385C2C9B86B30626F6D63E36EB107AC2D11BF31AEE225CE77B3E3E175C238D7A0653934D8791E8A03C67B56A776AD895628983EAA701AFEBFE8031FFA25426F2BE8612F6B8142CC
+4857CC68D5ADFFE96E5DAD5F9F361E1FD5A08B34271F3CF408C6FBBEF7E7F011BD006DC3E48764F89A6D4D7BFBC85DE47FDB932AE262C4D4E884EE348C2072C0C8F6BB6C1FDE9EC71D171456434E48AA9F7F1C92B2FCF61E873E9DE7CF20FC222C1688037E15A645A66DA45459451B3AF4D634FEFA949
+4018A48F9E7BF946AC707F2C4F16FC98A7497C62AC5C8266A4518BE0F75B54E033730B6F5B857363E78E3EA7A9C382CBC33FFF6A2A89776BF0AF54704F3BC51A168A175E8E26D8076098FA98F595F98272AC1693B5B4C841564A78A5FDFE3FEE6BF081321070512AA7913FEEF7FDDBD6303EB8465841E
+326AFE83041039E281B96BFFB63B24E6B4FD49279DAA1FBFC7DED738B990F579709CCEA419B415181AD6B3A7440D9386A3140626A003E0EB7BD73CFE93AF60E75952D0A71FC7DAB7A0218ED2C1AD5E0DB45E2E4474F03A71E14F87AFA1E336192F36EF6C9E64C2F0087336E9CEAA530014F55895359DB
+2C82A4B07EEA4AB67680A9370672AE242C5EF44E1A654E21E5E4B1C8E41193456A8C6EFD79D8AD3C51D3860D65D628D0919D2B082172782C70E9"}
+  772  exit
+  773  cd ocp/gcons/
+  774  ls -ltr
+  775  vi recon_secrets.json
+  776  oc get secrets
+  777  oc get recon -oyaml
+  778  oc get recon -o yaml
+  779  oc get secrets recon -o yaml
+  780  ls -ltr
+  781  cat docker-compose.yaml
+  782  ls -ltr
+  783  cat docker-compose.yaml
+  784  LS -LTR
+  785  ls -ltr
+  786  cat docker-compose.yaml
+  787  oc create secret generic "recon_secrets" --from-file=recon_secrets.json
+  788  docker images
+  789  oc new-app gcons
+  790  cat docker-compose.yaml
+  791  oc delete dc gcons
+  792  oc new-app gcons:v1
+  793  cd ../upi/
+  794  ls -ltr
+  795  docker build -t upi .
+  796  docker images | grep upi
+  797  docker tag upi docker-registry.default.svc:5000/sbiupidemo/upi
+  798  docker push docker-registry.default.svc:5000/sbiupidemo/upi
+  799  oc delete dc upi
+  800  oc project sbiupidemo
+  801  oc delete dc upi
+  802  oc new-app upi
+  803  curl -X POST https://uatupi.onlinesbi.com/upi/api/getAccBalConfWeb -d {"pspId":"201","requestMsg":"CA6098FC4384549D212083965DC2B49B12F053CCA42B713EBEA71349A8FE70360ECD39AE765EC7187FCDE9EC502A8A4D1AF29EE2F96B08B0407F576B68BD9D44E0D
+984D80DD6042F401BDE8E9FDDEE4CF5E78024304BD55EC4663F70A8E4CB396D641429164A2C1EC338215FA659244F2007FEE45E6693BD150D76BD56CF5065FDEC4F52E4A4913BEB01ED1E0185C1F306A179B15C6F31DBF6CC20F0A86645F526C8E94E35A23735993060C08DA6C87595541C005985CA10
+CF0CDE5CB5AF6D41B8C9A25716A063389206B51FE307561E2AAFA1EDA350C304B87D03F9C99D2C0B8D8375DE264BADB2E71E8E8246B07230EBAFEA79589A215634A179DB90FF35C6B0C20A9D76ED3281594082F91BE9D8CAE329DC0022947212A75B829109C4B5691815050EC7682F3BEB385F87DE8F4
+442D36E53451D63CF5E714321EEF37E95C17BCEA3761C76E795C69663A44485CE083DD974F3529F28A69CFAC0AC4B6E66EE1EB3442B84FDB600265EDA7478FECFE9074A215E4D2374542E3DBD1AC3B50C66E84C3AF440543F5998D36D45C08883629ABAC3B6551F1BF5F318317983B84F5F6AAF36C2EE
+A1BFCDBAC19B57A5AB911722439FA924CE2CD9741CE6F8F98CBDCFF35FBEC997B64935D472159542F3819652A9C92D0BFD826D97FE0CBCB151D2BC1738613F435C9A5BE4F3DA17E3F62C480090A60438E70983F487F3B522E229F1255702F0D052BAC40C53B53BD3BB089A9B1B0D83EC0F5188041E05B
+C84B99F4A3ABB2B310EFC5C857D69A6068CDEED59ED5E4B154A4081DFE1E3561F4A5601D629F249770BB70F304A8396598C7E1A0AC99F9FBF28BAE58E773E37B392B5274DFFFA574CCAFC2B81C771F74A14295FDC2DB5370EB828D28C593C9DEA88527CC94FC809660A8EDE2C8C508FEA936C123813E6
+739F884775AB7643059D1BA5B4F6AB835E317398E07286FDC70C6A33F5C05D3DB2153115EF9BCF2CFE4F7608F4D1288099E95453FCC1E6DF617363C58FACBD0F46C43B9273A9AFF1289E0BC7DB8DCAF0F2017FFD730EDC295473F11D65A12166798ED072F88A6E0D39D86E49BC341AA8D17076B47430F
+F7997F7FBB97BB6A931E1C49BC858D43E31F0F25FD0014809D73E53FAF9134CCEF188E10D2CC4077567817363889FA0D16D78E7946CCA7AFDA57B68D94A02BBB98EB27B04E9BEBEF2C683ECF34344F7ECC8473BBA2768CDD70DB381B2518A765288A2A2FE3D0EFA9FBA5F9F1F6E1F889A889848BC2DED
+3B1EBDF0778F4445C6CAF576CCFB16476C1B45C2456C04741A84905B238FA44146AE3B925AC8BB76CAC0A7960A5525BD2DC3CF875E3003588E6B65668FD151284CA7B616D4D31356C7EAC9F74A0A284A7F269229FFF981B1B44657246A44486C2A4C628A694009DCB2B6DBBCA8D13D5903980F4213BA1
+D13627F7AAA79558692F5781519317F3FB14B3AB1B0E42BDE0529F860E00C375AFEA5E004000BD2BD99B69FA010B8C176EA3D4D2A09967C5C9E76AB6554729E27ABAD76A154AAB295CC7F8EE38B5E212B1D5872ABB9B4C662EBAE74F3B7C5E2FD33E5A291F7EE439D3B9DF5FAFF808ED2951C10D90978
+375561AD8A42D97CF2DCC4A9943BD99AE12C7E00BEAE33165B8DF6C011F0AB620AE2301DDE21D5D0F4AD782A968F4D385C2C9B86B30626F6D63E36EB107AC2D11BF31AEE225CE77B3E3E175C238D7A0653934D8791E8A03C67B56A776AD895628983EAA701AFEBFE8031FFA25426F2BE8612F6B8142CC
+4857CC68D5ADFFE96E5DAD5F9F361E1FD5A08B34271F3CF408C6FBBEF7E7F011BD006DC3E48764F89A6D4D7BFBC85DE47FDB932AE262C4D4E884EE348C2072C0C8F6BB6C1FDE9EC71D171456434E48AA9F7F1C92B2FCF61E873E9DE7CF20FC222C1688037E15A645A66DA45459451B3AF4D634FEFA949
+4018A48F9E7BF946AC707F2C4F16FC98A7497C62AC5C8266A4518BE0F75B54E033730B6F5B857363E78E3EA7A9C382CBC33FFF6A2A89776BF0AF54704F3BC51A168A175E8E26D8076098FA98F595F98272AC1693B5B4C841564A78A5FDFE3FEE6BF081321070512AA7913FEEF7FDDBD6303EB8465841E
+326AFE83041039E281B96BFFB63B24E6B4FD49279DAA1FBFC7DED738B990F579709CCEA419B415181AD6B3A7440D9386A3140626A003E0EB7BD73CFE93AF60E75952D0A71FC7DAB7A0218ED2C1AD5E0DB45E2E4474F03A71E14F87AFA1E336192F36EF6C9E64C2F0087336E9CEAA530014F55895359DB
+2C82A4B07EEA4AB67680A9370672AE242C5EF44E1A654E21E5E4B1C8E41193456A8C6EFD79D8AD3C51D3860D65D628D0919D2B082172782C70E9"}
+  804  curl -X POST https://uatupi.onlinesbi.com/upi/noaouth/getAccBalConfWeb -d {"pspId":"201","requestMsg":"CA6098FC4384549D212083965DC2B49B12F053CCA42B713EBEA71349A8FE70360ECD39AE765EC7187FCDE9EC502A8A4D1AF29EE2F96B08B0407F576B68BD9D4
+4E0D984D80DD6042F401BDE8E9FDDEE4CF5E78024304BD55EC4663F70A8E4CB396D641429164A2C1EC338215FA659244F2007FEE45E6693BD150D76BD56CF5065FDEC4F52E4A4913BEB01ED1E0185C1F306A179B15C6F31DBF6CC20F0A86645F526C8E94E35A23735993060C08DA6C87595541C005985
+CA10CF0CDE5CB5AF6D41B8C9A25716A063389206B51FE307561E2AAFA1EDA350C304B87D03F9C99D2C0B8D8375DE264BADB2E71E8E8246B07230EBAFEA79589A215634A179DB90FF35C6B0C20A9D76ED3281594082F91BE9D8CAE329DC0022947212A75B829109C4B5691815050EC7682F3BEB385F87D
+E8F4442D36E53451D63CF5E714321EEF37E95C17BCEA3761C76E795C69663A44485CE083DD974F3529F28A69CFAC0AC4B6E66EE1EB3442B84FDB600265EDA7478FECFE9074A215E4D2374542E3DBD1AC3B50C66E84C3AF440543F5998D36D45C08883629ABAC3B6551F1BF5F318317983B84F5F6AAF36
+C2EEA1BFCDBAC19B57A5AB911722439FA924CE2CD9741CE6F8F98CBDCFF35FBEC997B64935D472159542F3819652A9C92D0BFD826D97FE0CBCB151D2BC1738613F435C9A5BE4F3DA17E3F62C480090A60438E70983F487F3B522E229F1255702F0D052BAC40C53B53BD3BB089A9B1B0D83EC0F5188041
+E05BC84B99F4A3ABB2B310EFC5C857D69A6068CDEED59ED5E4B154A4081DFE1E3561F4A5601D629F249770BB70F304A8396598C7E1A0AC99F9FBF28BAE58E773E37B392B5274DFFFA574CCAFC2B81C771F74A14295FDC2DB5370EB828D28C593C9DEA88527CC94FC809660A8EDE2C8C508FEA936C1238
+13E6739F884775AB7643059D1BA5B4F6AB835E317398E07286FDC70C6A33F5C05D3DB2153115EF9BCF2CFE4F7608F4D1288099E95453FCC1E6DF617363C58FACBD0F46C43B9273A9AFF1289E0BC7DB8DCAF0F2017FFD730EDC295473F11D65A12166798ED072F88A6E0D39D86E49BC341AA8D17076B47
+430FF7997F7FBB97BB6A931E1C49BC858D43E31F0F25FD0014809D73E53FAF9134CCEF188E10D2CC4077567817363889FA0D16D78E7946CCA7AFDA57B68D94A02BBB98EB27B04E9BEBEF2C683ECF34344F7ECC8473BBA2768CDD70DB381B2518A765288A2A2FE3D0EFA9FBA5F9F1F6E1F889A889848BC
+2DED3B1EBDF0778F4445C6CAF576CCFB16476C1B45C2456C04741A84905B238FA44146AE3B925AC8BB76CAC0A7960A5525BD2DC3CF875E3003588E6B65668FD151284CA7B616D4D31356C7EAC9F74A0A284A7F269229FFF981B1B44657246A44486C2A4C628A694009DCB2B6DBBCA8D13D5903980F421
+3BA1D13627F7AAA79558692F5781519317F3FB14B3AB1B0E42BDE0529F860E00C375AFEA5E004000BD2BD99B69FA010B8C176EA3D4D2A09967C5C9E76AB6554729E27ABAD76A154AAB295CC7F8EE38B5E212B1D5872ABB9B4C662EBAE74F3B7C5E2FD33E5A291F7EE439D3B9DF5FAFF808ED2951C10D9
+0978375561AD8A42D97CF2DCC4A9943BD99AE12C7E00BEAE33165B8DF6C011F0AB620AE2301DDE21D5D0F4AD782A968F4D385C2C9B86B30626F6D63E36EB107AC2D11BF31AEE225CE77B3E3E175C238D7A0653934D8791E8A03C67B56A776AD895628983EAA701AFEBFE8031FFA25426F2BE8612F6B81
+42CC4857CC68D5ADFFE96E5DAD5F9F361E1FD5A08B34271F3CF408C6FBBEF7E7F011BD006DC3E48764F89A6D4D7BFBC85DE47FDB932AE262C4D4E884EE348C2072C0C8F6BB6C1FDE9EC71D171456434E48AA9F7F1C92B2FCF61E873E9DE7CF20FC222C1688037E15A645A66DA45459451B3AF4D634FEF
+A9494018A48F9E7BF946AC707F2C4F16FC98A7497C62AC5C8266A4518BE0F75B54E033730B6F5B857363E78E3EA7A9C382CBC33FFF6A2A89776BF0AF54704F3BC51A168A175E8E26D8076098FA98F595F98272AC1693B5B4C841564A78A5FDFE3FEE6BF081321070512AA7913FEEF7FDDBD6303EB8465
+841E326AFE83041039E281B96BFFB63B24E6B4FD49279DAA1FBFC7DED738B990F579709CCEA419B415181AD6B3A7440D9386A3140626A003E0EB7BD73CFE93AF60E75952D0A71FC7DAB7A0218ED2C1AD5E0DB45E2E4474F03A71E14F87AFA1E336192F36EF6C9E64C2F0087336E9CEAA530014F558953
+59DB2C82A4B07EEA4AB67680A9370672AE242C5EF44E1A654E21E5E4B1C8E41193456A8C6EFD79D8AD3C51D3860D65D628D0919D2B082172782C70E9"}
+  805  cd ../gcons/
+  806  cat docker-compose.yaml
+  807  oc get secrets
+  808  oc project sbigconsuat
+  809  oc get secrets
+  810  oc delete secret  recon
+  811  cat docker-compose.yaml
+  812  vi Dockerfile
+  813  oc create secret recon --from-file recon_secrets.json
+  814  oc create secret generic recon --from-file recon_secrets.json
+  815  cat docker-compose.yaml
+  816  ls -ltr
+  817  curl -X POST https://uatupi.onlinesbi.com/upi/noaouth/getAccBalConfWeb -d {"pspId":"201","requestMsg":"CA6098FC4384549D212083965DC2B49B12F053CCA42B713EBEA71349A8FE70360ECD39AE765EC7187FCDE9EC502A8A4D1AF29EE2F96B08B0407F576B68BD9D4
+4E0D984D80DD6042F401BDE8E9FDDEE4CF5E78024304BD55EC4663F70A8E4CB396D641429164A2C1EC338215FA659244F2007FEE45E6693BD150D76BD56CF5065FDEC4F52E4A4913BEB01ED1E0185C1F306A179B15C6F31DBF6CC20F0A86645F526C8E94E35A23735993060C08DA6C87595541C005985
+CA10CF0CDE5CB5AF6D41B8C9A25716A063389206B51FE307561E2AAFA1EDA350C304B87D03F9C99D2C0B8D8375DE264BADB2E71E8E8246B07230EBAFEA79589A215634A179DB90FF35C6B0C20A9D76ED3281594082F91BE9D8CAE329DC0022947212A75B829109C4B5691815050EC7682F3BEB385F87D
+E8F4442D36E53451D63CF5E714321EEF37E95C17BCEA3761C76E795C69663A44485CE083DD974F3529F28A69CFAC0AC4B6E66EE1EB3442B84FDB600265EDA7478FECFE9074A215E4D2374542E3DBD1AC3B50C66E84C3AF440543F5998D36D45C08883629ABAC3B6551F1BF5F318317983B84F5F6AAF36
+C2EEA1BFCDBAC19B57A5AB911722439FA924CE2CD9741CE6F8F98CBDCFF35FBEC997B64935D472159542F3819652A9C92D0BFD826D97FE0CBCB151D2BC1738613F435C9A5BE4F3DA17E3F62C480090A60438E70983F487F3B522E229F1255702F0D052BAC40C53B53BD3BB089A9B1B0D83EC0F5188041
+E05BC84B99F4A3ABB2B310EFC5C857D69A6068CDEED59ED5E4B154A4081DFE1E3561F4A5601D629F249770BB70F304A8396598C7E1A0AC99F9FBF28BAE58E773E37B392B5274DFFFA574CCAFC2B81C771F74A14295FDC2DB5370EB828D28C593C9DEA88527CC94FC809660A8EDE2C8C508FEA936C1238
+13E6739F884775AB7643059D1BA5B4F6AB835E317398E07286FDC70C6A33F5C05D3DB2153115EF9BCF2CFE4F7608F4D1288099E95453FCC1E6DF617363C58FACBD0F46C43B9273A9AFF1289E0BC7DB8DCAF0F2017FFD730EDC295473F11D65A12166798ED072F88A6E0D39D86E49BC341AA8D17076B47
+430FF7997F7FBB97BB6A931E1C49BC858D43E31F0F25FD0014809D73E53FAF9134CCEF188E10D2CC4077567817363889FA0D16D78E7946CCA7AFDA57B68D94A02BBB98EB27B04E9BEBEF2C683ECF34344F7ECC8473BBA2768CDD70DB381B2518A765288A2A2FE3D0EFA9FBA5F9F1F6E1F889A889848BC
+2DED3B1EBDF0778F4445C6CAF576CCFB16476C1B45C2456C04741A84905B238FA44146AE3B925AC8BB76CAC0A7960A5525BD2DC3CF875E3003588E6B65668FD151284CA7B616D4D31356C7EAC9F74A0A284A7F269229FFF981B1B44657246A44486C2A4C628A694009DCB2B6DBBCA8D13D5903980F421
+3BA1D13627F7AAA79558692F5781519317F3FB14B3AB1B0E42BDE0529F860E00C375AFEA5E004000BD2BD99B69FA010B8C176EA3D4D2A09967C5C9E76AB6554729E27ABAD76A154AAB295CC7F8EE38B5E212B1D5872ABB9B4C662EBAE74F3B7C5E2FD33E5A291F7EE439D3B9DF5FAFF808ED2951C10D9
+0978375561AD8A42D97CF2DCC4A9943BD99AE12C7E00BEAE33165B8DF6C011F0AB620AE2301DDE21D5D0F4AD782A968F4D385C2C9B86B30626F6D63E36EB107AC2D11BF31AEE225CE77B3E3E175C238D7A0653934D8791E8A03C67B56A776AD895628983EAA701AFEBFE8031FFA25426F2BE8612F6B81
+42CC4857CC68D5ADFFE96E5DAD5F9F361E1FD5A08B34271F3CF408C6FBBEF7E7F011BD006DC3E48764F89A6D4D7BFBC85DE47FDB932AE262C4D4E884EE348C2072C0C8F6BB6C1FDE9EC71D171456434E48AA9F7F1C92B2FCF61E873E9DE7CF20FC222C1688037E15A645A66DA45459451B3AF4D634FEF
+A9494018A48F9E7BF946AC707F2C4F16FC98A7497C62AC5C8266A4518BE0F75B54E033730B6F5B857363E78E3EA7A9C382CBC33FFF6A2A89776BF0AF54704F3BC51A168A175E8E26D8076098FA98F595F98272AC1693B5B4C841564A78A5FDFE3FEE6BF081321070512AA7913FEEF7FDDBD6303EB8465
+841E326AFE83041039E281B96BFFB63B24E6B4FD49279DAA1FBFC7DED738B990F579709CCEA419B415181AD6B3A7440D9386A3140626A003E0EB7BD73CFE93AF60E75952D0A71FC7DAB7A0218ED2C1AD5E0DB45E2E4474F03A71E14F87AFA1E336192F36EF6C9E64C2F0087336E9CEAA530014F558953
+59DB2C82A4B07EEA4AB67680A9370672AE242C5EF44E1A654E21E5E4B1C8E41193456A8C6EFD79D8AD3C51D3860D65D628D0919D2B082172782C70E9"}
+  818  curl -X POST https://uatupi.onlinesbi.com/upi/noaouth/getAccBalConfWeb -g -d {"pspId": "201", "requestMsg":"CA6098FC4384549D212083965DC2B49B12F053CCA42B713EBEA71349A8FE70360ECD39AE765EC7187FCDE9EC502A8A4D1AF29EE2F96B08B0407F576B68
+BD9D44E0D984D80DD6042F401BDE8E9FDDEE4CF5E78024304BD55EC4663F70A8E4CB396D641429164A2C1EC338215FA659244F2007FEE45E6693BD150D76BD56CF5065FDEC4F52E4A4913BEB01ED1E0185C1F306A179B15C6F31DBF6CC20F0A86645F526C8E94E35A23735993060C08DA6C87595541C0
+05985CA10CF0CDE5CB5AF6D41B8C9A25716A063389206B51FE307561E2AAFA1EDA350C304B87D03F9C99D2C0B8D8375DE264BADB2E71E8E8246B07230EBAFEA79589A215634A179DB90FF35C6B0C20A9D76ED3281594082F91BE9D8CAE329DC0022947212A75B829109C4B5691815050EC7682F3BEB38
+5F87DE8F4442D36E53451D63CF5E714321EEF37E95C17BCEA3761C76E795C69663A44485CE083DD974F3529F28A69CFAC0AC4B6E66EE1EB3442B84FDB600265EDA7478FECFE9074A215E4D2374542E3DBD1AC3B50C66E84C3AF440543F5998D36D45C08883629ABAC3B6551F1BF5F318317983B84F5F6
+AAF36C2EEA1BFCDBAC19B57A5AB911722439FA924CE2CD9741CE6F8F98CBDCFF35FBEC997B64935D472159542F3819652A9C92D0BFD826D97FE0CBCB151D2BC1738613F435C9A5BE4F3DA17E3F62C480090A60438E70983F487F3B522E229F1255702F0D052BAC40C53B53BD3BB089A9B1B0D83EC0F51
+88041E05BC84B99F4A3ABB2B310EFC5C857D69A6068CDEED59ED5E4B154A4081DFE1E3561F4A5601D629F249770BB70F304A8396598C7E1A0AC99F9FBF28BAE58E773E37B392B5274DFFFA574CCAFC2B81C771F74A14295FDC2DB5370EB828D28C593C9DEA88527CC94FC809660A8EDE2C8C508FEA936
+C123813E6739F884775AB7643059D1BA5B4F6AB835E317398E07286FDC70C6A33F5C05D3DB2153115EF9BCF2CFE4F7608F4D1288099E95453FCC1E6DF617363C58FACBD0F46C43B9273A9AFF1289E0BC7DB8DCAF0F2017FFD730EDC295473F11D65A12166798ED072F88A6E0D39D86E49BC341AA8D170
+76B47430FF7997F7FBB97BB6A931E1C49BC858D43E31F0F25FD0014809D73E53FAF9134CCEF188E10D2CC4077567817363889FA0D16D78E7946CCA7AFDA57B68D94A02BBB98EB27B04E9BEBEF2C683ECF34344F7ECC8473BBA2768CDD70DB381B2518A765288A2A2FE3D0EFA9FBA5F9F1F6E1F889A889
+848BC2DED3B1EBDF0778F4445C6CAF576CCFB16476C1B45C2456C04741A84905B238FA44146AE3B925AC8BB76CAC0A7960A5525BD2DC3CF875E3003588E6B65668FD151284CA7B616D4D31356C7EAC9F74A0A284A7F269229FFF981B1B44657246A44486C2A4C628A694009DCB2B6DBBCA8D13D590398
+0F4213BA1D13627F7AAA79558692F5781519317F3FB14B3AB1B0E42BDE0529F860E00C375AFEA5E004000BD2BD99B69FA010B8C176EA3D4D2A09967C5C9E76AB6554729E27ABAD76A154AAB295CC7F8EE38B5E212B1D5872ABB9B4C662EBAE74F3B7C5E2FD33E5A291F7EE439D3B9DF5FAFF808ED2951
+C10D90978375561AD8A42D97CF2DCC4A9943BD99AE12C7E00BEAE33165B8DF6C011F0AB620AE2301DDE21D5D0F4AD782A968F4D385C2C9B86B30626F6D63E36EB107AC2D11BF31AEE225CE77B3E3E175C238D7A0653934D8791E8A03C67B56A776AD895628983EAA701AFEBFE8031FFA25426F2BE8612
+F6B8142CC4857CC68D5ADFFE96E5DAD5F9F361E1FD5A08B34271F3CF408C6FBBEF7E7F011BD006DC3E48764F89A6D4D7BFBC85DE47FDB932AE262C4D4E884EE348C2072C0C8F6BB6C1FDE9EC71D171456434E48AA9F7F1C92B2FCF61E873E9DE7CF20FC222C1688037E15A645A66DA45459451B3AF4D6
+34FEFA9494018A48F9E7BF946AC707F2C4F16FC98A7497C62AC5C8266A4518BE0F75B54E033730B6F5B857363E78E3EA7A9C382CBC33FFF6A2A89776BF0AF54704F3BC51A168A175E8E26D8076098FA98F595F98272AC1693B5B4C841564A78A5FDFE3FEE6BF081321070512AA7913FEEF7FDDBD6303E
+B8465841E326AFE83041039E281B96BFFB63B24E6B4FD49279DAA1FBFC7DED738B990F579709CCEA419B415181AD6B3A7440D9386A3140626A003E0EB7BD73CFE93AF60E75952D0A71FC7DAB7A0218ED2C1AD5E0DB45E2E4474F03A71E14F87AFA1E336192F36EF6C9E64C2F0087336E9CEAA530014F5
+5895359DB2C82A4B07EEA4AB67680A9370672AE242C5EF44E1A654E21E5E4B1C8E41193456A8C6EFD79D8AD3C51D3860D65D628D0919D2B082172782C70E9"}
+  819  curl -X POST https://uatupi.onlinesbi.com/upi/noaouth/getAccBalConfWeb -g -d {"pspId":"201", "requestMsg":"CA6098FC4384549D212083965DC2B49B12F053CCA42B713EBEA71349A8FE70360ECD39AE765EC7187FCDE9EC502A8A4D1AF29EE2F96B08B0407F576B68B
+D9D44E0D984D80DD6042F401BDE8E9FDDEE4CF5E78024304BD55EC4663F70A8E4CB396D641429164A2C1EC338215FA659244F2007FEE45E6693BD150D76BD56CF5065FDEC4F52E4A4913BEB01ED1E0185C1F306A179B15C6F31DBF6CC20F0A86645F526C8E94E35A23735993060C08DA6C87595541C00
+5985CA10CF0CDE5CB5AF6D41B8C9A25716A063389206B51FE307561E2AAFA1EDA350C304B87D03F9C99D2C0B8D8375DE264BADB2E71E8E8246B07230EBAFEA79589A215634A179DB90FF35C6B0C20A9D76ED3281594082F91BE9D8CAE329DC0022947212A75B829109C4B5691815050EC7682F3BEB385
+F87DE8F4442D36E53451D63CF5E714321EEF37E95C17BCEA3761C76E795C69663A44485CE083DD974F3529F28A69CFAC0AC4B6E66EE1EB3442B84FDB600265EDA7478FECFE9074A215E4D2374542E3DBD1AC3B50C66E84C3AF440543F5998D36D45C08883629ABAC3B6551F1BF5F318317983B84F5F6A
+AF36C2EEA1BFCDBAC19B57A5AB911722439FA924CE2CD9741CE6F8F98CBDCFF35FBEC997B64935D472159542F3819652A9C92D0BFD826D97FE0CBCB151D2BC1738613F435C9A5BE4F3DA17E3F62C480090A60438E70983F487F3B522E229F1255702F0D052BAC40C53B53BD3BB089A9B1B0D83EC0F518
+8041E05BC84B99F4A3ABB2B310EFC5C857D69A6068CDEED59ED5E4B154A4081DFE1E3561F4A5601D629F249770BB70F304A8396598C7E1A0AC99F9FBF28BAE58E773E37B392B5274DFFFA574CCAFC2B81C771F74A14295FDC2DB5370EB828D28C593C9DEA88527CC94FC809660A8EDE2C8C508FEA936C
+123813E6739F884775AB7643059D1BA5B4F6AB835E317398E07286FDC70C6A33F5C05D3DB2153115EF9BCF2CFE4F7608F4D1288099E95453FCC1E6DF617363C58FACBD0F46C43B9273A9AFF1289E0BC7DB8DCAF0F2017FFD730EDC295473F11D65A12166798ED072F88A6E0D39D86E49BC341AA8D1707
+6B47430FF7997F7FBB97BB6A931E1C49BC858D43E31F0F25FD0014809D73E53FAF9134CCEF188E10D2CC4077567817363889FA0D16D78E7946CCA7AFDA57B68D94A02BBB98EB27B04E9BEBEF2C683ECF34344F7ECC8473BBA2768CDD70DB381B2518A765288A2A2FE3D0EFA9FBA5F9F1F6E1F889A8898
+48BC2DED3B1EBDF0778F4445C6CAF576CCFB16476C1B45C2456C04741A84905B238FA44146AE3B925AC8BB76CAC0A7960A5525BD2DC3CF875E3003588E6B65668FD151284CA7B616D4D31356C7EAC9F74A0A284A7F269229FFF981B1B44657246A44486C2A4C628A694009DCB2B6DBBCA8D13D5903980
+F4213BA1D13627F7AAA79558692F5781519317F3FB14B3AB1B0E42BDE0529F860E00C375AFEA5E004000BD2BD99B69FA010B8C176EA3D4D2A09967C5C9E76AB6554729E27ABAD76A154AAB295CC7F8EE38B5E212B1D5872ABB9B4C662EBAE74F3B7C5E2FD33E5A291F7EE439D3B9DF5FAFF808ED2951C
+10D90978375561AD8A42D97CF2DCC4A9943BD99AE12C7E00BEAE33165B8DF6C011F0AB620AE2301DDE21D5D0F4AD782A968F4D385C2C9B86B30626F6D63E36EB107AC2D11BF31AEE225CE77B3E3E175C238D7A0653934D8791E8A03C67B56A776AD895628983EAA701AFEBFE8031FFA25426F2BE8612F
+6B8142CC4857CC68D5ADFFE96E5DAD5F9F361E1FD5A08B34271F3CF408C6FBBEF7E7F011BD006DC3E48764F89A6D4D7BFBC85DE47FDB932AE262C4D4E884EE348C2072C0C8F6BB6C1FDE9EC71D171456434E48AA9F7F1C92B2FCF61E873E9DE7CF20FC222C1688037E15A645A66DA45459451B3AF4D63
+4FEFA9494018A48F9E7BF946AC707F2C4F16FC98A7497C62AC5C8266A4518BE0F75B54E033730B6F5B857363E78E3EA7A9C382CBC33FFF6A2A89776BF0AF54704F3BC51A168A175E8E26D8076098FA98F595F98272AC1693B5B4C841564A78A5FDFE3FEE6BF081321070512AA7913FEEF7FDDBD6303EB
+8465841E326AFE83041039E281B96BFFB63B24E6B4FD49279DAA1FBFC7DED738B990F579709CCEA419B415181AD6B3A7440D9386A3140626A003E0EB7BD73CFE93AF60E75952D0A71FC7DAB7A0218ED2C1AD5E0DB45E2E4474F03A71E14F87AFA1E336192F36EF6C9E64C2F0087336E9CEAA530014F55
+895359DB2C82A4B07EEA4AB67680A9370672AE242C5EF44E1A654E21E5E4B1C8E41193456A8C6EFD79D8AD3C51D3860D65D628D0919D2B082172782C70E9"}
+  820  curl -X POST https://uatupi.onlinesbi.com/upi/noaouth/getAccBalConfWeb -g -d {"pspId:"201",""requestMsg":"CA6098FC4384549D212083965DC2B49B12F053CCA42B713EBEA71349A8FE70360ECD39AE765EC7187FCDE9EC502A8A4D1AF29EE2F96B08B0407F576B68BD
+9D44E0D984D80DD6042F401BDE8E9FDDEE4CF5E78024304BD55EC4663F70A8E4CB396D641429164A2C1EC338215FA659244F2007FEE45E6693BD150D76BD56CF5065FDEC4F52E4A4913BEB01ED1E0185C1F306A179B15C6F31DBF6CC20F0A86645F526C8E94E35A23735993060C08DA6C87595541C005
+985CA10CF0CDE5CB5AF6D41B8C9A25716A063389206B51FE307561E2AAFA1EDA350C304B87D03F9C99D2C0B8D8375DE264BADB2E71E8E8246B07230EBAFEA79589A215634A179DB90FF35C6B0C20A9D76ED3281594082F91BE9D8CAE329DC0022947212A75B829109C4B5691815050EC7682F3BEB385F
+87DE8F4442D36E53451D63CF5E714321EEF37E95C17BCEA3761C76E795C69663A44485CE083DD974F3529F28A69CFAC0AC4B6E66EE1EB3442B84FDB600265EDA7478FECFE9074A215E4D2374542E3DBD1AC3B50C66E84C3AF440543F5998D36D45C08883629ABAC3B6551F1BF5F318317983B84F5F6AA
+F36C2EEA1BFCDBAC19B57A5AB911722439FA924CE2CD9741CE6F8F98CBDCFF35FBEC997B64935D472159542F3819652A9C92D0BFD826D97FE0CBCB151D2BC1738613F435C9A5BE4F3DA17E3F62C480090A60438E70983F487F3B522E229F1255702F0D052BAC40C53B53BD3BB089A9B1B0D83EC0F5188
+041E05BC84B99F4A3ABB2B310EFC5C857D69A6068CDEED59ED5E4B154A4081DFE1E3561F4A5601D629F249770BB70F304A8396598C7E1A0AC99F9FBF28BAE58E773E37B392B5274DFFFA574CCAFC2B81C771F74A14295FDC2DB5370EB828D28C593C9DEA88527CC94FC809660A8EDE2C8C508FEA936C1
+23813E6739F884775AB7643059D1BA5B4F6AB835E317398E07286FDC70C6A33F5C05D3DB2153115EF9BCF2CFE4F7608F4D1288099E95453FCC1E6DF617363C58FACBD0F46C43B9273A9AFF1289E0BC7DB8DCAF0F2017FFD730EDC295473F11D65A12166798ED072F88A6E0D39D86E49BC341AA8D17076
+B47430FF7997F7FBB97BB6A931E1C49BC858D43E31F0F25FD0014809D73E53FAF9134CCEF188E10D2CC4077567817363889FA0D16D78E7946CCA7AFDA57B68D94A02BBB98EB27B04E9BEBEF2C683ECF34344F7ECC8473BBA2768CDD70DB381B2518A765288A2A2FE3D0EFA9FBA5F9F1F6E1F889A88984
+8BC2DED3B1EBDF0778F4445C6CAF576CCFB16476C1B45C2456C04741A84905B238FA44146AE3B925AC8BB76CAC0A7960A5525BD2DC3CF875E3003588E6B65668FD151284CA7B616D4D31356C7EAC9F74A0A284A7F269229FFF981B1B44657246A44486C2A4C628A694009DCB2B6DBBCA8D13D5903980F
+4213BA1D13627F7AAA79558692F5781519317F3FB14B3AB1B0E42BDE0529F860E00C375AFEA5E004000BD2BD99B69FA010B8C176EA3D4D2A09967C5C9E76AB6554729E27ABAD76A154AAB295CC7F8EE38B5E212B1D5872ABB9B4C662EBAE74F3B7C5E2FD33E5A291F7EE439D3B9DF5FAFF808ED2951C1
+0D90978375561AD8A42D97CF2DCC4A9943BD99AE12C7E00BEAE33165B8DF6C011F0AB620AE2301DDE21D5D0F4AD782A968F4D385C2C9B86B30626F6D63E36EB107AC2D11BF31AEE225CE77B3E3E175C238D7A0653934D8791E8A03C67B56A776AD895628983EAA701AFEBFE8031FFA25426F2BE8612F6
+B8142CC4857CC68D5ADFFE96E5DAD5F9F361E1FD5A08B34271F3CF408C6FBBEF7E7F011BD006DC3E48764F89A6D4D7BFBC85DE47FDB932AE262C4D4E884EE348C2072C0C8F6BB6C1FDE9EC71D171456434E48AA9F7F1C92B2FCF61E873E9DE7CF20FC222C1688037E15A645A66DA45459451B3AF4D634
+FEFA9494018A48F9E7BF946AC707F2C4F16FC98A7497C62AC5C8266A4518BE0F75B54E033730B6F5B857363E78E3EA7A9C382CBC33FFF6A2A89776BF0AF54704F3BC51A168A175E8E26D8076098FA98F595F98272AC1693B5B4C841564A78A5FDFE3FEE6BF081321070512AA7913FEEF7FDDBD6303EB8
+465841E326AFE83041039E281B96BFFB63B24E6B4FD49279DAA1FBFC7DED738B990F579709CCEA419B415181AD6B3A7440D9386A3140626A003E0EB7BD73CFE93AF60E75952D0A71FC7DAB7A0218ED2C1AD5E0DB45E2E4474F03A71E14F87AFA1E336192F36EF6C9E64C2F0087336E9CEAA530014F558
+95359DB2C82A4B07EEA4AB67680A9370672AE242C5EF44E1A654E21E5E4B1C8E41193456A8C6EFD79D8AD3C51D3860D65D628D0919D2B082172782C70E9"}
+  821  curl -X POST https://uatupi.onlinesbi.com/upi/noaouth/getAccBalConfWeb -g -d {pspId:201,"requestMsg":"CA6098FC4384549D212083965DC2B49B12F053CCA42B713EBEA71349A8FE70360ECD39AE765EC7187FCDE9EC502A8A4D1AF29EE2F96B08B0407F576B68BD9D44
+E0D984D80DD6042F401BDE8E9FDDEE4CF5E78024304BD55EC4663F70A8E4CB396D641429164A2C1EC338215FA659244F2007FEE45E6693BD150D76BD56CF5065FDEC4F52E4A4913BEB01ED1E0185C1F306A179B15C6F31DBF6CC20F0A86645F526C8E94E35A23735993060C08DA6C87595541C005985C
+A10CF0CDE5CB5AF6D41B8C9A25716A063389206B51FE307561E2AAFA1EDA350C304B87D03F9C99D2C0B8D8375DE264BADB2E71E8E8246B07230EBAFEA79589A215634A179DB90FF35C6B0C20A9D76ED3281594082F91BE9D8CAE329DC0022947212A75B829109C4B5691815050EC7682F3BEB385F87DE
+8F4442D36E53451D63CF5E714321EEF37E95C17BCEA3761C76E795C69663A44485CE083DD974F3529F28A69CFAC0AC4B6E66EE1EB3442B84FDB600265EDA7478FECFE9074A215E4D2374542E3DBD1AC3B50C66E84C3AF440543F5998D36D45C08883629ABAC3B6551F1BF5F318317983B84F5F6AAF36C
+2EEA1BFCDBAC19B57A5AB911722439FA924CE2CD9741CE6F8F98CBDCFF35FBEC997B64935D472159542F3819652A9C92D0BFD826D97FE0CBCB151D2BC1738613F435C9A5BE4F3DA17E3F62C480090A60438E70983F487F3B522E229F1255702F0D052BAC40C53B53BD3BB089A9B1B0D83EC0F5188041E
+05BC84B99F4A3ABB2B310EFC5C857D69A6068CDEED59ED5E4B154A4081DFE1E3561F4A5601D629F249770BB70F304A8396598C7E1A0AC99F9FBF28BAE58E773E37B392B5274DFFFA574CCAFC2B81C771F74A14295FDC2DB5370EB828D28C593C9DEA88527CC94FC809660A8EDE2C8C508FEA936C12381
+3E6739F884775AB7643059D1BA5B4F6AB835E317398E07286FDC70C6A33F5C05D3DB2153115EF9BCF2CFE4F7608F4D1288099E95453FCC1E6DF617363C58FACBD0F46C43B9273A9AFF1289E0BC7DB8DCAF0F2017FFD730EDC295473F11D65A12166798ED072F88A6E0D39D86E49BC341AA8D17076B474
+30FF7997F7FBB97BB6A931E1C49BC858D43E31F0F25FD0014809D73E53FAF9134CCEF188E10D2CC4077567817363889FA0D16D78E7946CCA7AFDA57B68D94A02BBB98EB27B04E9BEBEF2C683ECF34344F7ECC8473BBA2768CDD70DB381B2518A765288A2A2FE3D0EFA9FBA5F9F1F6E1F889A889848BC2
+DED3B1EBDF0778F4445C6CAF576CCFB16476C1B45C2456C04741A84905B238FA44146AE3B925AC8BB76CAC0A7960A5525BD2DC3CF875E3003588E6B65668FD151284CA7B616D4D31356C7EAC9F74A0A284A7F269229FFF981B1B44657246A44486C2A4C628A694009DCB2B6DBBCA8D13D5903980F4213
+BA1D13627F7AAA79558692F5781519317F3FB14B3AB1B0E42BDE0529F860E00C375AFEA5E004000BD2BD99B69FA010B8C176EA3D4D2A09967C5C9E76AB6554729E27ABAD76A154AAB295CC7F8EE38B5E212B1D5872ABB9B4C662EBAE74F3B7C5E2FD33E5A291F7EE439D3B9DF5FAFF808ED2951C10D90
+978375561AD8A42D97CF2DCC4A9943BD99AE12C7E00BEAE33165B8DF6C011F0AB620AE2301DDE21D5D0F4AD782A968F4D385C2C9B86B30626F6D63E36EB107AC2D11BF31AEE225CE77B3E3E175C238D7A0653934D8791E8A03C67B56A776AD895628983EAA701AFEBFE8031FFA25426F2BE8612F6B814
+2CC4857CC68D5ADFFE96E5DAD5F9F361E1FD5A08B34271F3CF408C6FBBEF7E7F011BD006DC3E48764F89A6D4D7BFBC85DE47FDB932AE262C4D4E884EE348C2072C0C8F6BB6C1FDE9EC71D171456434E48AA9F7F1C92B2FCF61E873E9DE7CF20FC222C1688037E15A645A66DA45459451B3AF4D634FEFA
+9494018A48F9E7BF946AC707F2C4F16FC98A7497C62AC5C8266A4518BE0F75B54E033730B6F5B857363E78E3EA7A9C382CBC33FFF6A2A89776BF0AF54704F3BC51A168A175E8E26D8076098FA98F595F98272AC1693B5B4C841564A78A5FDFE3FEE6BF081321070512AA7913FEEF7FDDBD6303EB84658
+41E326AFE83041039E281B96BFFB63B24E6B4FD49279DAA1FBFC7DED738B990F579709CCEA419B415181AD6B3A7440D9386A3140626A003E0EB7BD73CFE93AF60E75952D0A71FC7DAB7A0218ED2C1AD5E0DB45E2E4474F03A71E14F87AFA1E336192F36EF6C9E64C2F0087336E9CEAA530014F5589535
+9DB2C82A4B07EEA4AB67680A9370672AE242C5EF44E1A654E21E5E4B1C8E41193456A8C6EFD79D8AD3C51D3860D65D628D0919D2B082172782C70E9"}
+  822  curl -X POST https://uatupi.onlinesbi.com/upi/noaouth/getAccBalConfWeb -g -d {"pspId":"201","requestMsg":"CA6098FC4384549D212083965DC2B49B12F053CCA42B713EBEA71349A8FE70360ECD39AE765EC7187FCDE9EC502A8A4D1AF29EE2F96B08B0407F576B68BD
+9D44E0D984D80DD6042F401BDE8E9FDDEE4CF5E78024304BD55EC4663F70A8E4CB396D641429164A2C1EC338215FA659244F2007FEE45E6693BD150D76BD56CF5065FDEC4F52E4A4913BEB01ED1E0185C1F306A179B15C6F31DBF6CC20F0A86645F526C8E94E35A23735993060C08DA6C87595541C005
+985CA10CF0CDE5CB5AF6D41B8C9A25716A063389206B51FE307561E2AAFA1EDA350C304B87D03F9C99D2C0B8D8375DE264BADB2E71E8E8246B07230EBAFEA79589A215634A179DB90FF35C6B0C20A9D76ED3281594082F91BE9D8CAE329DC0022947212A75B829109C4B5691815050EC7682F3BEB385F
+87DE8F4442D36E53451D63CF5E714321EEF37E95C17BCEA3761C76E795C69663A44485CE083DD974F3529F28A69CFAC0AC4B6E66EE1EB3442B84FDB600265EDA7478FECFE9074A215E4D2374542E3DBD1AC3B50C66E84C3AF440543F5998D36D45C08883629ABAC3B6551F1BF5F318317983B84F5F6AA
+F36C2EEA1BFCDBAC19B57A5AB911722439FA924CE2CD9741CE6F8F98CBDCFF35FBEC997B64935D472159542F3819652A9C92D0BFD826D97FE0CBCB151D2BC1738613F435C9A5BE4F3DA17E3F62C480090A60438E70983F487F3B522E229F1255702F0D052BAC40C53B53BD3BB089A9B1B0D83EC0F5188
+041E05BC84B99F4A3ABB2B310EFC5C857D69A6068CDEED59ED5E4B154A4081DFE1E3561F4A5601D629F249770BB70F304A8396598C7E1A0AC99F9FBF28BAE58E773E37B392B5274DFFFA574CCAFC2B81C771F74A14295FDC2DB5370EB828D28C593C9DEA88527CC94FC809660A8EDE2C8C508FEA936C1
+23813E6739F884775AB7643059D1BA5B4F6AB835E317398E07286FDC70C6A33F5C05D3DB2153115EF9BCF2CFE4F7608F4D1288099E95453FCC1E6DF617363C58FACBD0F46C43B9273A9AFF1289E0BC7DB8DCAF0F2017FFD730EDC295473F11D65A12166798ED072F88A6E0D39D86E49BC341AA8D17076
+B47430FF7997F7FBB97BB6A931E1C49BC858D43E31F0F25FD0014809D73E53FAF9134CCEF188E10D2CC4077567817363889FA0D16D78E7946CCA7AFDA57B68D94A02BBB98EB27B04E9BEBEF2C683ECF34344F7ECC8473BBA2768CDD70DB381B2518A765288A2A2FE3D0EFA9FBA5F9F1F6E1F889A88984
+8BC2DED3B1EBDF0778F4445C6CAF576CCFB16476C1B45C2456C04741A84905B238FA44146AE3B925AC8BB76CAC0A7960A5525BD2DC3CF875E3003588E6B65668FD151284CA7B616D4D31356C7EAC9F74A0A284A7F269229FFF981B1B44657246A44486C2A4C628A694009DCB2B6DBBCA8D13D5903980F
+4213BA1D13627F7AAA79558692F5781519317F3FB14B3AB1B0E42BDE0529F860E00C375AFEA5E004000BD2BD99B69FA010B8C176EA3D4D2A09967C5C9E76AB6554729E27ABAD76A154AAB295CC7F8EE38B5E212B1D5872ABB9B4C662EBAE74F3B7C5E2FD33E5A291F7EE439D3B9DF5FAFF808ED2951C1
+0D90978375561AD8A42D97CF2DCC4A9943BD99AE12C7E00BEAE33165B8DF6C011F0AB620AE2301DDE21D5D0F4AD782A968F4D385C2C9B86B30626F6D63E36EB107AC2D11BF31AEE225CE77B3E3E175C238D7A0653934D8791E8A03C67B56A776AD895628983EAA701AFEBFE8031FFA25426F2BE8612F6
+B8142CC4857CC68D5ADFFE96E5DAD5F9F361E1FD5A08B34271F3CF408C6FBBEF7E7F011BD006DC3E48764F89A6D4D7BFBC85DE47FDB932AE262C4D4E884EE348C2072C0C8F6BB6C1FDE9EC71D171456434E48AA9F7F1C92B2FCF61E873E9DE7CF20FC222C1688037E15A645A66DA45459451B3AF4D634
+FEFA9494018A48F9E7BF946AC707F2C4F16FC98A7497C62AC5C8266A4518BE0F75B54E033730B6F5B857363E78E3EA7A9C382CBC33FFF6A2A89776BF0AF54704F3BC51A168A175E8E26D8076098FA98F595F98272AC1693B5B4C841564A78A5FDFE3FEE6BF081321070512AA7913FEEF7FDDBD6303EB8
+465841E326AFE83041039E281B96BFFB63B24E6B4FD49279DAA1FBFC7DED738B990F579709CCEA419B415181AD6B3A7440D9386A3140626A003E0EB7BD73CFE93AF60E75952D0A71FC7DAB7A0218ED2C1AD5E0DB45E2E4474F03A71E14F87AFA1E336192F36EF6C9E64C2F0087336E9CEAA530014F558
+95359DB2C82A4B07EEA4AB67680A9370672AE242C5EF44E1A654E21E5E4B1C8E41193456A8C6EFD79D8AD3C51D3860D65D628D0919D2B082172782C70E9"}
+  823  curl -X POST https://uatupi.onlinesbi.com/upi/noaouth/getAccBalConfWeb -g -d {"pspId":"201"}
+  824  cat docker-compose.yaml
+  825  exit
+  826  ls -ltr
+  827  cd ocp/
+  828  ls -ltr
+  829  cd gcons/
+  830  ls -ltr
+  831  docker build -t gcons .
+  832  docker images
+  833  docker tag gcons docker-registry.default.svc:5000/sbignonsuat/gcons
+  834  docekr push docker-registry.default.svc:5000/sbignonsuat/gcons
+  835  docker push docker-registry.default.svc:5000/sbignonsuat/gcons
+  836  docker tag gcons docker-registry.default.svc:5000/sbigconsuat/gcons
+  837  docker push docker-registry.default.svc:5000/sbigconsuat/gcons
+  838  oc delete dc gcons
+  839  oc new-app gcons
+  840  cat docker-compose.yaml
+  841  oc get is
+  842  oc delete is gcons
+  843  docker push docker-registry.default.svc:5000/sbigconsuat/gcons
+  844  oc delete dc gcons
+  845  oc new-app gcons
+  846  oc delete all --all
+  847  ls -ltr
+  848  docker build -t gcons:v2 .
+  849  docker tag gcons:v2 docker-registry.default.svc:5000/sbigconsuat/gcons:v2
+  850  docker push docker-registry.default.svc:5000/sbigconsuat/gcons:v2
+  851  oc new-app gcons:v2
+  852  oc delete all --all
+[root@upiuatmaster1 gcons]#
