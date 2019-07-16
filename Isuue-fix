@@ -49,3 +49,10 @@ Step 4/4 : CMD java -jar recon-engine-service-taskmanager-1.0.0.jar
 Successfully built 1e239fbc3c1a
 [root@upiuatmaster1 gcons]#
 
+
+[root@upiuatmaster1 gcons]# docker tag gcons docker-registry.default.svc:5000/sbigconsuat/gcons:v1
+[root@upiuatmaster1 gcons]#
+
+
+
+
