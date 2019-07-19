@@ -1,0 +1,3 @@
+[root@upiuatmaster1 upi]# docker login docker-registry.default.svc:5000 -u $(oc whoami) -p $(oc whoami -t)
+Error response from daemon: Get https://docker-registry.default.svc:5000/v2/: net/http: request canceled while waiting for connection (Client.Timeout exceeded while awaiting headers)
+[root@upiuatmaster1 upi]#
