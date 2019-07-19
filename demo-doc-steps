@@ -1,0 +1,443 @@
+UPI Build
+----------------------
+
+Path >>>>>   master1  path /root/ocp/upi
+
+docker build -t upi .
+docker tag upi docker-registry.default.svc:5000/sbiupidemo/upi
+docker push docker-registry.default.svc:5000/sbiupidemo/upi
+ certificate - D:\working cert , 
+edge termination
+First - doamin ca cert
+second - pvt key
+last - cafile
+
+
+GCON BUild
+---------------------
+
+Path >>>>>   master1  path /root/ocp/gcons
+
+docker build -t gcons .
+docker tag gcons docker-registry.default.svc:5000/sbigconstest/gcons:v1
+docker push docker-registry.default.svc:5000/sbigconstest/gcons:v1
+oc new-app gcons:v1
+
+
+
+
+
+
+*****Kishor Build New ******* 18/07/2019
+
+
+
+
+[root@upiuatmaster1 gcons]# oc login
+Authentication required for https://upiuatmaster1.onlinesbi.com:8443 (openshift)
+Username: ocpadmin
+Password:
+Login successful.
+
+You have access to the following projects and can switch between them with 'oc project <projectname>':
+
+    cicd-ocpadmin
+    default
+    dev-ocpadmin
+    kube-public
+    kube-service-catalog
+    kube-system
+    management-infra
+    openshift
+    openshift-ansible-service-broker
+    openshift-console
+    openshift-infra
+    openshift-logging
+    openshift-metrics-server
+    openshift-monitoring
+    openshift-node
+    openshift-sdn
+    openshift-template-service-broker
+    openshift-web-console
+  * sbigconstest
+    sbigconsuat
+    sbiupidemo
+    sbiupisit
+    sbiupiuat
+    stage-ocpadmin
+    testcicd
+
+Using project "sbigconstest".
+[root@upiuatmaster1 gcons]#
+
+
+Step -1
+
+[root@upiuatmaster1 gcons]# docker build -t gconsapp .
+Sending build context to Docker daemon 43.13 MB
+Step 1/4 : FROM registry.redhat.io/openjdk/openjdk-8-rhel8
+ ---> 74ed141057b4
+Step 2/4 : WORKDIR /
+ ---> Using cache
+ ---> 3f8f87409b9f
+Step 3/4 : ADD recon-engine-service-taskmanager-1.0.0.jar recon-engine-service-taskmanager-1.0.0.jar
+ ---> Using cache
+ ---> aa14d701501d
+Step 4/4 : CMD java -jar recon-engine-service-taskmanager-1.0.0.jar
+ ---> Using cache
+ ---> 1e239fbc3c1a
+Successfully built 1e239fbc3c1a
+[root@upiuatmaster1 gcons]#
+
+
+Step- 2
+
+[root@upiuatmaster1 gcons]# docker tag gconsapp docker-registry.default.svc:5000/sbigconstest/gconsapp:v1
+[root@upiuatmaster1 gcons]#
+
+
+Issue
+[root@upiuatmaster1 ~]# docker push docker-registry.default.svc:5000/sbigconstest/gconsapp:v1
+The push refers to a repository [docker-registry.default.svc:5000/sbigconstest/gconsapp]
+8b47f96841df: Preparing
+5a54b5648818: Preparing
+614abdb6064c: Preparing
+7c3e45609beb: Preparing
+unauthorized: authentication required
+
+
+Issue Resolution
+
+Restart one or more containers
+[root@upiuatmaster1 ~]# oc get nodes
+NAME                           STATUS    ROLES     AGE       VERSION
+genericuatapp1.onlinesbi.com   Ready     compute   6d        v1.11.0+d4cacc0
+genericuatapp2.onlinesbi.com   Ready     compute   6d        v1.11.0+d4cacc0
+upiuatapp1                     Ready     compute   21d       v1.11.0+d4cacc0
+upiuatapp2                     Ready     compute   21d       v1.11.0+d4cacc0
+upiuatapp3.onlinesbi.com       Ready     compute   21d       v1.11.0+d4cacc0
+upiuatapp4.onlinesbi.com       Ready     compute   21d       v1.11.0+d4cacc0
+upiuatinfra1.onlinesbi.com     Ready     infra     21d       v1.11.0+d4cacc0
+upiuatinfra2.onlinesbi.com     Ready     infra     21d       v1.11.0+d4cacc0
+upiuatlog1.onlinesbi.com       Ready     logging   21d       v1.11.0+d4cacc0
+upiuatlog2.onlinesbi.com       Ready     logging   21d       v1.11.0+d4cacc0
+upiuatlog3.onlinesbi.com       Ready     logging   21d       v1.11.0+d4cacc0
+upiuatmaster1.onlinesbi.com    Ready     master    21d       v1.11.0+d4cacc0
+upiuatmaster2.onlinesbi.com    Ready     master    21d       v1.11.0+d4cacc0
+upiuatmaster3.onlinesbi.com    Ready     master    21d       v1.11.0+d4cacc0
+[root@upiuatmaster1 ~]# systemctl stop docker
+[root@upiuatmaster1 ~]# systemctl start docker
+[root@upiuatmaster1 ~]# systemctl status docker
+docker.service - Docker Application Container Engine
+   Loaded: loaded (/usr/lib/systemd/system/docker.service; enabled; vendor preset: disabled)
+   Active: active (running) since Thu 2019-07-18 11:40:08 IST; 10s ago
+     Docs: http://docs.docker.com
+ Main PID: 62759 (dockerd-current)
+    Tasks: 99
+   Memory: 86.6M
+   CGroup: /system.slice/docker.service
+           62759 /usr/bin/dockerd-current --add-runtime docker-runc=/usr/libexec/docker/docker-runc-current --default-runtime=docker-runc --authorization-plugin=rhel-push-plugin --exec-opt native.cgroupdriver=systemd --userland-prox...
+           62811 /usr/bin/docker-containerd-current -l unix:///var/run/docker/libcontainerd/docker-containerd.sock --metrics-interval=0 --start-timeout 2m --state-dir /var/run/docker/libcontainerd/containerd --shim docker-containerd...
+           63452 /usr/bin/docker-containerd-shim-current 85895ceab1ba0e054e24f9ddd06f6b6c43b71492d8ca3732b495ebf13ab21c62 /var/run/docker/libcontainerd/85895ceab1ba0e054e24f9ddd06f6b6c43b71492d8ca3732b495ebf13ab21c62 /usr/libexec/do...
+           63549 /usr/bin/docker-containerd-shim-current d5a7ad2d1b1f4e4fdd0fc4f5c1b3626e41f7a993aaef2d77620176b97ad3795f /var/run/docker/libcontainerd/d5a7ad2d1b1f4e4fdd0fc4f5c1b3626e41f7a993aaef2d77620176b97ad3795f /usr/libexec/do...
+           63692 /usr/bin/docker-containerd-shim-current 15e72f9898d32c018348f5967ea91a2681efbd211a7396200507d5e43fb42209 /var/run/docker/libcontainerd/15e72f9898d32c018348f5967ea91a2681efbd211a7396200507d5e43fb42209 /usr/libexec/do...
+           63767 /usr/bin/docker-containerd-shim-current 85459598ab90f21dc72e3427d3c7a07fe65f15b48a9ad5165b750886222bb947 /var/run/docker/libcontainerd/85459598ab90f21dc72e3427d3c7a07fe65f15b48a9ad5165b750886222bb947 /usr/libexec/do...
+           63880 /usr/bin/docker-containerd-shim-current e1bcc99d8611d52e7731a2c31be52b49c4ed2867634a314ef6b1fbf98503eb7e /var/run/docker/libcontainerd/e1bcc99d8611d52e7731a2c31be52b49c4ed2867634a314ef6b1fbf98503eb7e /usr/libexec/do...
+           63964 /usr/bin/docker-containerd-shim-current d9c55aed0e381e1a34e8d28adc89b62514eab52b8119911cdc10b5be3552627c /var/run/docker/libcontainerd/d9c55aed0e381e1a34e8d28adc89b62514eab52b8119911cdc10b5be3552627c /usr/libexec/do...
+
+Jul 18 11:40:12 upiuatmaster1.onlinesbi.com oci-umount[64001]: umounthook <info>: d9c55aed0e38: Unmounted submount: [/var/lib/docker/devicemapper/mnt/d7962dc6bfd3d2ea5f3298cb7448b1e2c03a3c891a840e1313d9134a2caa9276/rootfs/var/lib/orig...
+Jul 18 11:40:12 upiuatmaster1.onlinesbi.com oci-umount[64001]: umounthook <info>: d9c55aed0e38: Unmounted submount: [/var/lib/docker/devicemapper/mnt/d7962dc6bfd3d2ea5f3298cb7448b1e2c03a3c891a840e1313d9134a2caa9276/root...t/serving-cert]
+Jul 18 11:40:12 upiuatmaster1.onlinesbi.com oci-umount[64001]: umounthook <info>: d9c55aed0e38: Unmounted submount: [/var/lib/docker/devicemapper/mnt/d7962dc6bfd3d2ea5f3298cb7448b1e2c03a3c891a840e1313d9134a2caa9276/root...t/oauth-config]
+Jul 18 11:40:12 upiuatmaster1.onlinesbi.com oci-umount[64001]: umounthook <info>: d9c55aed0e38: Unmounted submount: [/var/lib/docker/devicemapper/mnt/d7962dc6bfd3d2ea5f3298cb7448b1e2c03a3c891a840e1313d9134a2caa9276/root...lt-token-snct7]
+Jul 18 11:40:12 upiuatmaster1.onlinesbi.com oci-umount[64001]: umounthook <info>: d9c55aed0e38: Unmounted submount: [/var/lib/docker/devicemapper/mnt/d7962dc6bfd3d2ea5f3298cb7448b1e2c03a3c891a840e1313d9134a2caa9276/root...t/serving-cert]
+Jul 18 11:40:12 upiuatmaster1.onlinesbi.com oci-umount[64001]: umounthook <info>: d9c55aed0e38: Unmounted submount: [/var/lib/docker/devicemapper/mnt/d7962dc6bfd3d2ea5f3298cb7448b1e2c03a3c891a840e1313d9134a2caa9276/root...le-token-n8kjl]
+Jul 18 11:40:12 upiuatmaster1.onlinesbi.com oci-umount[64001]: umounthook <info>: d9c55aed0e38: Unmounted submount: [/var/lib/docker/devicemapper/mnt/d7962dc6bfd3d2ea5f3298cb7448b1e2c03a3c891a840e1313d9134a2caa9276/root...lt-token-gxb6j]
+Jul 18 11:40:12 upiuatmaster1.onlinesbi.com oci-umount[64001]: umounthook <info>: d9c55aed0e38: Unmounted submount: [/var/lib/docker/devicemapper/mnt/d7962dc6bfd3d2ea5f3298cb7448b1e2c03a3c891a840e1313d9134a2caa9276/root...nc-token-kwfvf]
+Jul 18 11:40:12 upiuatmaster1.onlinesbi.com oci-umount[64001]: umounthook <info>: d9c55aed0e38: Unmounted submount: [/var/lib/docker/devicemapper/mnt/d7962dc6bfd3d2ea5f3298cb7448b1e2c03a3c891a840e1313d9134a2caa9276/root...dn-token-89spt]
+Jul 18 11:40:12 upiuatmaster1.onlinesbi.com oci-umount[64001]: umounthook <info>: d9c55aed0e38: Unmounted submount: [/var/lib/docker/devicemapper/mnt/d7962dc6bfd3d2ea5f3298cb7448b1e2c03a3c891a840e1313d9134a2caa9276/root...dn-token-89spt]
+Hint: Some lines were ellipsized, use -l to show in full.
+[root@upiuatmaster1 ~]#
+
+
+[root@upiuatmaster1 ~]# ^C
+[root@upiuatmaster1 ~]# docker login docker-registry.default.svc:5000 -u $(oc whoami) -p $(oc whoami -t)
+Error response from daemon: Get https://docker-registry.default.svc:5000/v2/: net/http: request canceled while waiting for connection (Client.Timeout exceeded while awaiting headers)
+[root@upiuatmaster1 ~]#
+
+
+
+
+
+docker tag gconsapp docker-registry.default.svc:5000/sbigconstest/gconsapp:v1
+docker push docker-registry.default.svc:5000/sbigconstest/gconsapp:v1
+oc new-app gcons:v1
+
+
+
+
+
+
+aLL clean
+
+
+Sending build context to Docker daemon 43.13 MB
+Step 1/4 : FROM registry.redhat.io/openjdk/openjdk-8-rhel8
+ ---> 74ed141057b4
+Step 2/4 : WORKDIR /
+ ---> Using cache
+ ---> 3f8f87409b9f
+Step 3/4 : ADD recon-engine-service-taskmanager-1.0.0.jar recon-engine-service-taskmanager-1.0.0.jar
+ ---> Using cache
+ ---> 83b47c8440fe
+Step 4/4 : CMD java -jar recon-engine-service-taskmanager-1.0.0.jar
+ ---> Using cache
+ ---> 27e063fcf39f
+Successfully built 27e063fcf39f
+[root@upiuatmaster1 gcons]# docker tag gcons docker-registry.default.svc:5000/sbigconstest/gcons:v1
+[root@upiuatmaster1 gcons]# docker push docker-registry.default.svc:5000/sbigconstest/gcons:v1
+The push refers to a repository [docker-registry.default.svc:5000/sbigconsuat/gcons]
+ca214d280f78: Layer already exists
+5a54b5648818: Layer already exists
+614abdb6064c: Layer already exists
+7c3e45609beb: Layer already exists
+latest: digest: sha256:450798daf8b00ec5fe51dcac7cd0d1c22326d56d44292392154cbfe75e8a3d76 size: 1162
+7cccf5079614: Layer already exists
+5a54b5648818: Layer already exists
+614abdb6064c: Layer already exists
+7c3e45609beb: Layer already exists
+v1: digest: sha256:4c7f5335775cccac5538748838d1cfeac18d3abaace36c53ad0f4b921d072363 size: 1162
+ca214d280f78: Layer already exists
+5a54b5648818: Layer already exists
+614abdb6064c: Layer already exists
+7c3e45609beb: Layer already exists
+v2: digest: sha256:450798daf8b00ec5fe51dcac7cd0d1c22326d56d44292392154cbfe75e8a3d76 size: 1162
+[root@upiuatmaster1 gcons]# oc new-app gcons
+
+3) CI/CD demo 
+Run pipeline from UI , demo sit and uat project and code roll out
+
+4) Rolling upgrade
+ oc rollout latest dc/upi
+
+
+
+
+    Tags: builder, java, tomcat8
+
+    * A source build using binary input will be created
+      * The resulting image will be pushed to image stream tag "uatupiapp:latest"
+      * A binary build was created, use 'start-build --from-dir' to trigger a new build
+
+--> Creating resources with label build=uatupiapp ...
+    imagestream.image.openshift.io "uatupiapp" created
+    buildconfig.build.openshift.io "uatupiapp" created
+--> Success
+
+
+oc start-build uatupiappv3 --from-dir=. --follow=true --wait=true
+
+
+
+[root@upiuatbastion temp]# oc start-build uatupiappnew --from-dir=. --follow=true --wait=true
+Uploading directory "." as binary input for the build ...
+.
+Uploading finished
+build.build.openshift.io/uatupiappnew-1 started
+Receiving source from STDIN as archive ...
+Using docker-registry.default.svc:5000/openshift/webserver31-tomcat8-openshift@sha256:b1a715163a8f84cf5ae61a603588f8c4b07790fed530b491cbc9144bc9143322 as the s2i builder image
+INFO S2I source build with plain binaries detected
+INFO Copying deployments from . to /deployments...
+INFO Copying deployments from deployments to /deployments...
+'/tmp/src/deployments/UPIService-1.0_BalEnq.war' -> '/deployments/UPIService-1.0_BalEnq.war'
+
+Pushing image docker-registry.default.svc:5000/test/uatupiappnew:latest ...
+Pushed 0/5 layers, 2% complete
+Pushed 1/5 layers, 20% complete
+Push successful
+[root@upiuatbastion temp]#
+
+
+
+oc  new-app uatupiservicev12
+
+
+
+New Deployment
+
+oc new-build webserver31-tomcat8-openshift --name=uatupiappv1 --binary=true
+
+
+
+[root@upiuatbastion temp]# oc new-build webserver31-tomcat8-openshift --name=uatupiappv1 --binary=true
+--> Found image c303ee1 (2 months old) in image stream "openshift/webserver31-tomcat8-openshift" under tag "latest" for "webserver31-tomcat8-openshift"
+
+    JBoss Web Server 3.1
+    --------------------
+    Platform for building and running web applications on JBoss Web Server 3.1 - Tomcat v8
+
+    Tags: builder, java, tomcat8
+
+    * A source build using binary input will be created
+      * The resulting image will be pushed to image stream tag "uatupiappv1:latest"
+      * A binary build was created, use 'start-build --from-dir' to trigger a new build
+
+--> Creating resources with label build=uatupiappv1 ...
+    imagestream.image.openshift.io "uatupiappv1" created
+    buildconfig.build.openshift.io "uatupiappv1" created
+--> Success
+[root@upiuatbastion temp]#
+[root@upiuatbastion temp]# ^C
+[root@upiuatbastion temp]# ls deployments
+ROOT.war
+[root@upiuatbastion temp]# oc start-build ^C
+[root@upiuatbastion temp]# oc start-build uatupiapp --from-dir=. --follow=true --wait=true
+Uploading directory "." as binary input for the build ...
+............................................................
+Uploading finished
+Unable to connect to the server: unexpected EOF
+
+Next Try /test
+
+
+[root@upiuatbastion temp]# oc start-build uatupiapp --from-dir=. --follow=true --wait=true
+Uploading directory "." as binary input for the build ...
+........................................................
+Uploading finished
+build.build.openshift.io/uatupiapp-1 started
+Receiving source from STDIN as archive ...
+Using docker-registry.default.svc:5000/openshift/webserver31-tomcat8-openshift@sha256:b1a715163a8f84cf5ae61a603588f8c4b07790fed530b491cbc9144bc9143322 as the s2i builder image
+INFO S2I source build with plain binaries detected
+INFO Copying deployments from . to /deployments...
+INFO Copying deployments from deployments to /deployments...
+'/tmp/src/deployments/ROOT.war' -> '/deployments/ROOT.war'
+
+Pushing image docker-registry.default.svc:5000/test/uatupiapp:latest ...
+Pushed 0/5 layers, 2% complete
+Pushed 1/5 layers, 20% complete
+Push successful
+[root@upiuatbastion temp]#
+
+
+
+[root@upiuatbastion temp]# oc get pods
+NAME                READY     STATUS      RESTARTS   AGE
+airroute-1-h9lf5    1/1       Running     0          1d
+airroute-1-z28hn    1/1       Running     0          5d
+uatupiapp-1-build   0/1       Completed   0          9m
+[root@upiuatbastion temp]#
+
+
+
+ oc start-build uatupiappv1 --from-dir=. --follow=true --wait=true
+
+
+
+[root@upiuatbastion temp]#  oc start-build uatupiappv2 --from-dir=. --follow=true --wait=true
+Uploading directory "." as binary input for the build ...
+......
+Uploading finished
+build.build.openshift.io/uatupiappv1-1 started
+Receiving source from STDIN as archive ...
+Using docker-registry.default.svc:5000/openshift/webserver31-tomcat8-openshift@sha256:b1a715163a8f84cf5ae61a603588f8c4b07790fed530b491cbc9144bc9143322 as the s2i builder image
+INFO S2I source build with plain binaries detected
+INFO Copying deployments from . to /deployments...
+INFO Copying deployments from deployments to /deployments...
+'/tmp/src/deployments/ROOT.war' -> '/deployments/ROOT.war'
+
+Pushing image docker-registry.default.svc:5000/test/uatupiappv1:latest ...
+Pushed 0/5 layers, 2% complete
+Pushed 1/5 layers, 20% complete
+Push successful
+[root@upiuatbastion temp]#
+
+
+#3
+
+
+
+
+
+
+
+[root@upiuatbastion temp]# oc  new-app uatupiappv1
+
+oc new-app uatupiappv2
+
+--> Found image 6cecc71 (4 minutes old) in image stream "test/uatupiappv1" under tag "latest" for "uatupiappv1"
+
+    temp.builder.openshift.io/test/uatupiappv1-1:c58c518b
+    -----------------------------------------------------
+    Platform for building and running web applications on JBoss Web Server 3.1 - Tomcat v8
+
+    Tags: builder, java, tomcat8
+
+    * This image will be deployed in deployment config "uatupiappv1"
+    * Ports 8080/tcp, 8443/tcp, 8778/tcp will be load balanced by service "uatupiappv1"
+      * Other containers can access this service through the hostname "uatupiappv1"
+
+--> Creating resources ...
+    deploymentconfig.apps.openshift.io "uatupiappv1" created
+    service "uatupiappv1" created
+--> Success
+    Application is not exposed. You can expose services to the outside world by executing one or more of the commands below:
+     'oc expose svc/uatupiappv1'
+    Run 'oc status' to view your app.
+[root@upiuatbastion temp]#
+
+
+
+[root@upiuatbastion temp]# oc get pods
+NAME                  READY     STATUS      RESTARTS   AGE
+airroute-1-h9lf5      1/1       Running     0          1d
+airroute-1-z28hn      1/1       Running     0          6d
+uatupiapp-1-build     0/1       Completed   0          2h
+uatupiapp-1-s8xqb     1/1       Running     0          2h
+uatupiappv1-1-build   0/1       Completed   0          6m
+uatupiappv1-1-v2bbv   1/1       Running     0          45s
+[root@upiuatbastion temp]#
+
+
+
+[root@upiuatbastion temp]# oc get service
+NAME          TYPE        CLUSTER-IP       EXTERNAL-IP   PORT(S)                      AGE
+airroute      ClusterIP   172.30.119.128   <none>        8080/TCP                     6d
+uatupiapp     ClusterIP   172.30.4.150     <none>        8080/TCP,8443/TCP,8778/TCP   2h
+uatupiappv1   ClusterIP   172.30.255.147   <none>        8080/TCP,8443/TCP,8778/TCP   1m
+[root@upiuatbastion temp]#
+
+
+
+
+
+
+
+
+
+
+88888888
+
+[root@upiuatbastion temp]# oc new-build webserver31-tomcat8-openshift --name=uatupiappv1 --binary=true
+--> Found image c303ee1 (2 months old) in image stream "openshift/webserver31-tomcat8-openshift" under tag "latest" for "webserver31-tomcat8-openshift"
+
+    JBoss Web Server 3.1
+    --------------------
+    Platform for building and running web applications on JBoss Web Server 3.1 - Tomcat v8
+
+    Tags: builder, java, tomcat8
+
+    * A source build using binary input will be created
+      * The resulting image will be pushed to image stream tag "uatupiappnew:latest"
+      * A binary build was created, use 'start-build --from-dir' to trigger a new build
+
+--> Creating resources with label build=uatupiappnew ...
+    imagestream.image.openshift.io "uatupiappnew" created
+    buildconfig.build.openshift.io "uatupiappnew" created
+--> Success
+[root@upiuatbastion temp]#
+
+
+
+docker tag gcons docker-registry.default.svc:5000/sbigconsuat/gcons:v1
+
+
+
