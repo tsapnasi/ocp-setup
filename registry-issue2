@@ -1,0 +1,3 @@
+[root@upiuatmaster3 ~]# docker login  172.30.102.208:5000 -u $(oc whoami) -p $(oc whoami -t)
+Login Succeeded
+[root@upiuatmaster3 ~]#
