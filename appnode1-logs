@@ -1,0 +1,107 @@
+df -h
+cat /etc/fstab 
+df -h
+ifconfig
+cd /etc/sysconfig/network-scripts/
+vi ifcfg-ens192 
+service network restart
+ifconfig
+hostnamectl set-hostname upiuatapp1
+hostname
+cd /tmp
+fdisk -l
+./docker-storage.sh 
+systemctl start docker
+cat /etc/sysconfig/docker
+exit
+lscpu 
+free -g
+fdisk -l | grep GB
+lscpu; free -g; fdisk -l | grep GB
+df -hP
+fdisk /dev/sdc
+partprobe /dev/sdc1
+pvs ; vgs
+pvcreate /dev/sdc1
+vgextend rhel /dev/sdc1
+pvs ; vgs
+df -hP
+lvresize --resize --size +20G /dev/mapper/rhel-root
+lvresize --resize --size +70G /dev/mapper/rhel-var
+df -hP
+df -h
+ssh upiuatapp2
+ssh root@10.209.75.19
+ssh root@10.209.75.190
+cat /tmp/hosts_only >> /etc/hosts
+cat /etc/hosts
+exit
+vi /etc/sysconfig/docker
+systemctl restart docker
+systemctl status docker
+docker ps
+clear
+docker ps
+exit
+oc login https://upiuatlb.onlinesbi.com:8443
+oc login docker-registry.default.svc:5000
+exit
+
+exit
+docker images
+exit
+docker images
+exit
+oc get pods
+docker images
+
+docker images
+ls
+cd /root
+ls -ltr
+ip r
+exit
+history | grep subs
+exit
+rpm -qa | grep -i openshift_bootstrap/
+rpm -qa | grep -i openshift
+ifconfig
+ssh root@10.209.75.151
+ssh ubundu@10.209.75.151
+ssh ubuntu@10.209.75.151
+df -h
+ yum install nfs-utils rpcbind
+systemctl start nfs-server; systemctl enable nfs-server
+systemctl start rpcbind; systemctl enable rpcbind
+mkdir -p /var/nfshare/pv01
+chmod -R 775 /var/nfshare/pv01
+chown -R nfsnobody:nfsnobody /var/nfshare/pv01
+vi /etc/exports
+systemctl stop nfs-server
+systemctl stop rpcbind
+systemctl start rpcbind
+systemctl start nfs-server
+systemctl status nfs-server
+ifconfig
+exit
+lscpu
+lscpu ; free -g ; uname -a ;cat /etc/redhat-release
+ip r
+curl -v teln
+
+curl -v telnet://10.191.154.89:844
+curl -v telnet://10.191.154.89:8443
+curl -v telnet://10.191.154.89:443
+curl -v telnet://10.191.154.89:8443
+wget --no-check-certificate -O Dynatrace-OneAgent-Linux-1.171.226.sh"https://10.191.154.89:8443/e/c5f82983-d6da-49ed-b2f2-2d82bae0fa88/api/v1/deployment/installer/agent/unix/default/latest?Api-Token=BM_A-hhgSASdaieV15B1Y&arch=x86&flavor=default"
+wget --no-check-certificate -O Dynatrace-OneAgent-Linux-1.171.226.sh "https://10.191.154.89:8443/e/c5f82983-d6da-49ed-b2f2-2d82bae0fa88/api/v1/deployment/installer/agent/unix/default/latest?Api-Token=BM_A-hhgSASdaieV15B1Y&arch=x86&flavor=default"
+df -h
+/bin/sh Dynatrace-OneAgent-Linux-1.171.226.sh APP_LOG_CONTENT_ACCESS=1INFRA_ONLY=0
+/bin/sh Dynatrace-OneAgent-Linux-1.171.226.sh APP_LOG_CONTENT_ACCESS=1 INFRA_ONLY=0
+dmidecode | grep -i uuid
+ifconfig
+df -h
+cat /etc/fstab
+ifconfig 
+ssh root@10.209.75.194
+ssh 10.209.75.190
