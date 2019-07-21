@@ -6,14 +6,15 @@ Path >>>>>   master1  path /root/ocp/upi
 docker build -t upi .
 docker tag upi docker-registry.default.svc:5000/sbiupidemo/upi
 docker push docker-registry.default.svc:5000/sbiupidemo/upi
- certificate - D:\working cert , 
+certificate - D:\working cert , 
 edge termination
+
 First - doamin ca cert
-second - pvt key
-last - cafile
+Second - pvt key
+Third - cafile
 
 
-GCON BUild
+GCON Build
 ---------------------
 
 Path >>>>>   master1  path /root/ocp/gcons
