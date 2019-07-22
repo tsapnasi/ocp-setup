@@ -1,0 +1,11 @@
+ oc login -u gconsdevuser
+ 
+ [root@upiuatmaster1 upi]# oc projects
+You have access to the following projects and can switch between them with 'oc project <projectname>':
+
+    sbigconssit
+  * sbigconstest
+    sbigconsuat
+
+Using project "sbigconstest" on server "https://upiuatmaster1.onlinesbi.com:8443".
+
