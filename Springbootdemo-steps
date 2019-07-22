@@ -1,0 +1,9 @@
+#1 oc new-build --name=app1 openjdk18-openshift:latest --binary=true
+
+#2 oc start-build app1 --from-file=/root/ocp/gs-spring-boot-0.1.0.jar --follow
+
+#3 oc new-app app1
+  996  oc expose svc/app1
+  997  oc get svc
+  998  oc get route
+  999  curl http://app1-testocp001.cloudapps.onlinesbi.com
