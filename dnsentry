@@ -1,0 +1,26 @@
+[root@upiuatmaster1 ~]# cat /etc/hosts
+127.0.0.1   localhost localhost.localdomain localhost4 localhost4.localdomain4
+::1         localhost localhost.localdomain localhost6 localhost6.localdomain6
+10.209.75.188   upiuatbastion.onlinesbi.com
+10.209.75.184   upiuatlb.onlinesbi.com
+10.209.75.179   upiuatmaster1.onlinesbi.com
+10.209.75.180   upiuatmaster2.onlinesbi.com
+10.209.75.181   upiuatmaster3.onlinesbi.com
+10.209.75.182   upiuatinfra1.onlinesbi.com
+10.209.75.183   upiuatinfra2.onlinesbi.com
+10.209.75.185   upiuatlog1.onlinesbi.com
+10.209.75.186   upiuatlog2.onlinesbi.com
+10.209.75.187   upiuatlog3.onlinesbi.com
+10.209.75.189   upiuatapp1.onlinesbi.com
+10.209.75.190   upiuatapp2.onlinesbi.com
+10.209.75.191   upiuatapp3.onlinesbi.com
+10.209.75.192   upiuatapp4.onlinesbi.com
+10.209.75.193   upiuatapp5.onlinesbi.com
+10.209.75.194   upiuatapp6.onlinesbi.com
+10.209.75.197   genericuatapp1.onlinesbi.com
+10.209.75.198   genericuatapp2.onlinesbi.com
+10.209.75.182   sbitestocp.onlinesbi.com
+10.209.75.183   sbitestocp.onlinesbi.com
+10.209.75.197   genericuatapp1.onlinesbi.com
+10.209.75.198   genericuatapp2.onlinesbi.com
+[root@upiuatmaster1 ~]#
