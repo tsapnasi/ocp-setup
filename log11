@@ -1,0 +1,22 @@
+[root@upiuatmaster1 ~]# systemctl status dnsmasq.service
+● dnsmasq.service - DNS caching server.
+   Loaded: loaded (/usr/lib/systemd/system/dnsmasq.service; enabled; vendor preset: disabled)
+  Drop-In: /etc/systemd/system/dnsmasq.service.d
+           └─override.conf
+   Active: active (running) since Wed 2019-06-26 16:22:44 IST; 3 weeks 4 days ago
+ Main PID: 2243 (dnsmasq)
+    Tasks: 1
+   Memory: 1.7M
+   CGroup: /system.slice/dnsmasq.service
+           └─2243 /usr/sbin/dnsmasq -k
+
+Jul 22 09:43:01 upiuatmaster1.onlinesbi.com dnsmasq[2243]: using nameserver 10.209.134.150#53
+Jul 22 09:43:01 upiuatmaster1.onlinesbi.com dnsmasq[2243]: using nameserver 10.0.239.236#53
+Jul 22 09:43:01 upiuatmaster1.onlinesbi.com dnsmasq[2243]: using nameserver 127.0.0.1#53 for domain in-addr.arpa
+Jul 22 09:43:01 upiuatmaster1.onlinesbi.com dnsmasq[2243]: using nameserver 127.0.0.1#53 for domain cluster.local
+Jul 22 09:43:31 upiuatmaster1.onlinesbi.com dnsmasq[2243]: setting upstream servers from DBus
+Jul 22 09:43:31 upiuatmaster1.onlinesbi.com dnsmasq[2243]: using nameserver 10.189.53.150#53
+Jul 22 09:43:31 upiuatmaster1.onlinesbi.com dnsmasq[2243]: using nameserver 10.209.134.150#53
+Jul 22 09:43:31 upiuatmaster1.onlinesbi.com dnsmasq[2243]: using nameserver 10.0.239.236#53
+Jul 22 09:43:31 upiuatmaster1.onlinesbi.com dnsmasq[2243]: using nameserver 127.0.0.1#53 for domain in-addr.arpa
+Jul 22 09:43:31 upiuatmaster1.onlinesbi.com dnsmasq[2243]: using nameserver 127.0.0.1#53 for domain cluster.local
