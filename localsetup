@@ -1,0 +1,23 @@
+https://upiuatlb.onlinesbi.com:8443
+
+C:\Users\RH00079362>C:\Users\RH00079362\Downloads\oc-4.1.4-windows\oc login https://upiuatlb.onlinesbi.com:8443
+The server uses a certificate signed by an unknown authority.
+You can bypass the certificate check, but any data you send to the server could be intercepted by others.
+Use insecure connections? (y/n): y
+
+Authentication required for https://upiuatlb.onlinesbi.com:8443 (openshift)
+Username: gconsdevuser
+Password:
+Login successful.
+
+You have access to the following projects and can switch between them with 'oc project <projectname>':
+
+  * sbi-gcons-test
+    sbigconssit
+    sbigconstest
+    sbigconsuat
+
+Using project "sbi-gcons-test".
+Welcome! See 'oc help' to get started.
+
+C:\Users\RH00079362>
