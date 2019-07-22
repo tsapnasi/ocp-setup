@@ -1,0 +1,20 @@
+[root@upiuatmaster1 ~]# dig docker-registry.default.svc.cluster.local
+
+; <<>> DiG 9.9.4-RedHat-9.9.4-74.el7_6.1 <<>> docker-registry.default.svc.cluster.local
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 46377
+;; flags: qr aa rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;docker-registry.default.svc.cluster.local. IN A
+
+;; ANSWER SECTION:
+docker-registry.default.svc.cluster.local. 30 IN A 172.30.102.208
+
+;; Query time: 1 msec
+;; SERVER: 10.209.75.179#53(10.209.75.179)
+;; WHEN: Mon Jul 22 09:48:44 IST 2019
+;; MSG SIZE  rcvd: 75
+
+[root@upiuatmaster1 ~]#
