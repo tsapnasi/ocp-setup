@@ -1,0 +1,28 @@
+2019-07-22 10:43:22 1  [main] INFO  i.c.s.g.r.s.t.c.TaskManagerController - Starting TaskManagerController v1.0.0 on gcons-1-9qqjz with PID 1 (/recon-engine-service-taskmanager-1.0.0.jar started by ? in /)
+2019-07-22 10:43:22 1  [main] DEBUG i.c.s.g.r.s.t.c.TaskManagerController - Running with Spring Boot v2.0.5.RELEASE, Spring v5.0.9.RELEASE
+2019-07-22 10:43:22 1  [main] INFO  i.c.s.g.r.s.t.c.TaskManagerController - No active profile set, falling back to default profiles: default
+2019-07-22 10:43:31 1  [main] INFO  i.c.s.g.r.s.t.c.TaskManagerController - Started TaskManagerController in 9.447 seconds (JVM running for 10.144)
+2019-07-22 10:43:31 1  [Timer-1] DEBUG i.c.s.g.r.s.t.service.TaskInitiator - Task Manager Started
+2019-07-22 10:43:31 1  [Timer-1] INFO  i.c.s.g.r.l.c.model.AppServiceMap - Fetching appmaster
+2019-07-22 10:43:31 1  [Timer-1] INFO  i.c.s.g.r.s.t.service.TaskInitiator - App list [in.co.sbi.goct.reconengine.library.commons.model.AppMaster[ rowId=2 ], in.co.sbi.goct.reconengine.library.commons.model.AppMaster[ rowId=1 ], in.co.sbi.goct.reconengine.library.commons.model.AppMaster[ rowId=3 ], in.co.sbi.goct.reconengine.library.commons.model.AppMaster[ rowId=4 ]]
+2019-07-22 10:43:31 1  [Timer-1] INFO  i.c.s.g.r.l.c.service.TaskQueueImpl - Fetching TaskQueue 
+2019-07-22 10:43:31 1  [Timer-1] INFO  i.c.s.g.r.s.t.service.TaskInitiator - Task queue entries  for App SARVATRA are []
+2019-07-22 10:43:31 1  [Timer-1] INFO  i.c.s.g.r.l.c.service.TaskQueueImpl - Fetching TaskQueue 
+2019-07-22 10:43:31 1  [Timer-1] INFO  i.c.s.g.r.s.t.service.TaskInitiator - Task queue entries  for App IMPS are [in.co.sbi.goct.reconengine.library.model.TaskQueue[ taskId=3937 appId=RE0001 entryTimestamp=2019-07-22 10:43:12.282]]
+2019-07-22 10:43:31 1  [Timer-1] DEBUG i.c.s.g.r.s.t.service.TaskInitiator - Task is in PENDING/INPROGRESS Status for 0 Minitues
+2019-07-22 10:43:31 1  [Timer-1] INFO  i.c.s.g.r.l.c.service.TaskQueueImpl - Fetching TaskQueue 
+2019-07-22 10:43:31 1  [Timer-1] INFO  i.c.s.g.r.s.t.service.TaskInitiator - Task queue entries  for App TEST are []
+2019-07-22 10:43:31 1  [Timer-1] INFO  i.c.s.g.r.l.c.service.TaskQueueImpl - Fetching TaskQueue 
+2019-07-22 10:43:31 1  [Timer-1] INFO  i.c.s.g.r.s.t.service.TaskInitiator - Task queue entries  for App RE_LOOKUP_MASTER are []
+2019-07-22 10:46:31 1  [Timer-1] DEBUG i.c.s.g.r.s.t.service.TaskInitiator - Task Manager Started
+2019-07-22 10:46:31 1  [Timer-1] INFO  i.c.s.g.r.l.c.model.AppServiceMap - Fetching appmaster
+2019-07-22 10:46:31 1  [Timer-1] INFO  i.c.s.g.r.s.t.service.TaskInitiator - App list [in.co.sbi.goct.reconengine.library.commons.model.AppMaster[ rowId=2 ], in.co.sbi.goct.reconengine.library.commons.model.AppMaster[ rowId=1 ], in.co.sbi.goct.reconengine.library.commons.model.AppMaster[ rowId=3 ], in.co.sbi.goct.reconengine.library.commons.model.AppMaster[ rowId=4 ]]
+2019-07-22 10:46:31 1  [Timer-1] INFO  i.c.s.g.r.l.c.service.TaskQueueImpl - Fetching TaskQueue 
+2019-07-22 10:46:31 1  [Timer-1] INFO  i.c.s.g.r.s.t.service.TaskInitiator - Task queue entries  for App SARVATRA are []
+2019-07-22 10:46:31 1  [Timer-1] INFO  i.c.s.g.r.l.c.service.TaskQueueImpl - Fetching TaskQueue 
+2019-07-22 10:46:31 1  [Timer-1] INFO  i.c.s.g.r.s.t.service.TaskInitiator - Task queue entries  for App IMPS are [in.co.sbi.goct.reconengine.library.model.TaskQueue[ taskId=3937 appId=RE0001 entryTimestamp=2019-07-22 10:43:12.282]]
+2019-07-22 10:46:31 1  [Timer-1] DEBUG i.c.s.g.r.s.t.service.TaskInitiator - Task is in PENDING/INPROGRESS Status for 3 Minitues
+2019-07-22 10:46:31 1  [Timer-1] INFO  i.c.s.g.r.l.c.service.TaskQueueImpl - Fetching TaskQueue 
+2019-07-22 10:46:31 1  [Timer-1] INFO  i.c.s.g.r.s.t.service.TaskInitiator - Task queue entries  for App TEST are []
+2019-07-22 10:46:31 1  [Timer-1] INFO  i.c.s.g.r.l.c.service.TaskQueueImpl - Fetching TaskQueue 
+2019-07-22 10:46:31 1  [Timer-1] INFO  i.c.s.g.r.s.t.service.TaskInitiator - Task queue entries  for App RE_LOOKUP_MASTER are []
