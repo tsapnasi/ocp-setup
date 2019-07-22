@@ -1,0 +1,242 @@
+[root@upiuatbastion temp]# oc new-build webserver31-tomcat8-openshift --name=uatupiappv3 --binary=true
+--> Found image c303ee1 (2 months old) in image stream "openshift/webserver31-tomcat8-openshift" under tag "latest" for "webserver31-tomcat8-openshift"
+
+    JBoss Web Server 3.1
+    --------------------
+    Platform for building and running web applications on JBoss Web Server 3.1 - Tomcat v8
+
+    Tags: builder, java, tomcat8
+
+    * A source build using binary input will be created
+      * The resulting image will be pushed to image stream tag "uatupiapp:latest"
+      * A binary build was created, use 'start-build --from-dir' to trigger a new build
+
+--> Creating resources with label build=uatupiapp ...
+    imagestream.image.openshift.io "uatupiapp" created
+    buildconfig.build.openshift.io "uatupiapp" created
+--> Success
+[root@upiuatbastion temp]#
+
+
+[root@upiuatbastion temp]# oc new-build webserver31-tomcat8-openshift --name=uatupiapp --binary=true
+--> Found image c303ee1 (2 months old) in image stream "openshift/webserver31-tomcat8-openshift" under tag "latest" for "webserver31-tomcat8-openshift"
+
+    JBoss Web Server 3.1
+    --------------------
+    Platform for building and running web applications on JBoss Web Server 3.1 - Tomcat v8
+
+    Tags: builder, java, tomcat8
+
+    * A source build using binary input will be created
+      * The resulting image will be pushed to image stream tag "uatupiapp:latest"
+      * A binary build was created, use 'start-build --from-dir' to trigger a new build
+
+--> Creating resources with label build=uatupiapp ...
+    imagestream.image.openshift.io "uatupiapp" created
+    buildconfig.build.openshift.io "uatupiapp" created
+--> Success
+
+
+oc start-build uatupiappv3 --from-dir=. --follow=true --wait=true
+
+
+
+[root@upiuatbastion temp]# oc start-build uatupiappnew --from-dir=. --follow=true --wait=true
+Uploading directory "." as binary input for the build ...
+.
+Uploading finished
+build.build.openshift.io/uatupiappnew-1 started
+Receiving source from STDIN as archive ...
+Using docker-registry.default.svc:5000/openshift/webserver31-tomcat8-openshift@sha256:b1a715163a8f84cf5ae61a603588f8c4b07790fed530b491cbc9144bc9143322 as the s2i builder image
+INFO S2I source build with plain binaries detected
+INFO Copying deployments from . to /deployments...
+INFO Copying deployments from deployments to /deployments...
+'/tmp/src/deployments/UPIService-1.0_BalEnq.war' -> '/deployments/UPIService-1.0_BalEnq.war'
+
+Pushing image docker-registry.default.svc:5000/test/uatupiappnew:latest ...
+Pushed 0/5 layers, 2% complete
+Pushed 1/5 layers, 20% complete
+Push successful
+[root@upiuatbastion temp]#
+
+
+
+oc  new-app uatupiservicev12
+
+
+
+New Deployment
+
+oc new-build webserver31-tomcat8-openshift --name=uatupiappv1 --binary=true
+
+
+
+[root@upiuatbastion temp]# oc new-build webserver31-tomcat8-openshift --name=uatupiappv1 --binary=true
+--> Found image c303ee1 (2 months old) in image stream "openshift/webserver31-tomcat8-openshift" under tag "latest" for "webserver31-tomcat8-openshift"
+
+    JBoss Web Server 3.1
+    --------------------
+    Platform for building and running web applications on JBoss Web Server 3.1 - Tomcat v8
+
+    Tags: builder, java, tomcat8
+
+    * A source build using binary input will be created
+      * The resulting image will be pushed to image stream tag "uatupiappv1:latest"
+      * A binary build was created, use 'start-build --from-dir' to trigger a new build
+
+--> Creating resources with label build=uatupiappv1 ...
+    imagestream.image.openshift.io "uatupiappv1" created
+    buildconfig.build.openshift.io "uatupiappv1" created
+--> Success
+[root@upiuatbastion temp]#
+[root@upiuatbastion temp]# ^C
+[root@upiuatbastion temp]# ls deployments
+ROOT.war
+[root@upiuatbastion temp]# oc start-build ^C
+[root@upiuatbastion temp]# oc start-build uatupiapp --from-dir=. --follow=true --wait=true
+Uploading directory "." as binary input for the build ...
+............................................................
+Uploading finished
+Unable to connect to the server: unexpected EOF
+
+Next Try /test
+
+
+[root@upiuatbastion temp]# oc start-build uatupiapp --from-dir=. --follow=true --wait=true
+Uploading directory "." as binary input for the build ...
+........................................................
+Uploading finished
+build.build.openshift.io/uatupiapp-1 started
+Receiving source from STDIN as archive ...
+Using docker-registry.default.svc:5000/openshift/webserver31-tomcat8-openshift@sha256:b1a715163a8f84cf5ae61a603588f8c4b07790fed530b491cbc9144bc9143322 as the s2i builder image
+INFO S2I source build with plain binaries detected
+INFO Copying deployments from . to /deployments...
+INFO Copying deployments from deployments to /deployments...
+'/tmp/src/deployments/ROOT.war' -> '/deployments/ROOT.war'
+
+Pushing image docker-registry.default.svc:5000/test/uatupiapp:latest ...
+Pushed 0/5 layers, 2% complete
+Pushed 1/5 layers, 20% complete
+Push successful
+[root@upiuatbastion temp]#
+
+
+
+[root@upiuatbastion temp]# oc get pods
+NAME                READY     STATUS      RESTARTS   AGE
+airroute-1-h9lf5    1/1       Running     0          1d
+airroute-1-z28hn    1/1       Running     0          5d
+uatupiapp-1-build   0/1       Completed   0          9m
+[root@upiuatbastion temp]#
+
+
+
+ oc start-build uatupiappv1 --from-dir=. --follow=true --wait=true
+
+
+
+[root@upiuatbastion temp]#  oc start-build uatupiappv2 --from-dir=. --follow=true --wait=true
+Uploading directory "." as binary input for the build ...
+......
+Uploading finished
+build.build.openshift.io/uatupiappv1-1 started
+Receiving source from STDIN as archive ...
+Using docker-registry.default.svc:5000/openshift/webserver31-tomcat8-openshift@sha256:b1a715163a8f84cf5ae61a603588f8c4b07790fed530b491cbc9144bc9143322 as the s2i builder image
+INFO S2I source build with plain binaries detected
+INFO Copying deployments from . to /deployments...
+INFO Copying deployments from deployments to /deployments...
+'/tmp/src/deployments/ROOT.war' -> '/deployments/ROOT.war'
+
+Pushing image docker-registry.default.svc:5000/test/uatupiappv1:latest ...
+Pushed 0/5 layers, 2% complete
+Pushed 1/5 layers, 20% complete
+Push successful
+[root@upiuatbastion temp]#
+
+
+#3
+
+
+
+
+
+
+
+[root@upiuatbastion temp]# oc  new-app uatupiappv1
+
+oc new-app uatupiappv2
+
+--> Found image 6cecc71 (4 minutes old) in image stream "test/uatupiappv1" under tag "latest" for "uatupiappv1"
+
+    temp.builder.openshift.io/test/uatupiappv1-1:c58c518b
+    -----------------------------------------------------
+    Platform for building and running web applications on JBoss Web Server 3.1 - Tomcat v8
+
+    Tags: builder, java, tomcat8
+
+    * This image will be deployed in deployment config "uatupiappv1"
+    * Ports 8080/tcp, 8443/tcp, 8778/tcp will be load balanced by service "uatupiappv1"
+      * Other containers can access this service through the hostname "uatupiappv1"
+
+--> Creating resources ...
+    deploymentconfig.apps.openshift.io "uatupiappv1" created
+    service "uatupiappv1" created
+--> Success
+    Application is not exposed. You can expose services to the outside world by executing one or more of the commands below:
+     'oc expose svc/uatupiappv1'
+    Run 'oc status' to view your app.
+[root@upiuatbastion temp]#
+
+
+
+[root@upiuatbastion temp]# oc get pods
+NAME                  READY     STATUS      RESTARTS   AGE
+airroute-1-h9lf5      1/1       Running     0          1d
+airroute-1-z28hn      1/1       Running     0          6d
+uatupiapp-1-build     0/1       Completed   0          2h
+uatupiapp-1-s8xqb     1/1       Running     0          2h
+uatupiappv1-1-build   0/1       Completed   0          6m
+uatupiappv1-1-v2bbv   1/1       Running     0          45s
+[root@upiuatbastion temp]#
+
+
+
+[root@upiuatbastion temp]# oc get service
+NAME          TYPE        CLUSTER-IP       EXTERNAL-IP   PORT(S)                      AGE
+airroute      ClusterIP   172.30.119.128   <none>        8080/TCP                     6d
+uatupiapp     ClusterIP   172.30.4.150     <none>        8080/TCP,8443/TCP,8778/TCP   2h
+uatupiappv1   ClusterIP   172.30.255.147   <none>        8080/TCP,8443/TCP,8778/TCP   1m
+[root@upiuatbastion temp]#
+
+
+
+
+
+
+
+
+
+
+88888888
+
+[root@upiuatbastion temp]# oc new-build webserver31-tomcat8-openshift --name=uatupiappv1 --binary=true
+--> Found image c303ee1 (2 months old) in image stream "openshift/webserver31-tomcat8-openshift" under tag "latest" for "webserver31-tomcat8-openshift"
+
+    JBoss Web Server 3.1
+    --------------------
+    Platform for building and running web applications on JBoss Web Server 3.1 - Tomcat v8
+
+    Tags: builder, java, tomcat8
+
+    * A source build using binary input will be created
+      * The resulting image will be pushed to image stream tag "uatupiappnew:latest"
+      * A binary build was created, use 'start-build --from-dir' to trigger a new build
+
+--> Creating resources with label build=uatupiappnew ...
+    imagestream.image.openshift.io "uatupiappnew" created
+    buildconfig.build.openshift.io "uatupiappnew" created
+--> Success
+[root@upiuatbastion temp]#
+
+
+
