@@ -1,0 +1,13 @@
+
+Pipeline:
+https://upiuatlb.onlinesbi.com:8443/console/project/cicd-ocpadmin/browse/pipelines
+
+Click on edit pipeline to edit pipeline.
+To start click on Start Pipeline
+
+Folder: 
+cd /root/ocp/cicd/upi/
+oc create -f pipeline-upi.yml
+
+cd /root/ocp/cicd/gcons/
+oc create -f pipeline-gcons.yml
