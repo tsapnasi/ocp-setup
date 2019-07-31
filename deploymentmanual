@@ -1,0 +1,125 @@
+Deployment Manual
+*******************
+
+
+UPI Docker file content:
+************************
+
+FROM registry.redhat.io/jboss-webserver-3/webserver31-tomcat8-openshift
+COPY ROOT.war /deployments
+COPY log4j2.xml /home/jboss
+RUN mkdir /home/jboss/logs
+COPY hsm.config /home/jboss
+RUN chmod 777 -R /opt/webserver/bin
+CMD ["/opt/webserver/bin/launch.sh"]
+
+
+-------------------------------------
+
+UPI App Build
+--------------------------------------
+
+
+Path >>>>>master1  path /root/ocp/upi
+
+Step-1
+
+#docker build -t upi .
+
+Step-2
+
+docker tag upi docker-registry.default.svc:5000/sbiupidemo/upi
+Step-3 
+docker push docker-registry.default.svc:5000/sbiupidemo/upi
+
+Step4
+oc new-app upi
+
+Routes are in use
+
+uatupi.onlinesbi.com - http://uatupi.onlinesbi.com/
+sbiupiappuat.onlinesbi.com -- http://sbiupiappuat.onlinesbi.com/
+
+# In case new images are created for UPI
+FOR UPDATES
+oc rollout latest upi 
+(assumption is no change needed in routes)
+
+SSL - If in implemenations
+***************************
+Certificate - D:\working cert , 
+edge termination
+First - doamin ca cert
+second - pvt key
+last - cafile
+
+
+GCON App Build Process
+------------------------------------------------------------
+GCON Docker file contentd:
+FROM registry.redhat.io/openjdk/openjdk-8-rhel8
+WORKDIR /
+ADD recon-engine-service-taskmanager-1.0.0.jar recon-engine-service-taskmanager-1.0.0.jar
+CMD ["java","-jar","recon-engine-service-taskmanager-1.0.0.jar"]
+-------------------------------------------------------------
+
+Secret Creation
+
+oc create secret generic recons --from-file recon_secrets.json 
+
+Environment variables setup (for confguration of secrets)
+reconSecretPath = /data
+
+reconSecretName =(It will refer secret creator)
+
+Set to the key recon_secrets.json in secret recon
+
+Path >>>>>master1  path /root/ocp/gcons
+
+docker build -t gcons .
+docker tag gcons docker-registry.default.svc:5000/sbigconstest/gcons:v1
+docker push docker-registry.default.svc:5000/sbigconstest/gcons:v1
+oc new-app gcons:v1
+
+
+*****Kishor Build New ************************* 18/07/2019
+
+Login from CLI
+**************
+
+[root@upiuatmaster1 gcons]# oc login
+Authentication required for https://upiuatmaster1.onlinesbi.com:8443 (openshift)
+Username: ocpadmin
+Password:
+Login successful.
+
+You have access to the following projects and can switch between them with 'oc project <projectname>':
+
+    cicd-ocpadmin
+    default
+    dev-ocpadmin
+    kube-public
+    kube-service-catalog
+    kube-system
+    management-infra
+    openshift
+    openshift-ansible-service-broker
+    openshift-console
+    openshift-infra
+    openshift-logging
+    openshift-metrics-server
+    openshift-monitoring
+    openshift-node
+    openshift-sdn
+    openshift-template-service-broker
+    openshift-web-console
+  * sbigconstest
+    sbigconsuat
+    sbiupidemo
+    sbiupisit
+    sbiupiuat
+    stage-ocpadmin
+    testcicd
+
+Using project "sbigconstest".
+[root@upiuatmaster1 gcons]#
